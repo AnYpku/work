@@ -1,0 +1,190 @@
+pt range 25 ~ 30
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 194.295
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 45.1803
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 41.1197
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 45.2438
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 43.4311
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 36.2602
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 98.1256
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 116.836
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 71.5921
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 35.3319
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 131.81
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 79.8256
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 30 ~ 35
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 106.542
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 30.6817
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 29.739
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 22.2242
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 20.7471
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 22.8169
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 52.9815
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 62.6644
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 40.4402
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 17.6233
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 71.0729
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 51.9661
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 35 ~ 40
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 66.8031
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 20.0977
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 16.2898
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 14.8233
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 13.5928
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 14.9773
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 37.4126
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 43.7241
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 28.9008
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 13.9234
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 49.1891
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 36.1243
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 40 ~ 45
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 37.9725
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 10.954
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 10.4513
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 10.3718
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 11.5537
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 9.58701
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 23.4264
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 26.4896
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 16.1179
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 6.53085
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 32.9208
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 26.65
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 45 ~ 50
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 32.2889
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 8.19178
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 9.43527
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 7.47923
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 6.71101
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 7.4128
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 17.8545
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 20.8645
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 13.3852
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 5.97244
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 21.0849
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 19.8378
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 50 ~ 60
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 37.5269
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 10.5782
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 7.94519
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 6.54391
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 6.5427
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 8.25095
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 17.0141
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 21.5687
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 15.0248
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 6.77381
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 25.6123
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 27.0769
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 60 ~ 80
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 38.4744
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 7.10957
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 8.01512
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 9.02509
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 7.63689
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 5.20193
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 17.8688
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 21.347
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 12.3219
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 7.11999
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 25.9597
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 28.4524
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 80 ~ 120
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 27.4287
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 4.72785
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 4.17889
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 4.67438
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 6.25461
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 4.68624
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 12.2413
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 13.6698
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 8.99545
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 4.30921
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 16.6548
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 21.0414
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 120 ~ 400
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 12.9565
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 2.13161
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 1.87074
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 1.553
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 1.80432
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 1.3242
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 4.04253
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 4.17768
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 2.62468
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 1.30048
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 6.03887
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 11.6976
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+pt range 25 ~ 400
+============================total photon=========================
+for the mix root file pdata.root,with photon_chiso<0.441, the number of selected total photon = 552.32
+============================fake photon=========================
+for the mix root file pdata.root,with2<photon_chiso<4the number of selected fake photon = 139.283
+for the mix root file pdata.root,with3<photon_chiso<5the number of selected fake photon = 128.617
+for the mix root file pdata.root,with4<photon_chiso<6the number of selected fake photon = 121.206
+for the mix root file pdata.root,with5<photon_chiso<7the number of selected fake photon = 117.916
+for the mix root file pdata.root,with6<photon_chiso<8the number of selected fake photon = 110.564
+for the mix root file pdata.root,with4<photon_chiso<9the number of selected fake photon = 280.222
+for the mix root file pdata.root,with4<photon_chiso<10the number of selected fake photon = 330.216
+for the mix root file pdata.root,with6<photon_chiso<10the number of selected fake photon = 209.009
+for the mix root file pdata.root,with8<photon_chiso<10the number of selected fake photon = 98.4456
+for the mix root file pdata.root,with5<photon_chiso<12the number of selected fake photon = 378.731
+####################################################################################################
+============================real photon=========================
+for the ZA sample outofficial.root,with photon_chiso<0.441 and photon_isprompt=1
+the number of selected real photon = 301.759
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$

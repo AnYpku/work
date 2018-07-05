@@ -1,0 +1,2 @@
+ZJ*.root drla>0.3   no pt cut
+mcfake*.root drla>0.7 Add pt cut photon_pt[j]<400.&&photon_pt[j]>2
