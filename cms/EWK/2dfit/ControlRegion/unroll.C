@@ -10,6 +10,7 @@
 #include "CMS_lumi.C"
 using namespace std;
 void cmsLumi(bool channel); 
+ofstream file1("scalefactor.txt");
 TH1D* unroll(TH2D* th2_in,Double_t* xbin, Double_t* ybin,  Int_t xbins_in, Int_t ybins_in,char *hname);
 void cmsLumi(bool channel) 
 {
@@ -66,9 +67,9 @@ int unroll(){
 	std::ostringstream strs;
 	std::string lumivalue = strs.str();
 	Double_t lumi=35.866;
-	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+	Double_t mjj_bins[2]={150, 500};
     Double_t detajj_bins[4]={2.5,4.5,6,6.5};
-	const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
+	const char *name[9]={"Mjj 150~500","Mjj 150~500","Mjj 150~500"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
 	TH2D* th2_ZA[9];
@@ -79,10 +80,10 @@ int unroll(){
         ll[i] = new TLegend(0.55,0.4,0.8,0.9);
         cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
         th2_ZA[i]=(TH2D*)f_ZA->Get(Form("th2_%d",i));
-        t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 3,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
+        t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 1,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+1);
-        for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
+        for(Int_t j=1;j<=3;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
         t_ZA[i]->Scale(lumi*ZA_scale);
         t_ZA[i]->Draw("HIST");
 //        t_ZA[i]->DrawNormalized("HIST");
@@ -96,6 +97,7 @@ int unroll(){
      t_ZA[0]->SetTitle("Mjj vs detajj");
      t_ZA[0]->SetLineWidth(3);
      t_ZA[0]->Draw("HIST");
+     file1<<"histo 1 1"<<endl;
      for(Int_t i=1;i<9;i++){
  //         t_ZA[i]->SetFillColor(kMagenta);
  //         t_ZA[i]->SetMarkerColor(kMagenta);
@@ -103,7 +105,10 @@ int unroll(){
           t_ZA[i]->SetLineWidth(1);
           t_ZA[i]->SetLineStyle(2);
 //          t_ZA[i]->Scale(lumi*ZA_scale);
-          for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
+          file1<<"histo "<<i+1<<"\t"<<t_ZA[0]->Integral()/t_ZA[i]->Integral()<<endl;
+          cout<<"histo "<<i+1<<" "<<t_ZA[0]->Integral()/t_ZA[i]->Integral()<<endl;
+          t_ZA[i]->Scale(t_ZA[0]->Integral()/t_ZA[i]->Integral());
+          for(Int_t j=1;j<=3;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
           //t_ZA[i]->Draw("HIST,SAME");
           t_ZA[i]->Draw("HIST,SAME");
           l2->AddEntry(t_ZA[i],Form("%d central scale pdf variations",i+1));

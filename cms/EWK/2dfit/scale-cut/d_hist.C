@@ -38,19 +38,20 @@ void run(std::string filename){
 	{
         p=0;
 		t->GetEntry(j);
-        for(Int_t i=0;i<9;i++){
-              actualWeight[p]=scalef*lumiWeight*pweight[i];
+        for(Int_t i=104;i<=112;i++){
+              actualWeight[p]=scalef*lumiWeight*pweight[i]*theWeight/fabs(theWeight);
 
-		if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[i]);
-		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[i]);
-		if(Mjj<2000 && detajj>=6.5) th2[p]->Fill(Mjj, 6.1, actualWeight[i]);
-		if(Mjj>=2000 && detajj>=6.5) th2[p]->Fill(1999, 6.1, actualWeight[i]);
+     	if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[p]);
+		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[p]);
+		if(Mjj<2000 && detajj>=6.5) th2[p]->Fill(Mjj, 6.1, actualWeight[p]);
+		if(Mjj>=2000 && detajj>=6.5) th2[p]->Fill(1999, 6.1, actualWeight[p]);
         p++;
      	}
+         cout<<"p = "<<p<<endl;
          cout<<"entry "<<j<<endl;
          cout<<"scalef = "<<scalef<<endl;
          cout<<"lumiWeight = "<<lumiWeight<<endl;
-         for(Int_t k=0;k<9;k++){
+         for(Int_t k=104;k<112;k++){
              cout<<"pweight ["<<k<<"] = "<<pweight[k]<<endl;
           }
          for(Int_t k=0;k<9;k++){

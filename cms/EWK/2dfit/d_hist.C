@@ -38,19 +38,20 @@ void run(std::string filename){
 	{
         p=0;
 		t->GetEntry(j);
-        for(Int_t i=0;i<9;i++){
+        for(Int_t i=104;i<113;i++){
               actualWeight[p]=scalef*lumiWeight*pweight[i];
 
-		if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[i]);
-		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[i]);
-		if(Mjj<2000 && detajj>=6.5) th2[p]->Fill(Mjj, 6.1, actualWeight[i]);
-		if(Mjj>=2000 && detajj>=6.5) th2[p]->Fill(1999, 6.1, actualWeight[i]);
+		if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[p]);
+		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[p]);
+		if(Mjj<2000 && detajj>=6.5) th2[p]->Fill(Mjj, 6.1, actualWeight[p]);
+		if(Mjj>=2000 && detajj>=6.5) th2[p]->Fill(1999, 6.1, actualWeight[p]);
         p++;
      	}
+         cout<<"p = "<<p<<endl;
          cout<<"entry "<<j<<endl;
          cout<<"scalef = "<<scalef<<endl;
          cout<<"lumiWeight = "<<lumiWeight<<endl;
-         for(Int_t k=0;k<9;k++){
+         for(Int_t k=104;k<113;k++){
              cout<<"pweight ["<<k<<"] = "<<pweight[k]<<endl;
           }
          for(Int_t k=0;k<9;k++){
@@ -62,7 +63,6 @@ void run(std::string filename){
 }
 
 int d_hist(){
-    cout<<"test"<<endl;
 	run("outZA-cut1");
 	TFile* f5=new TFile("th2-histo.root","RECREATE");
     for(Int_t i=0;i<9;i++){

@@ -26,31 +26,32 @@ void run(std::string filename){
 	t->SetBranchAddress("theWeight", &theWeight);
 	t->SetBranchAddress("lumiWeight", &lumiWeight);
 
-	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+	Double_t mjj_bins[2]={150, 500};
 	Double_t detajj_bins[4]={2.5, 4.5, 6, 6.5};
     char th2name[9];
     for(Int_t i=0;i<9;i++){
        sprintf(th2name,"th2_%d",i);
-	   th2[i] = new TH2D(th2name,th2name,3, mjj_bins, 3, detajj_bins);
+	   th2[i] = new TH2D(th2name,th2name,1, mjj_bins, 3, detajj_bins);
 	   th2[i]->Sumw2();}
     Int_t p;
 	for(Int_t j=0; j<t->GetEntries();j++)
 	{
         p=0;
 		t->GetEntry(j);
-        for(Int_t i=0;i<9;i++){
+        for(Int_t i=104;i<113;i++){
               actualWeight[p]=scalef*lumiWeight*pweight[i];
 
-		if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[i]);
-		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[i]);
-		if(Mjj<2000 && detajj>=6.5) th2[p]->Fill(Mjj, 6.1, actualWeight[i]);
-		if(Mjj>=2000 && detajj>=6.5) th2[p]->Fill(1999, 6.1, actualWeight[i]);
+		if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[p]);
+		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[p]);
+		if(Mjj<2000 && detajj>=6.5) th2[p]->Fill(Mjj, 6.1, actualWeight[p]);
+		if(Mjj>=2000 && detajj>=6.5) th2[p]->Fill(1999, 6.1, actualWeight[p]);
         p++;
      	}
+         cout<<"p = "<<p<<endl;
          cout<<"entry "<<j<<endl;
          cout<<"scalef = "<<scalef<<endl;
          cout<<"lumiWeight = "<<lumiWeight<<endl;
-         for(Int_t k=0;k<9;k++){
+         for(Int_t k=104;k<113;k++){
              cout<<"pweight ["<<k<<"] = "<<pweight[k]<<endl;
           }
          for(Int_t k=0;k<9;k++){
@@ -62,8 +63,7 @@ void run(std::string filename){
 }
 
 int d_hist(){
-    cout<<"test"<<endl;
-	run("outZA-cut1");
+	run("outZA-cut-Mjj");
 	TFile* f5=new TFile("th2-histo.root","RECREATE");
     for(Int_t i=0;i<9;i++){
 	   th2[i]->Write();}

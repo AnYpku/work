@@ -42,7 +42,7 @@ TH1D* unroll(TH2D* th2_in,Double_t* xbin, Double_t* ybin,  Int_t xbins_in, Int_t
 			Double_t y_temp = 0.5*(ybin[iy-1]+ybin[iy]);////取一个bin两个端点的均值,y direction
 			   h1_out->SetBinContent(ix+(iy-1)*nbinsx,th2->GetBinContent(th2->FindBin(x_temp, y_temp)));//void SetBinContent(Int_t bin, Double_t content),the FindBin function can return Global bin number corresponding to x,y
 			   h1_out->SetBinError(ix+(iy-1)*nbinsx,th2->GetBinError(th2->FindBin(x_temp, y_temp)));
-               cout<<"ix = "<<ix<<", iy = "<<iy<<"; bin = "<<ix+(iy-1)*nbinsx<<", BinContent"<<th2->GetBinContent(th2->FindBin(x_temp, y_temp))<<endl;
+               cout<<"ix = "<<ix<<", iy = "<<iy<<"; bin = "<<ix+(iy-1)*nbinsx<<", BinContent "<<th2->GetBinContent(th2->FindBin(x_temp, y_temp))<<endl;
 		}
     }
     return h1_out;
@@ -83,7 +83,7 @@ int unroll(){
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+1);
         for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
-        t_ZA[i]->Scale(lumi*ZA_scale);
+//        t_ZA[i]->Scale(lumi*ZA_scale);
         t_ZA[i]->Draw("HIST");
 //        t_ZA[i]->DrawNormalized("HIST");
         ll[i]->AddEntry(t_ZA[i],Form("%d central scale pdf variable",i+1));
@@ -93,10 +93,10 @@ int unroll(){
      TCanvas* c1 = new TCanvas("c1","Mjj vs deltajj",900,600);
      c1->SetFrameFillColor(41);
      TLegend *l2 = new TLegend(0.55,0.4,0.8,0.9);
-     t_ZA[0]->SetTitle("Mjj vs detajj");
-     t_ZA[0]->SetLineWidth(3);
-     t_ZA[0]->Draw("HIST");
      for(Int_t i=1;i<9;i++){
+          t_ZA[0]->SetTitle("Mjj vs detajj");
+          t_ZA[0]->SetLineWidth(3);
+          t_ZA[0]->Draw("HIST");
  //         t_ZA[i]->SetFillColor(kMagenta);
  //         t_ZA[i]->SetMarkerColor(kMagenta);
           t_ZA[i]->SetLineColor(i+1);
