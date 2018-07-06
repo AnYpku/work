@@ -9,6 +9,7 @@
 #include "CMSTDRStyle.h"
 #include "CMS_lumi.C"
 using namespace std;
+TString name="_content";
 void cmsLumi(bool channel); 
 TH1D* unroll(TH2D* th2_in,Double_t* xbin, Double_t* ybin,  Int_t xbins_in, Int_t ybins_in,char *hname);
 void cmsLumi(bool channel) 
@@ -61,7 +62,7 @@ int unroll(){
     gStyle->SetTickLength(0.03, "XYZ");
     gStyle->SetNdivisions(510, "XYZ");
 
-	TFile* fout = new TFile("aa.root","RECREATE");
+	TFile* fout = new TFile("dd.root","RECREATE");
 	Double_t ZA_scale= 0.98;
 	std::ostringstream strs;
 	std::string lumivalue = strs.str();
@@ -71,15 +72,17 @@ int unroll(){
 	const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
-	TH2D* th2_ZA[9];
-	TH1D* t_ZA[9];
-    TCanvas* cc[9];
-    TLegend *ll[9];
-    for(Int_t i=0;i<9;i++){
+	TH2D* th2_ZA[51];
+	TH1D* t_ZA[51];
+    TCanvas* cc[51];
+    TLegend *ll[51];
+    for(Int_t i=0;i<51;i++){
         ll[i] = new TLegend(0.55,0.4,0.8,0.9);
         cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
         th2_ZA[i]=(TH2D*)f_ZA->Get(Form("th2_%d",i));
         t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 3,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
+        ofstream file2(Form("content-hist_%d",i+1));
+    cout<<"***************************histo "<<i+1<< " has been created*********************"<<endl;
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+1);
         for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
@@ -88,7 +91,9 @@ int unroll(){
 //        t_ZA[i]->DrawNormalized("HIST");
         ll[i]->AddEntry(t_ZA[i],Form("%d central scale pdf variable",i+1));
         ll[i]->Draw();
-        cc[i]->Print(Form("tmp-hist2d_%d.eps",i+1));
+//        cc[i]->Print(Form("tmp-hist2d_%d.eps",i+1));
+        for(Int_t k=0;k<51;k++){
+        file2<<t_ZA[i]->GetBinContent(k+1)<<endl;}
       }
      TCanvas* c1 = new TCanvas("c1","Mjj vs deltajj",900,600);
      c1->SetFrameFillColor(41);
@@ -96,13 +101,15 @@ int unroll(){
      t_ZA[0]->SetTitle("Mjj vs detajj");
      t_ZA[0]->SetLineWidth(3);
      t_ZA[0]->Draw("HIST");
-     for(Int_t i=1;i<9;i++){
+     t_ZA[0]->SetLineStyle(1);
+     t_ZA[0]->SetLineColor(kRed);
+     l2->AddEntry(t_ZA[0],"1 central scale pdf variations");
+     for(Int_t i=1;i<51;i++){
  //         t_ZA[i]->SetFillColor(kMagenta);
  //         t_ZA[i]->SetMarkerColor(kMagenta);
-          t_ZA[i]->SetLineColor(i+1);
+          t_ZA[i]->SetLineColor(kBlue);
           t_ZA[i]->SetLineWidth(1);
-          t_ZA[i]->SetLineStyle(2);
-//          t_ZA[i]->Scale(lumi*ZA_scale);
+          t_ZA[i]->SetLineStyle(1);
           for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
           //t_ZA[i]->Draw("HIST,SAME");
           t_ZA[i]->Draw("HIST,SAME");
@@ -110,11 +117,11 @@ int unroll(){
          // delete t_ZA[i];
          // delete cc[i];
        }
-       l2->Draw();
+//       l2->Draw();
        c1->Print("tmp-hist-2d.eps");
 
 //	TH1D* t_ZA=unroll(th2_ZA, mjj_bins, detajj_bins, 3,3);
-//    for(Int_t i=0;i<9;i++){
+//    for(Int_t i=0;i<103;i++){
 //	  t_ZA[i]->SetFillColor(i+1);
 //	  t_ZA[i]->SetMarkerColor(i+1);
 //	  t_ZA[i]->SetLineColor(i+1);
@@ -122,7 +129,7 @@ int unroll(){
 //    }
 	THStack* hs = new THStack("hs", "");
     TLegend *l1 = new TLegend(0.55,0.4,0.8,0.9);
-    for(Int_t i=0;i<9;i++){
+    for(Int_t i=0;i<51;i++){
 	   hs->Add(t_ZA[i]);
        l1->AddEntry(t_ZA[i],Form("%d central scale pdf variations",i+1));
       }
@@ -136,7 +143,7 @@ int unroll(){
 //    hs->Draw("HIST");
 //    hs->GetYaxis()->SetTitleOffset(0.8);
 //    hs->GetYaxis()->SetTitle("Events /bin");
-//    for(Int_t i=1;i<=9;i++){ hs->GetXaxis()->SetBinLabel(i,name[i-1]);}
+//    for(Int_t i=1;i<=103;i++){ hs->GetXaxis()->SetBinLabel(i,name[i-1]);}
 //    l1->Draw();
 //    c->Print("tmp.eps");
 
@@ -144,10 +151,10 @@ int unroll(){
 	cmsLumi(0);
 
 	fout->cd();
-
-    for(Int_t i=0;i<9;i++){
-	t_ZA[i]->Write();}
-    hs->Write();
+    c1->Write();
+    for(Int_t i=0;i<51;i++){
+	t_ZA[i]->Write();
+    cc[i]->Write();}
 	fout->Close();
 return 0;
 
