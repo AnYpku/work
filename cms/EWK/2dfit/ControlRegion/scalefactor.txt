@@ -1,9 +1,9 @@
 histo 1 1
-histo 2	2.22637
-histo 3	1.77093
-histo 4	1.98832
-histo 5	2.20628
-histo 6	1.76752
-histo 7	2.03363
-histo 8	2.2723
-histo 9	1.79254
+histo 2	2.2317
+histo 3	1.76597
+histo 4	1.99193
+histo 5	2.21526
+histo 6	1.76605
+histo 7	2.02937
+histo 8	2.27334
+histo 9	1.78346

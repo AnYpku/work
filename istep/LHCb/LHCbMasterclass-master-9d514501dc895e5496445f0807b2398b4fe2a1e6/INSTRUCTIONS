@@ -1,0 +1,97 @@
+Instructions for tutors / moderators
+Screenshots to be included when helpful!
+
+1. Name of the measurement: D0 Lifetime Measurement
+
+2. Authors:  Vladimir Gligorov, Marco Clemencic, Ben Couturier, Tom Blake, Ana Trisovic,
+             Silvia Amerio, Marcello Rotondo
+
+3. Supported languages: English
+
+4. Short description
+   * Use of transverse momentum and lifetime to discriminate between signal and background
+     among D0 meson candidates.
+   * Fitting of the D0 meson mass distribution to estimate signal and background distributions
+     in other variables of interest.
+   * Fitting of the D0 lifetime distribution and comparison with the PDG D0 lifetime. 
+
+5. Prerequisites (Browser, Software…):
+   * Local ROOT installation/environment
+   * Internet connection desirable but not required
+
+6. Datasets: LHCb real pp-data from 2012 at 8 TeV
+   * ~50,000 D0 candidate events collected with a minimum bias trigger and selected with
+     a lifetime unbiased preselection.
+   * The entire dataset should be considered by all students/teachers at once.
+
+7. Proposed outline for the day
+   * 09:45 – 10:00 Arrival & Welcome
+   * 10:00 – 12:00 Lectures (twice 45 minutes + time of questions & discussion)
+     . Introduction to particle physics with emphasis to LHC and B-physics
+     . Introduction to detectors and particle identification
+   * 12:00 - 13:00 Lunch 
+   * 13:00 – 13:45 Introduction to the measurement
+     . Invariant mass as a discriminant between signal and background
+     . Explanation of other variables : transverse momentum, lifetime, impact parameter
+     . Explanation of the Gaussian distribution, +-3 sigma interval as the ''signal region''
+   *   13:45 – 15:45 Measurement
+   *   15:45 – 16:00 Break
+   *   16:00 – 17:00 Discussion of results 
+
+8. Students´ tasks
+
+  * Instructions for analysis
+    . All data and commands required for the exercise are contained within the executable. 
+    . It is helpful, but not required, if the students have pencil, paper, and calculator to hand.
+    . Ask each student to open the event display executable and begin by reading the instructions inside the executable.
+    . Go through one step of the measurement (see step by step below) together with the students
+      to ensure that they understand the mechanics.
+    . Then ask students to reset the exercise and work through it themseleves. 
+
+9. How they do it (step by step)
+ 
+*** Event display part
+
+  * Preparing for the event display
+    . Load and validate a dataset file. The file should be different for each student.
+    . Go through a single event with a student, using the online help, to make sure they
+      understand the commands.
+  * Event selection
+    . The students need to select the D0 in each event
+    . If they select something wildly outside the correct mass range, they will be warned.
+      But mistakes are in general allowed.
+    . Once the students think they have the right candidate, they can add it to the histogram.
+  * Histogram of mass
+    . With all 30 events added, the students should begin to see a structure in the histogram.
+    . They should then save the histogram, and the teachers should merge the student histograms,
+      making the signal clear to see.
+  
+*** Lifetime fitting part
+
+  * Fitting the D0 mass
+    . First plot the D0 mass distribution 
+    . Now fit to it. In this fit, leave the signal and mass ranges to their default values.
+    . Define the signal mass region as +-3 sigma around the mean value
+    . OPTIONAL : depending on the students' level, ask them to note down the signal significance
+  * Plotting the other variables and cutting on them
+    . Plot the other variables. Discuss the signal and background distributions with the students
+      the first time around. How can you tell where there is more signal and where there is more background?
+  * Fitting the lifetime
+    . Fit the liftime and compare the result to the PDG. How many standard deviations does it differ by?
+    . Save this fit result. At this point the IPCHI2 variable should not yet have been used. 
+  * IPCHI2 dependence 
+    . Repeat the previous step for different values of IPCHI2, as described in the instructions
+      included in the executable.
+    . At each step save the fit result.
+    . Plot the trend of fit results vs. IPCHI2.
+
+11. What can be discussed (proposed questions)
+
+  * Does the Gaussian fit the mass distribution well?
+    . For example, students could notice that in the fits where there is less background, the
+      Gaussian undershoots the data points on the left.
+    . Discuss radiative photon emission and mass bias.
+  * Why does the original lifetime fit not agree with the PDG value?
+  * Why does cutting on IPCHI2 help, but cutting on D0 PT or TAU not help? 
+    . Can be used to introduce secondary charm and/or systematic uncertainties.
+  * How would you estimate the systematic uncertainty on the measurement from the trend plot? 

@@ -5,7 +5,7 @@ using namespace std;
 void runxx() {
 //gROOT->LoadMacro("xx.C");
 TString dir="./";
-ifstream infile("file-root");
+ifstream infile("file_all");
 string buffer; 
 TString infilename;
 

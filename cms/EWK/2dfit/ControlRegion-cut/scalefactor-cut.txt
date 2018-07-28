@@ -1,0 +1,7 @@
+histo 1 1
+histo 2	2.2317
+histo 3	1.76597
+histo 4	1.99193
+histo 5	2.21526
+histo 7	2.02937
+histo 9	1.78346

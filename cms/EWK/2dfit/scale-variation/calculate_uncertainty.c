@@ -4,7 +4,7 @@ Int_t histo_number=8;
 Double_t central_value[9],nlo_value[8][9];//[the amount of pdf][the amout of bin]
 ofstream f1("./scale-uncertainty.txt");
 void open(Int_t i){
-    ifstream file(Form("./content-hist_%d",i));
+    ifstream file(Form("./scale-txt/content-hist_%d",i));
     if(!file.is_open()){cout<<"can not open the "<<i<<" file"<<endl;   }
     for(Int_t j=0;j<p;j++){
        if(i==1){
@@ -20,6 +20,7 @@ void open(Int_t i){
  }
  
 int calculate_uncertainty(){
+    gStyle->SetOptStat(0);
 for(Int_t i=1;i<=histo_number+1;i++){
    open(i);
    //对于第j个bin，把每个histo的bincontent输出
@@ -44,6 +45,23 @@ for(Int_t j=0;j<p;j++){
     cout<<"bin "<<j+1<<"; uncertainty["<<j<<"] = "<<uncertainty[j]<<endl;
     f1<<"bin "<<j+1<<"; uncertainty["<<j<<"] = "<<uncertainty[j]<<endl;
   }
+const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
+TH1D* h1 =new TH1D("h1","uncertainty",9,0,0.5);
+for(Int_t i=0;i<9;i++){
+    h1->SetBinContent(i+1,uncertainty[i]);
+    h1->SetTitle("uncertainty;;uncertainty");
+    h1->GetXaxis()->SetBinLabel(i+1,name[i]);
+    h1->GetYaxis()->CenterTitle();
+    h1->GetYaxis()->SetTitleFont(32);
+    h1->GetYaxis()->SetLabelFont(22);
+    h1->GetYaxis()->SetLabelSize(0.05);
+    h1->GetYaxis()->SetTitleSize(0.06);
+    h1->GetYaxis()->SetTitleOffset(0.85);
+    h1->GetXaxis()->SetLabelFont(22);
+    h1->GetXaxis()->SetLabelSize(0.05);
+    h1->SetMarkerStyle(29);
+    h1->SetMarkerSize(1.5);
+    h1->Draw("P");}
 
 
 

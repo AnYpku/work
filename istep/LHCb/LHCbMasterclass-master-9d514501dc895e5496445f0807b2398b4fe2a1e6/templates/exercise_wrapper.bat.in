@@ -1,0 +1,4 @@
+@echo off
+set ROOTSYS=%~dps0contrib\root
+set PATH=%ROOTSYS%\bin;%PATH%
+"%~dp0bin\%~n0.exe"

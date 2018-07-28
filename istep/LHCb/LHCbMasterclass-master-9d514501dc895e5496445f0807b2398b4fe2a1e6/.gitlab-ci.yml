@@ -1,0 +1,25 @@
+image: gitlab-registry.cern.ch/lhcboutreach/lhcbmasterclass
+
+
+stages:
+    - build
+    - deploy
+
+build:
+    stage: build
+    script:
+        - scl enable devtoolset-7  'cmake .'
+        - scl enable devtoolset-7  'make'
+        
+deploy:
+    stage: deploy
+    script:
+        - echo ${LBOUTRCH} | kinit lboutrch@CERN.CH
+        - klist
+        - tar zcf LHCbMasterclass.tar.gz *
+        - xrdcp -f LHCbMasterclass.tar.gz root://eosuser.cern.ch//eos/project/l/lhcbwebsites/www/lhcb-rpm/masterclass/LHCbMasterclass.tar.gz
+        - tar cf LHCbMasterclass.tar *
+    artifacts:
+        expire_in: 1y
+        paths:
+            - LHCbMasterclass.tar

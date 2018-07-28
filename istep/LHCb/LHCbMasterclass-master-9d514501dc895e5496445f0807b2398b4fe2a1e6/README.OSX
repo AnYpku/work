@@ -1,0 +1,40 @@
+/-----------------------------------------------------------------------------\
+| (C) Copyright 2013  CERN                                                    |
+|                                                                             |
+| This software is distributed under the terms of the GNU General Public      |
+| License version 3 (GPL Version 3), copied verbatim in the file "COPYING".   |
+|                                                                             |
+| In applying this license, CERN does not waive the privileges and immunities |
+| granted to it by virtue of its status as an Intergovernmental Organization  |
+| or submit itself to any jurisdiction.                                       |
+\-----------------------------------------------------------------------------/
+
+Build and Install
+-----------------
+
+Preliminaries :
+
+- X11 should be installed; since Mountain Lion (10.8), it's not part of the distribution
+  but can be installed, see : http://support.apple.com/kb/HT5293
+
+- have ROOT locally installed and ROOT binaries available in your local PATH :
+ --> install ROOT from http://root.cern.ch/
+ --> "source thisroot.csh" from the /root/bin/ directory to setup your local PATH
+
+- have cmake locally installed and ROOT binaries available in your local PATH :
+ --> install cmake from http://www.cmake.org/cmake/resources/software.html
+ --> click "Install command line links" when asked by the installer
+
+- make sure that the command line tools ("make", for example) are available in your local PATH :
+ --> OS X XCode has to be installed
+ --> in XCode 4, one can install the Command Line Tools from : Preferences/Downloads ;
+ --> for older XCode versions, put "/Applications/Xcode.app/Contents/Developer/usr/bin" in your local PATH 
+
+Then to actually build and run : 
+
+git clone http://cern.ch/lhcbproject/GIT/LHCbMasterclass.git
+cd LHCbMasterclass
+cmake .
+make
+./LHCb_D0_Exercise
+

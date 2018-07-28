@@ -17,6 +17,7 @@ void run(std::string filename){
 	Double_t Mjj;
 	Double_t detajj;
     Double_t theWeight,lumiWeight,scalef,pweight[703];
+//    Double_t pileupWeight;
 	Double_t actualWeight[9];
 
 	t->SetBranchAddress("Mjj", &Mjj);
@@ -25,6 +26,7 @@ void run(std::string filename){
 	t->SetBranchAddress("scalef", &scalef);
 	t->SetBranchAddress("theWeight", &theWeight);
 	t->SetBranchAddress("lumiWeight", &lumiWeight);
+//	t->SetBranchAddress("pileupWeight", &pileupWeight);
 
 	Double_t mjj_bins[4]={500, 750, 1000, 2000};
 	Double_t detajj_bins[4]={2.5, 4.5, 6, 6.5};
@@ -39,7 +41,8 @@ void run(std::string filename){
         p=0;
 		t->GetEntry(j);
         for(Int_t i=104;i<113;i++){
-              actualWeight[p]=scalef*lumiWeight*pweight[i];
+         if(p==0)  actualWeight[p]=scalef*lumiWeight*pweight[i];
+         else  actualWeight[p]=2*scalef*lumiWeight*pweight[i];
 
 		if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[p]);
 		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[p]);

@@ -8,7 +8,7 @@ vector<Double_t>:: iterator biggest_nlo;
 vector<Double_t>:: iterator smallest_nlo;
 Double_t biggest[9],smallest[9];
 void open(Int_t i){
-    ifstream file(Form("./scale-txt/content-hist_%d",i));
+    ifstream file(Form("./scale-txt/content-hist_no%d",i));
     if(!file.is_open()){cout<<"can not open the "<<i<<" file"<<endl;   }
     for(Int_t j=0;j<p;j++){
        if(i==1){
@@ -25,6 +25,7 @@ void open(Int_t i){
      
  
 int uncertainty_other(){
+    gStyle->SetOptStat(0);
 for(Int_t i=1;i<=histo_number+1;i++){
    open(i);
    //对于第j个bin，把每个histo的bincontent输出
@@ -38,7 +39,7 @@ for(Int_t j=0;j<p;j++){
    smallest_nlo = min_element(begin(vector_nlo),end(vector_nlo));
    biggest[j]=*biggest_nlo;
    smallest[j]=*smallest_nlo;
-   cout<<j <<" bin "<<"; biggest = "<<biggest[j]<<"; smallest = "<<*smallest_nlo<<";central value = "<<central_value[j]<<endl;
+   cout<<j <<" bin "<<"; biggest = "<<biggest[j]<<"; smallest = "<<*smallest_nlo<<"; 2*central value = "<<2*central_value[j]<<endl;
    vector_nlo.clear();
    cout<<"*****************************"<<endl;
   }
@@ -60,10 +61,28 @@ for(Int_t j=0;j<p;j++){
 //  cout<<"bin "<<j+1<<"; mean = "<<mean<<endl;
 //  cout<<"bin "<<j+1<<"; sum = "<<sum<<endl;
 //    cout<<"bin "<<j+1<<"; uncertainty["<<j<<"] = "<<uncertainty[j]<<endl;
-    cout<<"bin "<<j+1<<"; uncertainty_other["<<j<<"] = "<<uncertainty_other[j]<<endl;
+    cout<<"bin "<<j+1<<"; uncertainty_other["<<j<<"] = "<<uncertainty_other[j]<<"; uncertainty["<<j<<"] = "<<uncertainty[j]<<endl;
     f1<<"bin "<<j+1<<"; uncertainty["<<j<<"] = "<<uncertainty[j]<<endl;
   }
 
+const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
+TH1D* h1 =new TH1D("h1","uncertainty",9,0,0.5);
+for(Int_t i=0;i<9;i++){
+    h1->SetBinContent(i+1,uncertainty[i]);
+    h1->SetTitle("uncertainty;;uncertainty");
+    h1->GetXaxis()->SetBinLabel(i+1,name[i]);
+    h1->GetYaxis()->CenterTitle();
+    h1->GetYaxis()->SetTitleFont(32);
+    h1->GetYaxis()->SetLabelFont(22);
+    h1->GetYaxis()->SetLabelSize(0.05);
+    h1->GetYaxis()->SetTitleSize(0.06);
+    h1->GetYaxis()->SetTitleOffset(0.85);
+    h1->GetXaxis()->SetLabelFont(22);
+    h1->GetXaxis()->SetLabelSize(0.05);
+    h1->SetMarkerStyle(29);
+    h1->SetMarkerSize(1.5);
+    h1->Draw("P");
+  }
 
 
 return 0;

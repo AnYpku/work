@@ -1,0 +1,28 @@
+# Download contrib libraries for the masterclass
+set(root_version 5.34.07)
+
+if(NOT EXISTS ${CMAKE_BINARY_DIR}/contrib/root)
+  if(WIN32)
+    set(root_tar root_v${root_version}.win32.vc10.tar.gz)
+  else()
+    message(FATAL "Downloading of ROOT only possible on Windows")
+  endif()
+  set(root_src_url ftp://root.cern.ch/root/${root_tar})
+  set(root_src_dest ${CMAKE_BINARY_DIR}/${root_tar})
+  if(NOT EXISTS ${root_src_dest})
+    message(STATUS "Downloading data from ${root_src_url}")
+    file(DOWNLOAD ${root_src_url} ${root_src_dest} STATUS dwld_status)
+    list(GET dwld_status 0 status)
+    if(status)
+      list(GET dwld_status 1 mgs)
+      message(FATAL "Failed to download ROOT from '${root_src_url}'.")
+    endif()
+  endif()
+  file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/contrib)
+  message(STATUS "Unpacking ${root_tar}...")
+  execute_process(COMMAND ${CMAKE_COMMAND} -E tar xzf ${root_src_dest}
+                  WORKING_DIRECTORY ${CMAKE_BINARY_DIR}/contrib)
+  message(STATUS "... done.")
+endif()
+
+set(CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR}/contrib/root ${CMAKE_PRAFIX_PATH})

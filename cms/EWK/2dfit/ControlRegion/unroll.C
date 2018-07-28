@@ -67,9 +67,9 @@ int unroll(){
 	std::ostringstream strs;
 	std::string lumivalue = strs.str();
 	Double_t lumi=35.866;
-	Double_t mjj_bins[2]={150, 500};
+	Double_t mjj_bins[2]={150, 400};
     Double_t detajj_bins[4]={2.5,4.5,6,6.5};
-	const char *name[9]={"Mjj 150~500","Mjj 150~500","Mjj 150~500"};
+	const char *name[9]={"Mjj 150~400","Mjj 150~400","Mjj 150~400"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
 	TH2D* th2_ZA[9];
@@ -78,18 +78,18 @@ int unroll(){
     TLegend *ll[9];
     for(Int_t i=0;i<9;i++){
         ll[i] = new TLegend(0.55,0.4,0.8,0.9);
-        cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
+//        cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
         th2_ZA[i]=(TH2D*)f_ZA->Get(Form("th2_%d",i));
         t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 1,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+1);
         for(Int_t j=1;j<=3;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
         t_ZA[i]->Scale(lumi*ZA_scale);
-        t_ZA[i]->Draw("HIST");
+//        t_ZA[i]->Draw("HIST");
 //        t_ZA[i]->DrawNormalized("HIST");
         ll[i]->AddEntry(t_ZA[i],Form("%d central scale pdf variable",i+1));
         ll[i]->Draw();
-        cc[i]->Print(Form("tmp-hist2d_%d.eps",i+1));
+//        cc[i]->Print(Form("tmp-hist2d_%d.eps",i+1));
       }
      TCanvas* c1 = new TCanvas("c1","Mjj vs deltajj",900,600);
      c1->SetFrameFillColor(41);
@@ -116,7 +116,7 @@ int unroll(){
          // delete cc[i];
        }
        l2->Draw();
-       c1->Print("tmp-hist-2d.eps");
+       c1->Print("hist-2d.eps");
 
 //	TH1D* t_ZA=unroll(th2_ZA, mjj_bins, detajj_bins, 3,3);
 //    for(Int_t i=0;i<9;i++){

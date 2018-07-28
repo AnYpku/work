@@ -1,4 +1,5 @@
 #define xx_cxx
+#include <iostream>
 #include "xx.h"
 #include <TH2.h>
 #include <TRandom.h>
@@ -41,7 +42,7 @@ void xx::Loop()
 
 	Long64_t npp = fChain->GetEntries("theWeight>0.");
 	Long64_t nmm = fChain->GetEntries("theWeight<0.");
-	//std::cout<< "numberofnp:" << npp << "  numberofnm:" <<nmm << std::endl;
+    std::cout<< "numberofnp:" << npp << "  numberofnm:" <<nmm << std::endl;
 	TFile * input13 = new TFile ("./pu_calc/puweight.root");
 	TH1* h13 = NULL;
 	input13->GetObject("h2",h13);
@@ -124,7 +125,7 @@ void xx::Loop()
 		lep2_phi_station2_tmp = lep2_phi_station2;
 		// if (Cut(ientry) < 0) continue;
 		if(jentry%100000==0) 
-            //std::cout<<" "<<HLT_Ele1<<" "<<HLT_Mu1<<" "<<fabs(theWeight)/theWeight<<" "<<m_dataset<<" "<<jentry<<" "<<nentries<<std::endl;
+            std::cout<<" "<<HLT_Ele1<<" "<<HLT_Mu1<<" "<<fabs(theWeight)/theWeight<<" "<<m_dataset<<" "<<jentry<<" "<<nentries<<std::endl;
 
 		if(m_dataset=="outDMuonB.root"){ scalef=1.0; run_period=1;}
 		if(m_dataset=="outDMuonC.root"){ scalef=1.0; run_period=2;}
@@ -160,6 +161,9 @@ void xx::Loop()
 		if(m_dataset=="outWZ.root"){ scalef=1000.*47.13/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 		if(m_dataset=="outZZ.root"){ scalef=1000.*16.523/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 		if(m_dataset=="outZA-EWK.root"){ scalef=1000.*0.1097/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
+
+		if(m_dataset=="outZA_sig.root"){ scalef=1000.*0.1097/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
+
 		if(m_dataset=="outZA-sig-muonid-correct.root"){ scalef=1000.*0.1097/float(npp-nmm)*fabs(theWeight)/theWeight; run_period=8;}
 
 		if(lep1_phi_station2<0) lep1_phi_station2_tmp = lep1_phi_station2+6.28319;

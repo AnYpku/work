@@ -1,0 +1,100 @@
+
+Processing uncertainty_other.c...
+histo 1; bin1; central_value = 11.8114
+histo 1; bin2; central_value = 7.08686
+histo 1; bin3; central_value = 3.54343
+histo 1; bin4; central_value = 10.6303
+histo 1; bin5; central_value = 3.54343
+histo 1; bin6; central_value = 3.54343
+histo 1; bin7; central_value = 1.18114
+histo 1; bin8; central_value = 3.54343
+histo 1; bin9; central_value = 5.90572
+*****************************
+hist 2; bin0; nlo_value = 5.39712
+hist 2; bin1; nlo_value = 3.19315
+hist 2; bin2; nlo_value = 1.49047
+hist 2; bin3; nlo_value = 4.70589
+hist 2; bin4; nlo_value = 1.64065
+hist 2; bin5; nlo_value = 1.55707
+hist 2; bin6; nlo_value = 0.572824
+hist 2; bin7; nlo_value = 1.65732
+hist 2; bin8; nlo_value = 2.55233
+*****************************
+hist 3; bin0; nlo_value = 6.51286
+hist 3; bin1; nlo_value = 3.98326
+hist 3; bin2; nlo_value = 2.14234
+hist 3; bin3; nlo_value = 6.20992
+hist 3; bin4; nlo_value = 1.92425
+hist 3; bin5; nlo_value = 2.05301
+hist 3; bin6; nlo_value = 0.597677
+hist 3; bin7; nlo_value = 1.92485
+hist 3; bin8; nlo_value = 3.51835
+*****************************
+hist 4; bin0; nlo_value = 6.19194
+hist 4; bin1; nlo_value = 3.46663
+hist 4; bin2; nlo_value = 1.56258
+hist 4; bin3; nlo_value = 5.70528
+hist 4; bin4; nlo_value = 1.63105
+hist 4; bin5; nlo_value = 1.92939
+hist 4; bin6; nlo_value = 0.6103
+hist 4; bin7; nlo_value = 1.5569
+hist 4; bin8; nlo_value = 3.05379
+*****************************
+hist 5; bin0; nlo_value = 5.62366
+hist 5; bin1; nlo_value = 3.12029
+hist 5; bin2; nlo_value = 1.31456
+hist 5; bin3; nlo_value = 5.04684
+hist 5; bin4; nlo_value = 1.51287
+hist 5; bin5; nlo_value = 1.68391
+hist 5; bin6; nlo_value = 0.592852
+hist 5; bin7; nlo_value = 1.47369
+hist 5; bin8; nlo_value = 2.63928
+*****************************
+hist 6; bin0; nlo_value = 5.66041
+hist 6; bin1; nlo_value = 3.60911
+hist 6; bin2; nlo_value = 2.02793
+hist 6; bin3; nlo_value = 4.7722
+hist 6; bin4; nlo_value = 1.93254
+hist 6; bin5; nlo_value = 1.58261
+hist 6; bin6; nlo_value = 0.562001
+hist 6; bin7; nlo_value = 1.92574
+hist 6; bin8; nlo_value = 2.81055
+*****************************
+hist 7; bin0; nlo_value = 6.19888
+hist 7; bin1; nlo_value = 4.04994
+hist 7; bin2; nlo_value = 2.45222
+hist 7; bin3; nlo_value = 5.5725
+hist 7; bin4; nlo_value = 2.1039
+hist 7; bin5; nlo_value = 1.81492
+hist 7; bin6; nlo_value = 0.570077
+hist 7; bin7; nlo_value = 2.11223
+hist 7; bin8; nlo_value = 3.34787
+*****************************
+0 bin ; biggest = 6.51286; smallest = 5.39712; 2*central value = 23.6228
+*****************************
+1 bin ; biggest = 4.04994; smallest = 3.12029; 2*central value = 14.1737
+*****************************
+2 bin ; biggest = 2.45222; smallest = 1.31456; 2*central value = 7.08686
+*****************************
+3 bin ; biggest = 6.20992; smallest = 4.70589; 2*central value = 21.2606
+*****************************
+4 bin ; biggest = 2.1039; smallest = 1.51287; 2*central value = 7.08686
+*****************************
+5 bin ; biggest = 2.05301; smallest = 1.55707; 2*central value = 7.08686
+*****************************
+6 bin ; biggest = 0.6103; smallest = 0.562001; 2*central value = 2.36228
+*****************************
+7 bin ; biggest = 2.11223; smallest = 1.47369; 2*central value = 7.08686
+*****************************
+8 bin ; biggest = 3.51835; smallest = 2.55233; 2*central value = 11.8114
+*****************************
+bin 1; (max-min)/(2*center)[0] = 0.0472315; (max-min)/(max+min)[0] = 0.0936811; -0.0464496
+bin 2; (max-min)/(2*center)[1] = 0.0655897; (max-min)/(max+min)[1] = 0.129654; -0.0640644
+bin 3; (max-min)/(2*center)[2] = 0.160531; (max-min)/(max+min)[2] = 0.302025; -0.141494
+bin 4; (max-min)/(2*center)[3] = 0.0707426; (max-min)/(max+min)[3] = 0.137785; -0.067042
+bin 5; (max-min)/(2*center)[4] = 0.083398; (max-min)/(max+min)[4] = 0.163414; -0.0800158
+bin 6; (max-min)/(2*center)[5] = 0.0699802; (max-min)/(max+min)[5] = 0.137376; -0.0673962
+bin 7; (max-min)/(2*center)[6] = 0.0204459; (max-min)/(max+min)[6] = 0.0412002; -0.0207542
+bin 8; (max-min)/(2*center)[7] = 0.090102; (max-min)/(max+min)[7] = 0.178069; -0.0879667
+bin 9; (max-min)/(2*center)[8] = 0.0817868; (max-min)/(max+min)[8] = 0.159129; -0.077342
+(int) 0

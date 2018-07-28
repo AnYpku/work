@@ -26,7 +26,7 @@ void run(std::string filename){
 	t->SetBranchAddress("theWeight", &theWeight);
 	t->SetBranchAddress("lumiWeight", &lumiWeight);
 
-	Double_t mjj_bins[2]={150, 500};
+	Double_t mjj_bins[2]={150, 400};
 	Double_t detajj_bins[4]={2.5, 4.5, 6, 6.5};
     char th2name[9];
     for(Int_t i=0;i<9;i++){

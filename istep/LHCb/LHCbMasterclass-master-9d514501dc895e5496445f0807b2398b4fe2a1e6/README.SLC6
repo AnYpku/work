@@ -1,0 +1,31 @@
+/-----------------------------------------------------------------------------\
+| (C) Copyright 2013  CERN                                                    |
+|                                                                             |
+| This software is distributed under the terms of the GNU General Public      |
+| License version 3 (GPL Version 3), copied verbatim in the file "COPYING".   |
+|                                                                             |
+| In applying this license, CERN does not waive the privileges and immunities |
+| granted to it by virtue of its status as an Intergovernmental Organization  |
+| or submit itself to any jurisdiction.                                       |
+\-----------------------------------------------------------------------------/
+
+Build and Install
+-----------------
+To compile and build on SL[C]6, you need to install CMake and ROOT (with
+support for Event Display):
+
+    sudo yum install cmake root root-graf3d-eve
+
+Then you can build with:
+
+    cmake .
+    make
+
+You can run the application from the build directory
+
+    ./LHCb_D0_Exercise
+
+or installing it
+
+    sudo make install
+    LHCb_D0_Exercise

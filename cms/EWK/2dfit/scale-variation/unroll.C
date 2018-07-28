@@ -89,7 +89,7 @@ int unroll(){
         cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
         th2_ZA[i]=(TH2D*)f_ZA->Get(Form("th2_%d",i));
         t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 3,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
-        ofstream file2(Form("content-hist_%d",i+1));
+        ofstream file2(Form("content-hist_no%d",i+1));
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+1);
         for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
@@ -100,13 +100,15 @@ int unroll(){
         ll[i]->Draw();
         cc[i]->Print(Form("tmp-hist2d_%d.eps",i+1));
         for(Int_t k=0;k<9;k++){
-        file2<<t_ZA[i]->GetBinContent(k+1)*scale_factor[i]<<endl;}
+//        file2<<t_ZA[i]->GetBinContent(k+1)*scale_factor[i]<<endl;}
+        file2<<t_ZA[i]->GetBinContent(k+1)<<endl;}
       }
      TCanvas* c1 = new TCanvas("c1","Mjj vs deltajj",900,600);
      c1->SetFrameFillColor(41);
      TLegend *l2 = new TLegend(0.55,0.4,0.8,0.9);
      t_ZA[0]->SetTitle("Mjj vs detajj");
      t_ZA[0]->SetLineWidth(3);
+     t_ZA[0]->GetYaxis()->SetRangeUser(0,14);
      t_ZA[0]->Draw("HIST");
      l2->AddEntry(t_ZA[0],"1 central scale pdf variations");
      for(Int_t i=1;i<9;i++){
@@ -115,7 +117,7 @@ int unroll(){
           t_ZA[i]->SetLineColor(i+1);
           t_ZA[i]->SetLineWidth(1);
           t_ZA[i]->SetLineStyle(2);
-          t_ZA[i]->Scale(scale_factor[i]);
+//          t_ZA[i]->Scale(scale_factor[i]);
           for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
           //t_ZA[i]->Draw("HIST,SAME");
           t_ZA[i]->Draw("HIST,SAME");
@@ -124,7 +126,7 @@ int unroll(){
          // delete cc[i];
        }
        l2->Draw();
-       c1->Print("tmp-hist-2d.eps");
+       c1->Print("hist-2d.eps");
 
 //	TH1D* t_ZA=unroll(th2_ZA, mjj_bins, detajj_bins, 3,3);
 //    for(Int_t i=0;i<9;i++){
