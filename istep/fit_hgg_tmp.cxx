@@ -51,7 +51,7 @@ void fit_hgg_tmp()
     RooAddPdf sum("sum","signalPDF + Cheby PDF",RooArgList(gauss1_pdf, bkg_pdf),RooArgList(N1,N3));
 
     RooFitResult *fitres = sum.fitTo(data, Save(kTRUE), Extended());
-	fitres->Print("v");//Need "Save(kTRUE)"
+	fitres->Print("!v");//Need "Save(kTRUE)"
 //============== plot hgg ============
     RooPlot *frame_hgg = hgg.frame(Name("hehe"), Bins(hgg_bins), Range(hgg_low, hgg_up));
     data.plotOn(frame_hgg,Name("data"),MarkerColor(kBlack), MarkerSize(1.0),DataError(RooAbsData::SumW2));
