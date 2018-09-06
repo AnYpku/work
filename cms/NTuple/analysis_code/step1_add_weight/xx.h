@@ -109,7 +109,7 @@ public :
 //Lu
    Int_t           HLT_Mu1;
 //Meng reMiniaod
-   Int_t 	   HLT_Mu2;
+   Int_t 	       HLT_Mu2;
    Int_t           HLT_Mu3;
    Int_t           HLT_Mu4;
    Int_t           HLT_Mu5;
@@ -126,19 +126,19 @@ public :
    Bool_t          passFilter_badMuon;
    Bool_t          passFilter_badChargedHadron;
 //Meng reMiniaod
-   Bool_t	   passFilter_MetbadMuon;
+   Bool_t	       passFilter_MetbadMuon;
    Bool_t   	   passFilter_duplicateMuon;
 //Lu
-   Double_t        lumiWeight;
+   Double_t    lumiWeight;
    Double_t	   pileupWeight;
    Int_t	   run_period;
 //Meng reMiniaod
    Double_t 	   lep1_eta_station2;
    Double_t 	   lep1_phi_station2;
-   Int_t	   lep1_sign;
-   Double_t	   lep2_eta_station2;
-   Double_t	   lep2_phi_station2;
-   Int_t	   lep2_sign;
+   Int_t	       lep1_sign;
+   Double_t	       lep2_eta_station2;
+   Double_t	       lep2_phi_station2;
+   Int_t	       lep2_sign;
    Double_t 	   l1_weight;
 //Lu
 

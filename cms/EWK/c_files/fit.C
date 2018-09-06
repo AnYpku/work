@@ -8,15 +8,15 @@
 using namespace RooFit;
 void fit(float lowpt, float highpt, float lowchiso, float highchiso){
 //TString b="chiso5-12_";
-	TFile* fdata = TFile::Open(Form("photonandfake_pt%0.f-%0.f_chiso%0.f-%0.f.root",lowpt,highpt,lowchiso,highchiso));
-	TFile* ftrue = TFile::Open(Form("rootfiles/pdata_photonreal_pt%0.f_%0.f.root",lowpt,highpt));
+	TFile* fdata = TFile::Open(Form("data_fake_pt%0.f-%0.f_chiso%0.f-%0.f.root",lowpt,highpt,lowchiso,highchiso));
+	TFile* ftrue = TFile::Open(Form("data_photonreal_pt%0.f_%0.f.root",lowpt,highpt));
 //	TFile* ftrue = TFile::Open(Form("../fit_produce/ZA_%0.f_%0.f_true.root", lowpt, highpt));
 //	TFile* ffake = TFile::Open(Form("../fit_produce/DMuon_%0.f_%0.f_fake.root", lowpt, highpt));
 //	TFile* ffake = TFile::Open(Form("../fit_produce/ZJets_FX_%0.f_%0.f_fake.root", lowpt, highpt));
 
-	TH1F* hdata_ = (TH1F*)fdata->Get("h11");
-	TH1F* hfake_ = (TH1F*)fdata->Get(Form("h12_chiso%0.f-%0.f",lowchiso,highchiso));
-	TH1F* htrue_ = (TH1F*)ftrue->Get("h23");
+	TH1F* hdata_ = (TH1F*)fdata->Get(Form("h11_pt%0.f-%0.f",lowpt,highpt));
+	TH1F* hfake_ = (TH1F*)fdata->Get(Form("h12_pt%0.f-%0.f_chiso%0.f-%0.f",lowpt,highpt,lowchiso,highchiso));
+	TH1F* htrue_ = (TH1F*)ftrue->Get(Form("h23_pt%0.f-%0.f",lowpt,highpt));
 
 	Int_t nBins = 9;
 	Double_t bins[10];
@@ -137,6 +137,7 @@ void fit(float lowpt, float highpt, float lowchiso, float highchiso){
 									*nDataInWindow*nDataInWindow*nDataInWindow));
 	ofstream myfile(TString("fakerate_") + Form("photon_pt%0.f_%0.f_chisochiso%0.f-%0.f.txt", lowpt, highpt,lowchiso,highchiso),ios::out);
 	ofstream file(TString("TrueNumber_") + Form("pt%0.f-%0.f_chiso%0.f-%0.f.txt", lowpt, highpt,lowchiso,highchiso),ios::out);
+	ofstream file1(TString("FakeNumber_") + Form("pt%0.f-%0.f_chiso%0.f-%0.f.txt", lowpt, highpt,lowchiso,highchiso),ios::out);
 
 	myfile << "data in window = " << nDataInWindow << "+-" << nDataInWindowErr <<" "<<nDataInWindow_1<<" "<<nDataInWindow_2<<" "<<nDataInWindow_3<<" "<<nDataInWindow_4<<" "<<nDataInWindow_5<<" "<<nDataInWindow_6<<" "<<nDataInWindow_7<<std::endl;
 	myfile << "nDatatotal = " << nDatatotal << std::endl;
@@ -147,6 +148,7 @@ void fit(float lowpt, float highpt, float lowchiso, float highchiso){
 	myfile << "fakerate = " << fakerate << "+-" <<fakerateErr <<std::endl; 
 	myfile << "chi2ToNDF = " << chi2ToNDF <<std::endl;
     file<<nTrue_fit<<"\t"<<nTrue_fitErr<<endl;
+    file1<<nFake_fit<<"\t"<<nFake_fitErr<<endl;
 	TString strFR = "FR = (";
         float FRFloat = (1000 * fakerate);
         int FRInt = FRFloat;
