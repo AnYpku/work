@@ -2,7 +2,7 @@ ofstream myfile("result.txt");
 void get(Double_t lowpt,Double_t highpt){
 
 ifstream f1,f2;
-f2.open(Form("closure-test_pt%0.f-%0.f.txt",lowpt,highpt));
+f2.open(Form("./resultNew/txt/closure-test_pt%0.f-%0.f.txt",lowpt,highpt));
 Double_t value[22];
 for(Int_t i=0;i<22;i++){
    f2>>value[i+1];

@@ -1,0 +1,353 @@
+# Conditions read from  CMS_CONDITIONS  via FrontierProd 
+DEBUG 2018-07-24 17:14:33,541: 	 Executing command: 'submit'
+DEBUG 2018-07-24 17:14:33,541: 	 Found CRAB cache file /uscms/home/mlu/.crab3
+DEBUG 2018-07-24 17:14:33,566: 	 Checking credentials
+DEBUG 2018-07-24 17:14:33,566: 	 Found proxy file /tmp/x509up_u52213
+DEBUG 2018-07-24 17:14:33,566: 	 Getting proxy life time left
+DEBUG 2018-07-24 17:14:33,668: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -timeleft
+ output : 41002
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:33,771: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -actimeleft
+ output : 41002
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:33,771: 	 Proxy valid for 11:23:22 hours
+INFO 2018-07-24 17:14:33,772: 	 Will use CRAB configuration file Zcrab/crab3_analysisZA_sig.py
+DEBUG 2018-07-24 17:14:33,772: 	 Loading CRAB configuration file.
+DEBUG 2018-07-24 17:14:33,811: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2018-07-24 17:14:34,111: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:34,111: 	 Checking credentials
+DEBUG 2018-07-24 17:14:34,111: 	 Found proxy file /tmp/x509up_u52213
+DEBUG 2018-07-24 17:14:34,111: 	 Getting proxy life time left
+DEBUG 2018-07-24 17:14:34,214: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -timeleft
+ output : 41001
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:34,317: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -actimeleft
+ output : 41001
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:34,318: 	 Proxy valid for 11:23:21 hours
+DEBUG 2018-07-24 17:14:34,420: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u52213 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:35,439: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-07-24 17:14:35,545: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:35,545: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-07-24 17:14:35,545: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu_cmsweb.cern.ch for credential name
+DEBUG 2018-07-24 17:14:36,449: 	 Executing : 
+ command : myproxy-info -l 3f70a46e133bba62aac5bf1c6ef0806c91adccb2 -s myproxy.cern.ch
+ output : username: 3f70a46e133bba62aac5bf1c6ef0806c91adccb2
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 592:46:58  (24.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:14:36,451: 	 Myproxy is valid: 2134018
+DEBUG 2018-07-24 17:14:36,451: 	 Command use: submit
+DEBUG 2018-07-24 17:14:36,451: 	 Options use: ['-c', 'Zcrab/crab3_analysisZA_sig.py']
+DEBUG 2018-07-24 17:14:38,377: 	 CRABClient version: 3.3.1805.patch1
+DEBUG 2018-07-24 17:14:38,377: 	 Instance is prod
+DEBUG 2018-07-24 17:14:38,377: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-07-24 17:14:38,377: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-07-24 17:14:38,377: 	 Started submission
+DEBUG 2018-07-24 17:14:38,377: 	 Working on /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1
+DEBUG 2018-07-24 17:14:39,424: 	 Loading required information from the environment
+DEBUG 2018-07-24 17:14:39,425: 	 Found CMSSW_8_0_26_patch2 for slc6_amd64_gcc530 with base /uscms_data/d3/mlu/CMSSW_8_0_26_patch2
+DEBUG 2018-07-24 17:14:39,425: 	 Loading required information from the environment
+DEBUG 2018-07-24 17:14:39,425: 	 Found CMSSW_8_0_26_patch2 for slc6_amd64_gcc530 with base /uscms_data/d3/mlu/CMSSW_8_0_26_patch2
+DEBUG 2018-07-24 17:14:39,444: 	 UNIQUE NAME: tarUUID 73e180af-1740-4bc4-a8b7-750a805e1677 
+DEBUG 2018-07-24 17:14:39,444: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.requestName = 'Z-ZA-EWK-1'
+config.section_('JobType')
+config.JobType.psetName = 'Zanalysis.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.inputFiles = ['Summer16_23Sep2016V3_MC_L1FastJet_AK4PFchs.txt', 'Summer16_23Sep2016V3_MC_L2Relative_AK4PFchs.txt', 'Summer16_23Sep2016V3_MC_L3Absolute_AK4PFchs.txt', 'Summer16_23Sep2016V3_MC_L1FastJet_AK4PFpuppi.txt', 'Summer16_23Sep2016V3_MC_L2Relative_AK4PFpuppi.txt', 'Summer16_23Sep2016V3_MC_L3Absolute_AK4PFpuppi.txt']
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/LLAJJ_EWK_MLL-50_MJJ-120_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM'
+config.Data.outputDatasetTag = 'Z-ZA-EWK-1'
+config.Data.totalUnits = -1
+config.Data.unitsPerJob = 1
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.publication = False
+config.section_('Site')
+config.Site.storageSite = 'T3_US_FNALLPC'
+
+DEBUG 2018-07-24 17:14:39,444: 	 self.config.JobType.psetName: Zanalysis.py
+INFO 2018-07-24 17:14:39,444: 	 Importing CMSSW configuration Zanalysis.py
+INFO 2018-07-24 17:14:40,084: 	 Finished importing CMSSW configuration Zanalysis.py
+DEBUG 2018-07-24 17:14:40,084: 	 Writing CMSSW configuration to /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/inputs/PSet.py
+DEBUG 2018-07-24 17:14:40,254: 	 The following EDM output files will be collected: []
+DEBUG 2018-07-24 17:14:40,254: 	 The following TFile output files will be collected: ['ZtreePKU.root']
+DEBUG 2018-07-24 17:14:40,254: 	 The following user output files will be collected: []
+DEBUG 2018-07-24 17:14:40,254: 	 Loading required information from the environment
+DEBUG 2018-07-24 17:14:40,254: 	 Found CMSSW_8_0_26_patch2 for slc6_amd64_gcc530 with base /uscms_data/d3/mlu/CMSSW_8_0_26_patch2
+DEBUG 2018-07-24 17:14:40,254: 	 Making tarball in /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/inputs/73e180af-1740-4bc4-a8b7-750a805e1677default.tgz
+DEBUG 2018-07-24 17:14:40,374: 	 Checking directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/lib
+DEBUG 2018-07-24 17:14:40,374: 	 Adding directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/lib to tarball
+DEBUG 2018-07-24 17:14:47,382: 	 Checking directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/biglib
+DEBUG 2018-07-24 17:14:47,382: 	 Adding directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/biglib to tarball
+DEBUG 2018-07-24 17:14:47,384: 	 Checking directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/module
+DEBUG 2018-07-24 17:14:48,953: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/FWCore/Framework/interface to tarball
+DEBUG 2018-07-24 17:14:49,642: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/FWCore/PluginManager/interface to tarball
+DEBUG 2018-07-24 17:14:49,758: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/FWCore/ParameterSet/interface to tarball
+DEBUG 2018-07-24 17:14:49,924: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/FWCore/Utilities/interface to tarball
+DEBUG 2018-07-24 17:14:50,704: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/DataFormats/Common/interface to tarball
+DEBUG 2018-07-24 17:14:51,156: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/DataFormats/EgammaCandidates/interface to tarball
+DEBUG 2018-07-24 17:14:51,244: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/DataFormats/PatCandidates/interface to tarball
+DEBUG 2018-07-24 17:14:51,381: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/DataFormats/Candidate/interface to tarball
+DEBUG 2018-07-24 17:14:51,448: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/DataFormats/Math/interface to tarball
+DEBUG 2018-07-24 17:14:51,625: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/DataFormats/HepMCCandidate/interface to tarball
+DEBUG 2018-07-24 17:14:51,661: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/RecoEgamma/EgammaTools/data to tarball
+DEBUG 2018-07-24 17:14:51,774: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/RecoEgamma/EgammaTools/interface to tarball
+DEBUG 2018-07-24 17:14:52,025: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/RecoEcal/EgammaCoreTools/interface to tarball
+DEBUG 2018-07-24 17:14:52,162: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/CommonTools/UtilAlgos/interface to tarball
+DEBUG 2018-07-24 17:14:52,561: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/CondFormats/JetMETObjects/data to tarball
+DEBUG 2018-07-24 17:14:55,329: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/CondFormats/JetMETObjects/interface to tarball
+DEBUG 2018-07-24 17:14:55,567: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/JetMETCorrections/Objects/interface to tarball
+DEBUG 2018-07-24 17:14:55,599: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/JetMETCorrections/Algorithms/interface to tarball
+DEBUG 2018-07-24 17:14:55,681: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/JetMETCorrections/Modules/interface to tarball
+DEBUG 2018-07-24 17:14:55,800: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/HLTrigger/HLTcore/interface to tarball
+DEBUG 2018-07-24 17:14:55,900: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/PhysicsTools/PatUtils/data to tarball
+DEBUG 2018-07-24 17:14:56,467: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/PhysicsTools/PatUtils/interface to tarball
+DEBUG 2018-07-24 17:14:56,715: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/PhysicsTools/PatExamples/interface to tarball
+DEBUG 2018-07-24 17:14:56,801: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/PhysicsTools/Heppy/data to tarball
+DEBUG 2018-07-24 17:14:57,456: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/PhysicsTools/Heppy/interface to tarball
+DEBUG 2018-07-24 17:14:57,777: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/PhysicsTools/PatAlgos/interface to tarball
+DEBUG 2018-07-24 17:14:57,972: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/SimDataFormats/JetMatching/interface to tarball
+DEBUG 2018-07-24 17:14:58,036: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/AnalysisDataFormats/TopObjects/interface to tarball
+DEBUG 2018-07-24 17:14:58,233: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/GeneratorInterface/LHEInterface/data to tarball
+DEBUG 2018-07-24 17:14:58,311: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/GeneratorInterface/LHEInterface/interface to tarball
+DEBUG 2018-07-24 17:14:58,360: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/MuonAnalysis/MuonAssociators/interface to tarball
+DEBUG 2018-07-24 17:14:58,639: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUCommon/python/data to tarball
+DEBUG 2018-07-24 17:14:59,136: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/RecoMET/METFilters/data to tarball
+DEBUG 2018-07-24 17:14:59,152: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/RecoMET/METFilters/interface to tarball
+DEBUG 2018-07-24 17:14:59,192: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/EgammaAnalysis/ElectronTools/data to tarball
+DEBUG 2018-07-24 17:15:02,171: 	 Adding data directory /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/EgammaAnalysis/ElectronTools/interface to tarball
+DEBUG 2018-07-24 17:15:02,318: 	 Adding file Summer16_23Sep2016V3_MC_L1FastJet_AK4PFchs.txt to tarball
+DEBUG 2018-07-24 17:15:02,323: 	 Adding file Summer16_23Sep2016V3_MC_L2Relative_AK4PFchs.txt to tarball
+DEBUG 2018-07-24 17:15:02,402: 	 Adding file Summer16_23Sep2016V3_MC_L3Absolute_AK4PFchs.txt to tarball
+DEBUG 2018-07-24 17:15:02,403: 	 Adding file Summer16_23Sep2016V3_MC_L1FastJet_AK4PFpuppi.txt to tarball
+DEBUG 2018-07-24 17:15:02,416: 	 Adding file Summer16_23Sep2016V3_MC_L2Relative_AK4PFpuppi.txt to tarball
+DEBUG 2018-07-24 17:15:02,508: 	 Adding file Summer16_23Sep2016V3_MC_L3Absolute_AK4PFpuppi.txt to tarball
+DEBUG 2018-07-24 17:15:02,613: 	 Uploading archive /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/inputs/73e180af-1740-4bc4-a8b7-750a805e1677default.tgz (15 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-07-24 17:15:12,486: 	 Loading required information from the environment
+DEBUG 2018-07-24 17:15:12,486: 	 Found CMSSW_8_0_26_patch2 for slc6_amd64_gcc530 with base /uscms_data/d3/mlu/CMSSW_8_0_26_patch2
+DEBUG 2018-07-24 17:15:12,486: 	 Making tarball in /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/inputs/debugFiles.tgz
+DEBUG 2018-07-24 17:15:12,502: 	 Uploading archive /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2018-07-24 17:15:13,685: 	 Result uploading input files: 9176ad57698b5113508df08f72432b77db00b9d0b8bf8ea765e3cfdb2413d6a2.tar.gz 
+INFO 2018-07-24 17:15:13,685: 	 Sending the request to the server
+DEBUG 2018-07-24 17:15:13,686: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T3_US_FNALLPC', 'algoargs': 1, 'cachefilename': '9176ad57698b5113508df08f72432b77db00b9d0b8bf8ea765e3cfdb2413d6a2.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_8_0_26_patch2', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/LLAJJ_EWK_MLL-50_MJJ-120_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', 'dryrun': 0, 'workflow': 'crab_Z-ZA-EWK-1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 1, 'tfileoutfiles': ['ZtreePKU.root'], 'oneEventMode': 0, 'debugfilename': 'f0f029da238e4c3279545da2de84192dd2201064a6b0e410d910c209f1ac3152.tar.gz', 'saveoutput': 1, 'publication': 0, 'jobarch': 'slc6_amd64_gcc530', 'totalunits': -1, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'Z-ZA-EWK-1'} 
+DEBUG 2018-07-24 17:15:13,686: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T3_US_FNALLPC&algoargs=1&cachefilename=9176ad57698b5113508df08f72432b77db00b9d0b8bf8ea765e3cfdb2413d6a2.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_8_0_26_patch2&primarydataset=&inputdata=%2FLLAJJ_EWK_MLL-50_MJJ-120_13TeV-madgraph-pythia8%2FRunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1%2FMINIAODSIM&dryrun=0&workflow=crab_Z-ZA-EWK-1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=1&oneEventMode=0&debugfilename=f0f029da238e4c3279545da2de84192dd2201064a6b0e410d910c209f1ac3152.tar.gz&saveoutput=1&publication=0&jobarch=slc6_amd64_gcc530&totalunits=-1&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Z-ZA-EWK-1&tfileoutfiles=ZtreePKU.root
+DEBUG 2018-07-24 17:15:14,611: 	 Result: {u'result': [{u'RequestName': u'180724_221514:melu_crab_Z-ZA-EWK-1'}]}
+INFO 2018-07-24 17:15:14,613: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2018-07-24 17:15:14,613: 	 Task name: 180724_221514:melu_crab_Z-ZA-EWK-1
+INFO 2018-07-24 17:15:14,613: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2018-07-24 17:15:14,613: 	 About to return
+INFO 2018-07-24 17:15:14,618: 	 Log file is /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/crab.log
+DEBUG 2018-07-24 17:27:44,484: 	 Executing command: 'status'
+DEBUG 2018-07-24 17:27:44,485: 	 Found CRAB cache file /uscms/home/mlu/.crab3
+DEBUG 2018-07-24 17:27:44,503: 	 Checking credentials
+DEBUG 2018-07-24 17:27:44,503: 	 Found proxy file /tmp/x509up_u52213
+DEBUG 2018-07-24 17:27:44,503: 	 Getting proxy life time left
+DEBUG 2018-07-24 17:27:44,605: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -timeleft
+ output : 40211
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:27:44,708: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -actimeleft
+ output : 40211
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:27:44,708: 	 Proxy valid for 11:10:11 hours
+DEBUG 2018-07-24 17:27:44,819: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:27:44,819: 	 Checking credentials
+DEBUG 2018-07-24 17:27:44,819: 	 Found proxy file /tmp/x509up_u52213
+DEBUG 2018-07-24 17:27:44,819: 	 Getting proxy life time left
+DEBUG 2018-07-24 17:27:44,922: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -timeleft
+ output : 40211
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:27:45,024: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -actimeleft
+ output : 40211
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:27:45,025: 	 Proxy valid for 11:10:11 hours
+DEBUG 2018-07-24 17:27:45,915: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-07-24 17:27:46,021: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:27:46,021: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-07-24 17:27:46,021: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu_cmsweb.cern.ch for credential name
+DEBUG 2018-07-24 17:27:46,925: 	 Executing : 
+ command : myproxy-info -l 3f70a46e133bba62aac5bf1c6ef0806c91adccb2 -s myproxy.cern.ch
+ output : username: 3f70a46e133bba62aac5bf1c6ef0806c91adccb2
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 592:33:48  (24.7 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-24 17:27:46,926: 	 Myproxy is valid: 2133228
+DEBUG 2018-07-24 17:27:46,926: 	 Command use: status
+DEBUG 2018-07-24 17:27:46,926: 	 Options use: ['-d', 'crab_Z-ZA-EWK-1/']
+DEBUG 2018-07-24 17:27:47,823: 	 CRABClient version: 3.3.1805.patch1
+DEBUG 2018-07-24 17:27:47,823: 	 Instance is prod
+DEBUG 2018-07-24 17:27:47,823: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-07-24 17:27:47,823: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-07-24 17:27:48,773: 	 Got information from server oracle database: {u'result': [u'180724_221514:melu_crab_Z-ZA-EWK-1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-07-24 22:15:14.534120', u'None', u'2018-07-24 22:15:56.592918', u'None', u'CMSSW_8_0_26_patch2', u'slc6_amd64_gcc530', u'/LLAJJ_EWK_MLL-50_MJJ-120_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'9176ad57698b5113508df08f72432b77db00b9d0b8bf8ea765e3cfdb2413d6a2.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'melu', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu', u'cms', u'None', u'None', u'Z-ZA-EWK-1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['ZtreePKU.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0197.cern.ch/mon/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0197.cern.ch', u'F', u'[]', u'T', u'/store/user/melu/', u'F', u'None', u'F', u'None', u'LLAJJ_EWK_MLL-50_MJJ-120_13TeV-madgraph-pythia8', u'None', u'f0f029da238e4c3279545da2de84192dd2201064a6b0e410d910c209f1ac3152.tar.gz', u'23431770', u'filetransfers', u'F', u'131.225.189.208', u'-1.0'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits']}}
+INFO 2018-07-24 17:27:48,773: 	 CRAB project directory:		/uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1
+INFO 2018-07-24 17:27:48,773: 	 Task name:			180724_221514:melu_crab_Z-ZA-EWK-1
+INFO 2018-07-24 17:27:48,773: 	 Grid scheduler:			crab3@vocms0197.cern.ch
+INFO 2018-07-24 17:27:48,773: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-07-24 17:27:48,773: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180724_221514%3Amelu_crab_Z-ZA-EWK-1
+INFO 2018-07-24 17:27:48,774: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=melu&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180724_221514%3Amelu_crab_Z-ZA-EWK-1
+DEBUG 2018-07-24 17:27:48,774: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 23431770)
+DEBUG 2018-07-24 17:27:48,774: 	 Webdir is located at http://vocms0197.cern.ch/mon/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1
+DEBUG 2018-07-24 17:27:49,804: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0197/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1
+DEBUG 2018-07-24 17:27:49,804: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0197/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1/status_cache
+DEBUG 2018-07-24 17:27:51,197: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 140.39382100105286], 'StartTimes': [1532471082.0], 'SubmitTimes': [1532470570.0], 'JobIds': ['23431799.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [13848], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T2_US_MIT'], 'TotalSysCpuTimeHistory': [0.0]}, '3': {'Retries': 0, 'WallDurations': [9.0, 309.0], 'StartTimes': [1532470854.0], 'SubmitTimes': [1532470570.0], 'JobIds': ['23431798.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [275480], 'TotalUserCpuTimeHistory': [5.0], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [1.0]}, '2': {'Retries': 0, 'WallDurations': [9.0, 310.0], 'StartTimes': [1532470856.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431800.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [867408], 'TotalUserCpuTimeHistory': [64.0], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [3.0]}, '5': {'Retries': 0, 'WallDurations': [9.0, 310.0], 'StartTimes': [1532470885.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431802.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [956704], 'TotalUserCpuTimeHistory': [64.0], 'SiteHistory': ['Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [5.0]}, '4': {'Retries': 0, 'WallDurations': [10.0, 310.0], 'StartTimes': [1532470857.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431801.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [912400], 'TotalUserCpuTimeHistory': [41.0], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [3.0]}, '7': {'Retries': 0, 'WallDurations': [8.0, 308.0], 'StartTimes': [1532470862.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431804.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [187672], 'TotalUserCpuTimeHistory': [3.0], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [0.0]}, '6': {'Retries': 0, 'WallDurations': [9.0, 107.39382100105286], 'StartTimes': [1532471115.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431803.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [2544], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [0.0]}, '9': {'Retries': 0, 'WallDurations': [10.0, 49.393821001052856], 'StartTimes': [1532471173.0], 'SubmitTimes': [1532470572.0], 'JobIds': ['23431806.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [17896], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [0.0]}, '8': {'Retries': 0, 'WallDurations': [10.0, 18.393821001052856], 'StartTimes': [1532471204.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431805.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [32852], 'TotalUserCpuTimeHistory': [0.0], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [0.0]}}
+INFO 2018-07-24 17:27:51,197: 	 Status on the scheduler:	SUBMITTED
+INFO 2018-07-24 17:27:51,197: 	 
+Jobs status:                    running       100.0% (9/9)
+INFO 2018-07-24 17:27:51,197: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-07-24 17:27:51,290: 	 Log file is /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/crab.log
+DEBUG 2018-07-25 03:56:34,302: 	 Executing command: 'status'
+DEBUG 2018-07-25 03:56:34,302: 	 Found CRAB cache file /uscms/home/mlu/.crab3
+DEBUG 2018-07-25 03:56:34,333: 	 Checking credentials
+DEBUG 2018-07-25 03:56:34,333: 	 Found proxy file /tmp/x509up_u52213
+DEBUG 2018-07-25 03:56:34,333: 	 Getting proxy life time left
+DEBUG 2018-07-25 03:56:34,435: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -timeleft
+ output : 2481
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-25 03:56:34,538: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -actimeleft
+ output : 2481
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-25 03:56:34,538: 	 Proxy valid for 00:41:21 hours
+DEBUG 2018-07-25 03:56:34,647: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-25 03:56:34,648: 	 Checking credentials
+DEBUG 2018-07-25 03:56:34,648: 	 Found proxy file /tmp/x509up_u52213
+DEBUG 2018-07-25 03:56:34,648: 	 Getting proxy life time left
+DEBUG 2018-07-25 03:56:34,750: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -timeleft
+ output : 2481
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-25 03:56:34,853: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u52213 -actimeleft
+ output : 2481
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-25 03:56:34,853: 	 Proxy valid for 00:41:21 hours
+DEBUG 2018-07-25 03:56:36,085: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2018-07-25 03:56:36,191: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-25 03:56:36,192: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2018-07-25 03:56:36,192: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu_cmsweb.cern.ch for credential name
+DEBUG 2018-07-25 03:56:37,196: 	 Executing : 
+ command : myproxy-info -l 3f70a46e133bba62aac5bf1c6ef0806c91adccb2 -s myproxy.cern.ch
+ output : username: 3f70a46e133bba62aac5bf1c6ef0806c91adccb2
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 582:04:57  (24.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2018-07-25 03:56:37,197: 	 Myproxy is valid: 2095497
+DEBUG 2018-07-25 03:56:37,197: 	 Command use: status
+DEBUG 2018-07-25 03:56:37,197: 	 Options use: ['-d', 'crab_Z-ZA-EWK-1/']
+DEBUG 2018-07-25 03:56:38,234: 	 CRABClient version: 3.3.1805.patch1
+DEBUG 2018-07-25 03:56:38,234: 	 Instance is prod
+DEBUG 2018-07-25 03:56:38,234: 	 Server base url is cmsweb.cern.ch
+DEBUG 2018-07-25 03:56:38,235: 	 Command url /crabserver/prod/workflow
+DEBUG 2018-07-25 03:56:39,341: 	 Got information from server oracle database: {u'result': [u'180724_221514:melu_crab_Z-ZA-EWK-1', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2018-07-24 22:15:14.534120', u'None', u'2018-07-24 22:15:56.592918', u'None', u'CMSSW_8_0_26_patch2', u'slc6_amd64_gcc530', u'/LLAJJ_EWK_MLL-50_MJJ-120_13TeV-madgraph-pythia8/RunIISummer16MiniAODv2-PUMoriond17_80X_mcRun2_asymptotic_2016_TrancheIV_v6-v1/MINIAODSIM', u'F', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1, 'runs': [], 'lumis': []}", u'9176ad57698b5113508df08f72432b77db00b9d0b8bf8ea765e3cfdb2413d6a2.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'melu', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=melu/CN=805145/CN=Meng Lu', u'cms', u'None', u'None', u'Z-ZA-EWK-1-00000000000000000000000000000000', u'F', u'T3_US_FNALLPC', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'F', u'[]', u"['ZtreePKU.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0197.cern.ch/mon/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0197.cern.ch', u'F', u'[]', u'T', u'/store/user/melu/', u'F', u'None', u'F', u'None', u'LLAJJ_EWK_MLL-50_MJJ-120_13TeV-madgraph-pythia8', u'None', u'f0f029da238e4c3279545da2de84192dd2201064a6b0e410d910c209f1ac3152.tar.gz', u'23431770', u'filetransfers', u'F', u'131.225.189.208', u'-1.0'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits']}}
+INFO 2018-07-25 03:56:39,342: 	 CRAB project directory:		/uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1
+INFO 2018-07-25 03:56:39,342: 	 Task name:			180724_221514:melu_crab_Z-ZA-EWK-1
+INFO 2018-07-25 03:56:39,342: 	 Grid scheduler:			crab3@vocms0197.cern.ch
+INFO 2018-07-25 03:56:39,342: 	 Status on the CRAB server:	SUBMITTED
+INFO 2018-07-25 03:56:39,342: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/180724_221514%3Amelu_crab_Z-ZA-EWK-1
+INFO 2018-07-25 03:56:39,343: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=melu&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=180724_221514%3Amelu_crab_Z-ZA-EWK-1
+DEBUG 2018-07-25 03:56:39,343: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 23431770)
+DEBUG 2018-07-25 03:56:39,343: 	 Webdir is located at http://vocms0197.cern.ch/mon/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1
+DEBUG 2018-07-25 03:56:40,433: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0197/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1
+DEBUG 2018-07-25 03:56:40,433: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0197/cms1038/180724_221514:melu_crab_Z-ZA-EWK-1/status_cache
+DEBUG 2018-07-25 03:56:41,293: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [9.0, 3430.0], 'StartTimes': [1532471082.0], 'SubmitTimes': [1532470570.0], 'JobIds': ['23431799.0'], 'EndTimes': [1532474512.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1040864], 'TotalUserCpuTimeHistory': [3010], 'SiteHistory': ['Unknown', 'T2_US_MIT'], 'TotalSysCpuTimeHistory': [50]}, '3': {'Retries': 0, 'WallDurations': [9.0, 962.0], 'StartTimes': [1532470854.0], 'SubmitTimes': [1532470570.0], 'JobIds': ['23431798.0'], 'EndTimes': [1532471816.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [730380], 'TotalUserCpuTimeHistory': [205], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [12]}, '2': {'Retries': 0, 'WallDurations': [9.0, 855.0], 'StartTimes': [1532470856.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431800.0'], 'EndTimes': [1532471711.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [867408], 'TotalUserCpuTimeHistory': [428], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [9]}, '5': {'Retries': 0, 'WallDurations': [9.0, 2819.0], 'StartTimes': [1532470885.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431802.0'], 'EndTimes': [1532473704.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [1028276], 'TotalUserCpuTimeHistory': [2195], 'SiteHistory': ['Unknown', 'T2_US_Caltech'], 'TotalSysCpuTimeHistory': [39]}, '4': {'Retries': 0, 'WallDurations': [10.0, 2443.0], 'StartTimes': [1532470857.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431801.0'], 'EndTimes': [1532473300.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [929328], 'TotalUserCpuTimeHistory': [1915], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [32]}, '7': {'Retries': 0, 'WallDurations': [8.0, 1079.0], 'StartTimes': [1532470862.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431804.0'], 'EndTimes': [1532471941.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [904872], 'TotalUserCpuTimeHistory': [345], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [18]}, '6': {'Retries': 0, 'WallDurations': [9.0, 2932.0], 'StartTimes': [1532471115.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431803.0'], 'EndTimes': [1532474047.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [962040], 'TotalUserCpuTimeHistory': [2510], 'SiteHistory': ['Unknown', 'T2_US_Wisconsin'], 'TotalSysCpuTimeHistory': [43]}, '9': {'Retries': 0, 'WallDurations': [10.0, 2191.0], 'StartTimes': [1532471173.0], 'SubmitTimes': [1532470572.0], 'JobIds': ['23431806.0'], 'EndTimes': [1532473364.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [926968], 'TotalUserCpuTimeHistory': [1978], 'SiteHistory': ['Unknown', 'T2_US_Nebraska'], 'TotalSysCpuTimeHistory': [38]}, '8': {'Retries': 0, 'WallDurations': [10.0, 830.0], 'StartTimes': [1532471204.0], 'SubmitTimes': [1532470571.0], 'JobIds': ['23431805.0'], 'EndTimes': [1532472034.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [954120], 'TotalUserCpuTimeHistory': [149], 'SiteHistory': ['Unknown', 'T2_US_UCSD'], 'TotalSysCpuTimeHistory': [18]}}
+INFO 2018-07-25 03:56:41,293: 	 Status on the scheduler:	COMPLETED
+INFO 2018-07-25 03:56:41,293: 	 
+Jobs status:                    finished      100.0% (9/9)
+INFO 2018-07-25 03:56:41,293: 	 
+No publication information (publication has been disabled in the CRAB configuration file)
+INFO 2018-07-25 03:56:41,294: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2018-07-25 03:56:41,294: 	 
+Summary of run jobs:
+ * Memory: 931MB min, 1016MB max, 905MB ave
+ * Runtime: 0:13:50 min, 0:57:10 max, 0:32:29 ave
+ * CPU eff: 20% min, 92% max, 74% ave
+ * Waste: 0:01:23 (0% of total)
+
+INFO 2018-07-25 03:56:41,339: 	 Log file is /uscms_data/d3/mlu/CMSSW_8_0_26_patch2/src/VAJets/PKUTreeMaker/test/crab_Z-ZA-EWK-1/crab.log

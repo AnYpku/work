@@ -100,7 +100,7 @@ void select(TTree *tree,TH1D *h1[7],TH1D *h2[7][21],TH1D *h3[7]){
  for(Int_t i=0;i<nentries;i++){
     tree->GetEntry(i);
     for(Int_t j=0;j<6;j++){
-         Zjets[j] = ptlep1 > 21. && ptlep2 > 20.&& abs(etalep1) < 2.4 &&abs(etalep2) < 2.4 && nlooseeles == 0 && nloosemus < 3 && massVlep >70. && massVlep < 110;
+         Zjets[j] = ptlep1 > 20. && ptlep2 > 20.&& abs(etalep1) < 2.4 &&abs(etalep2) < 2.4 && nlooseeles == 0 && nloosemus < 3 && massVlep >70. && massVlep < 110;
          Leading_photon[j]= photon_drla[j]>0.7 && photon_drla2[j]>0.7;
          //&&photon_pt[j]<highpt &&photon_pt[j]>lowpt;
          medium_cut[j]= photon_hoe[j]<0.0396  && photon_nhiso[j]<2.725 + 0.0148*photon_pt[j] + 0.000017*photon_pt[j]*photon_pt[j] && photon_phoiso[j]<2.571 + 0.0047*photon_pt[j]&&abs(photon_eta[j])<1.4442&&photon_pt[j]>25&&photon_pt[j]<400;//&&photon_sieie[j]<0.0102&&photon_sieie[j]>0.0052;
