@@ -1,0 +1,21 @@
+
+Processing pljweight.c...
+fakerate = 0.341911
+fakerate = 0.378917
+fakerate = 0.256393
+fakerate = 0.228442
+fakerate = 0.158622
+fakerate = 0.130333
+fakerate = 0.108374
+fakerate = 0.0589132
+fakerate = 0.0371807
+bin 25~30 ;data : 5335; plj : 10510; fakerate : 0.341911; weight : 0.173558
+bin 30~35 ;data : 3080; plj : 6341; fakerate : 0.378917; weight : 0.184051
+bin 35~40 ;data : 2080; plj : 4095; fakerate : 0.256393; weight : 0.130231
+bin 40~45 ;data : 1420; plj : 2754; fakerate : 0.228442; weight : 0.117788
+bin 45~50 ;data : 1031; plj : 1911; fakerate : 0.158622; weight : 0.0855779
+bin 50~60 ;data : 1381; plj : 2463; fakerate : 0.130333; weight : 0.0730775
+bin 60~80 ;data : 1379; plj : 2482; fakerate : 0.108374; weight : 0.0602126
+bin 80~120 ;data : 935; plj : 1534; fakerate : 0.0589132; weight : 0.0359086
+bin 120~400 ;data : 497; plj : 713; fakerate : 0.0371807; weight : 0.025917
+(int) 0

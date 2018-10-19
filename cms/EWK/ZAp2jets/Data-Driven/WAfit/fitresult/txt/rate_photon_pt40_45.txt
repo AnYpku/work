@@ -1,0 +1,7 @@
+Fake fit5166.91+-88.5134
+True fit15414.7+-134.457
+chi2/ndf=54.9855
+Fake Yields4309+-201.816
+Ture yields16273+-141.943
+Data yields20582+-143.464
+Fake Rate0.209358+-0.0112648

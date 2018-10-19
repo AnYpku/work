@@ -58,7 +58,7 @@ void drawcom(){
 void open(Int_t i){
     
     ifstream f1;
-    f1.open(Form("/Users/andy/work/cms/EWK/ZAp2jets/Data-Driven/make-template/fakerate_pt%0.f_%0.f.txt",lowpt[i],highpt[i]));
+    f1.open(Form("/Users/andy/work/cms/EWK/ZAp2jets/Data-Driven/make-template/fit-txt/fakerate_pt%0.f_%0.f.txt",lowpt[i],highpt[i]));
     if(!f1.is_open()) cout<<"can not open the file: "<<Form("fakerate_pt%0.f_%0.f.txt",lowpt[i],highpt[i])<<endl;
    // if(f1.is_open()) cout<<"open the file: "<<Form("fakerate_pt%0.f_%0.f.txt",lowpt[i],highpt[i])<<endl;
     f1>>fakerate[i];cout<<"fakerate = "<<fakerate[i]<<endl;
