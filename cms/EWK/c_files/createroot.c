@@ -110,11 +110,11 @@ void select(TTree *tree,TH1D *h1[7],TH1D *h2[7][21],TH1D *h3[7]){
       }//fill the vector_pt
    size=vector_pt.size();
    biggest_pt = max_element(begin(vector_pt),end(vector_pt));
+   position = distance( begin(vector_pt), biggest_pt);
    if(*biggest_pt==0){
        vector_pt.clear();
        continue;}
 //   cout<<"the biggest pt"<<*biggest_pt<<endl;
-   position = distance( begin(vector_pt), biggest_pt);
    for(Int_t k=0;k<7;k++){
        if(photon_chiso[position]<0.441&& *biggest_pt<highpt[k] && *biggest_pt>lowpt[k]) 
             {h1[k]->Fill(photon_sieie[position],scalef);m1[k] += scalef;

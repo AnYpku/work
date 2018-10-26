@@ -91,7 +91,7 @@ int unroll(){
         t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 3,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
         ofstream file2(Form("content-hist_no%d",i+1));
         t_ZA[i]->SetLineWidth(3);
-        t_ZA[i]->SetLineColor(i+1);
+        t_ZA[i]->SetLineColor(i+11);
         for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
         t_ZA[i]->Scale(lumi*ZA_scale);
         t_ZA[i]->Draw("HIST");
