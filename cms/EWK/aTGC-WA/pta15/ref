@@ -1,0 +1,298 @@
+launch
+   set Dim6 1   0
+   set Dim6 2   200
+   set Dim6 3   400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   200
+   set Dim6 3   -400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -200
+   set Dim6 3   400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -200
+   set Dim6 3   -400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   200
+   set Dim6 3   500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   200
+   set Dim6 3   -500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -200
+   set Dim6 3   500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -200
+   set Dim6 3   -500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   200
+   set Dim6 3   600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   200
+   set Dim6 3   -600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -200
+   set Dim6 3   600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -200
+   set Dim6 3   -600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   200
+   set Dim6 3   0
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -200
+   set Dim6 3   0
+   set Dim6 4   0
+   set Dim6 5   0
+######## 14 weights
+launch
+   set Dim6 1   0
+   set Dim6 2   300
+   set Dim6 3   400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   300
+   set Dim6 3   -400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -300
+   set Dim6 3   400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -300
+   set Dim6 3   -400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   300
+   set Dim6 3   500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   300
+   set Dim6 3   -500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -300
+   set Dim6 3   500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -300
+   set Dim6 3   -500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   300
+   set Dim6 3   600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   300
+   set Dim6 3   -600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -300
+   set Dim6 3   600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -300
+   set Dim6 3   -600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   300
+   set Dim6 3   0
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -300
+   set Dim6 3   0
+   set Dim6 4   0
+   set Dim6 5   0
+######## 14 weights
+launch
+   set Dim6 1   0
+   set Dim6 2   400
+   set Dim6 3   400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   400
+   set Dim6 3   -400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -400
+   set Dim6 3   400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -400
+   set Dim6 3   -400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   400
+   set Dim6 3   500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   400
+   set Dim6 3   -500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -400
+   set Dim6 3   500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -400
+   set Dim6 3   -500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   400
+   set Dim6 3   600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   400
+   set Dim6 3   -600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -400
+   set Dim6 3   600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -400
+   set Dim6 3   -600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   400
+   set Dim6 3   0
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   -400
+   set Dim6 3   0
+   set Dim6 4   0
+   set Dim6 5   0
+######## 14 weights
+launch
+   set Dim6 1   0
+   set Dim6 2   0
+   set Dim6 3   400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   0
+   set Dim6 3   -400
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   0
+   set Dim6 3   500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   0
+   set Dim6 3   -500
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   0
+   set Dim6 3   600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   0
+   set Dim6 3   -600
+   set Dim6 4   0
+   set Dim6 5   0
+launch
+   set Dim6 1   0
+   set Dim6 2   0
+   set Dim6 3   0
+   set Dim6 4   0
+   set Dim6 5   0
+#######7 weights
