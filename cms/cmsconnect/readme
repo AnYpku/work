@@ -1,0 +1,6 @@
+1.Using command "cmssw-sandbox create -a CMSSW_X_X_X" to get your version file
+2.cp the file to /stash/user/anying/public, this directory is synchronous with the link http://stash.osgconnect.net/+anying/
+3. prepare your .jdl file and .sh file.
+4. condor_submit XXX.jdl
+
+NOTE: Don't forget to create the log fold "mkdir log"
