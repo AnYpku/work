@@ -1,0 +1,8 @@
+data in window = 700+-26.4575 8 91 601 61 44 39 27
+nDatatotal = 895
+fake number = 372.421+-29.0841
+true number = 522.579+-31.5523
+fake in window = 190.541+-14.8802
+true in window = 511.093+-30.8588
+fakerate = 0.272202+-0.0236163
+chi2ToNDF = 1.29077
