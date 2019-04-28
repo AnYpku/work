@@ -1,9 +1,10 @@
-bin 1; uncertainty[0] = 0.0916341
-bin 2; uncertainty[1] = 0.0977102
-bin 3; uncertainty[2] = 0.196091
-bin 4; uncertainty[3] = 0.144232
-bin 5; uncertainty[4] = 0.101668
-bin 6; uncertainty[5] = 0.148615
-bin 7; uncertainty[6] = 0.0419063
-bin 8; uncertainty[7] = 0.113648
-bin 9; uncertainty[8] = 0.145167
+the first way 	max-min/(2*center)
+bin 1	0.0956376	0.113085
+bin 2	0.109317	0.168133
+bin 3	0.176471	0.279765
+bin 4	0.0899851	0.124021
+bin 5	0.0893546	0.132826
+bin 6	0.0799715	0.131068
+bin 7	0.0809775	0.13141
+bin 8	0.0704925	0.0961506
+bin 9	0.0847779	0.120365

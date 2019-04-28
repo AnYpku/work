@@ -50,14 +50,14 @@ TH1D* unroll(TH2D* th2_in,Double_t* xbin, Double_t* ybin,  Int_t xbins_in, Int_t
 }
 
 int unroll(){
-    ifstream file1;
+   /* ifstream file1;
     file1.open("./scalefactor.txt");
     if(!file1.is_open()) cout<<"can not open the file"<<endl;
     Double_t scale_factor[9];
     for(Int_t i=0;i<9;i++){
        file1>>scale_factor[i];
        cout<<"scale factor = "<<scale_factor[i]<<endl;
-      }
+      }*/
 	setTDRStyle();
 	gStyle->SetPadBorderMode(0);
     gStyle->SetOptStat(0);
@@ -75,9 +75,11 @@ int unroll(){
 	std::ostringstream strs;
 	std::string lumivalue = strs.str();
 	Double_t lumi=35.866;
-	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+//	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+	Double_t mjj_bins[4]={500, 800, 1200,2000};
     Double_t detajj_bins[4]={2.5,4.5,6,6.5};
 	const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
+//	const char *name[6]={"Mjj 500~800","Mjj 800~1200","Mjj 500~800","Mjj 800~1200","Mjj 500~800","Mjj 800~1200"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
 	TH2D* th2_ZA[9];
@@ -89,7 +91,7 @@ int unroll(){
         cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
         th2_ZA[i]=(TH2D*)f_ZA->Get(Form("th2_%d",i));
         t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 3,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
-        ofstream file2(Form("content-hist_no%d",i+1));
+        ofstream file2(Form("./scale-txt/content-hist_no%d",i+1));
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+11);
         for(Int_t j=1;j<=9;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
@@ -98,7 +100,7 @@ int unroll(){
 //        t_ZA[i]->DrawNormalized("HIST");
         ll[i]->AddEntry(t_ZA[i],Form("%d central scale pdf variable",i+1));
         ll[i]->Draw();
-        cc[i]->Print(Form("tmp-hist2d_%d.eps",i+1));
+        cc[i]->Print(Form("./figs/tmp-hist2d_%d.eps",i+1));
         for(Int_t k=0;k<9;k++){
 //        file2<<t_ZA[i]->GetBinContent(k+1)*scale_factor[i]<<endl;}
         file2<<t_ZA[i]->GetBinContent(k+1)<<endl;}
@@ -108,7 +110,7 @@ int unroll(){
      TLegend *l2 = new TLegend(0.55,0.4,0.8,0.9);
      t_ZA[0]->SetTitle("Mjj vs detajj");
      t_ZA[0]->SetLineWidth(3);
-     t_ZA[0]->GetYaxis()->SetRangeUser(0,14);
+     t_ZA[0]->GetYaxis()->SetRangeUser(0,75);
      t_ZA[0]->Draw("HIST");
      l2->AddEntry(t_ZA[0],"1 central scale pdf variations");
      for(Int_t i=1;i<9;i++){
@@ -126,7 +128,7 @@ int unroll(){
          // delete cc[i];
        }
        l2->Draw();
-       c1->Print("hist-2d.eps");
+       c1->Print("./figs/hist-2d.eps");
 
 //	TH1D* t_ZA=unroll(th2_ZA, mjj_bins, detajj_bins, 3,3);
 //    for(Int_t i=0;i<9;i++){

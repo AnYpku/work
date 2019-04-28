@@ -1,0 +1,138 @@
+
+Processing uncertainty_other.c...
+histo 1; bin1; central_value = 78.3547
+histo 1; bin2; central_value = 18.7551
+histo 1; bin3; central_value = 5.00136
+histo 1; bin4; central_value = 65.4345
+histo 1; bin5; central_value = 21.6726
+histo 1; bin6; central_value = 6.2517
+histo 1; bin7; central_value = 7.29366
+histo 1; bin8; central_value = 18.9635
+histo 1; bin9; central_value = 12.9202
+*****************************
+hist 2; bin0; nlo_value = 70.3401
+hist 2; bin1; nlo_value = 16.6314
+hist 2; bin2; nlo_value = 4.32838
+hist 2; bin3; nlo_value = 60.9307
+hist 2; bin4; nlo_value = 19.3455
+hist 2; bin5; nlo_value = 5.58463
+hist 2; bin6; nlo_value = 6.85157
+hist 2; bin7; nlo_value = 18.3
+hist 2; bin8; nlo_value = 11.8408
+*****************************
+hist 3; bin0; nlo_value = 88.477
+hist 3; bin1; nlo_value = 21.4661
+hist 3; bin2; nlo_value = 5.883
+hist 3; bin3; nlo_value = 70.9282
+hist 3; bin4; nlo_value = 24.6552
+hist 3; bin5; nlo_value = 7.09771
+hist 3; bin6; nlo_value = 7.85494
+hist 3; bin7; nlo_value = 19.7453
+hist 3; bin8; nlo_value = 14.378
+*****************************
+hist 4; bin0; nlo_value = 76.9647
+hist 4; bin1; nlo_value = 17.8315
+hist 4; bin2; nlo_value = 4.64259
+hist 4; bin3; nlo_value = 67.1577
+hist 4; bin4; nlo_value = 21.6791
+hist 4; bin5; nlo_value = 6.32782
+hist 4; bin6; nlo_value = 7.6617
+hist 4; bin7; nlo_value = 18.7779
+hist 4; bin8; nlo_value = 12.9769
+*****************************
+hist 5; bin0; nlo_value = 69.1737
+hist 5; bin1; nlo_value = 15.8237
+hist 5; bin2; nlo_value = 4.01724
+hist 5; bin3; nlo_value = 62.615
+hist 5; bin4; nlo_value = 19.3675
+hist 5; bin5; nlo_value = 5.6287
+hist 5; bin6; nlo_value = 7.21021
+hist 5; bin7; nlo_value = 18.2369
+hist 5; bin8; nlo_value = 11.9124
+*****************************
+hist 6; bin0; nlo_value = 86.7832
+hist 6; bin1; nlo_value = 20.3918
+hist 6; bin2; nlo_value = 5.46067
+hist 6; bin3; nlo_value = 72.6939
+hist 6; bin4; nlo_value = 24.6379
+hist 6; bin5; nlo_value = 7.21759
+hist 6; bin6; nlo_value = 8.2347
+hist 6; bin7; nlo_value = 19.3922
+hist 6; bin8; nlo_value = 14.4176
+*****************************
+hist 7; bin0; nlo_value = 80.0419
+hist 7; bin1; nlo_value = 19.848
+hist 7; bin2; nlo_value = 5.42743
+hist 7; bin3; nlo_value = 63.5471
+hist 7; bin4; nlo_value = 21.6687
+hist 7; bin5; nlo_value = 6.2024
+hist 7; bin6; nlo_value = 6.87168
+hist 7; bin7; nlo_value = 18.9697
+hist 7; bin8; nlo_value = 12.7913
+*****************************
+hist 8; bin0; nlo_value = 71.7195
+hist 8; bin1; nlo_value = 17.5807
+hist 8; bin2; nlo_value = 4.69794
+hist 8; bin3; nlo_value = 59.0093
+hist 8; bin4; nlo_value = 19.311
+hist 8; bin5; nlo_value = 5.56617
+hist 8; bin6; nlo_value = 6.43584
+hist 8; bin7; nlo_value = 18.1759
+hist 8; bin8; nlo_value = 11.6981
+*****************************
+hist 9; bin0; nlo_value = 90.5873
+hist 9; bin1; nlo_value = 22.7465
+hist 9; bin2; nlo_value = 6.38465
+hist 9; bin3; nlo_value = 69.1108
+hist 9; bin4; nlo_value = 24.6985
+hist 9; bin5; nlo_value = 7.00591
+hist 9; bin6; nlo_value = 7.42695
+hist 9; bin7; nlo_value = 19.9331
+hist 9; bin8; nlo_value = 14.2649
+*****************************
+0 bin ; biggest = 90.5873; smallest = 69.1737; 2*central value = 156.709
+*****************************
+1 bin ; biggest = 22.7465; smallest = 15.8237; 2*central value = 37.5102
+*****************************
+2 bin ; biggest = 6.38465; smallest = 4.01724; 2*central value = 10.0027
+*****************************
+3 bin ; biggest = 72.6939; smallest = 59.0093; 2*central value = 130.869
+*****************************
+4 bin ; biggest = 24.6985; smallest = 19.311; 2*central value = 43.3452
+*****************************
+5 bin ; biggest = 7.21759; smallest = 5.56617; 2*central value = 12.5034
+*****************************
+6 bin ; biggest = 8.2347; smallest = 6.43584; 2*central value = 14.5873
+*****************************
+7 bin ; biggest = 19.9331; smallest = 18.1759; 2*central value = 37.927
+*****************************
+8 bin ; biggest = 14.4176; smallest = 11.6981; 2*central value = 25.8404
+*****************************
+bin 1; mean = 79.1602
+bin 1; sum = 520.466
+bin 1; uncertainty_other[0] = 0.136645; uncertainty[0] = 0.101893
+bin 2; mean = 19.0083
+bin 2; sum = 42.4895
+bin 2; uncertainty_other[1] = 0.184558; uncertainty[1] = 0.121242
+bin 3; mean = 5.0937
+bin 3; sum = 4.72546
+bin 3; uncertainty_other[2] = 0.236677; uncertainty[2] = 0.150884
+bin 4; mean = 65.7141
+bin 4; sum = 172.443
+bin 4; uncertainty_other[3] = 0.104567; uncertainty[3] = 0.0706512
+bin 5; mean = 21.8929
+bin 5; sum = 43.1511
+bin 5; uncertainty_other[4] = 0.124293; uncertainty[4] = 0.106083
+bin 6; mean = 6.32029
+bin 6; sum = 3.5288
+bin 6; uncertainty_other[5] = 0.132078; uncertainty[5] = 0.105083
+bin 7; mean = 7.31569
+bin 7; sum = 2.47014
+bin 7; uncertainty_other[6] = 0.123317; uncertainty[6] = 0.0759557
+bin 8; mean = 18.9438
+bin 8; sum = 3.3581
+bin 8; uncertainty_other[7] = 0.0463311; uncertainty[7] = 0.0342006
+bin 9; mean = 13.0222
+bin 9; sum = 9.86973
+bin 9; uncertainty_other[8] = 0.105242; uncertainty[8] = 0.0852946
+(int) 0

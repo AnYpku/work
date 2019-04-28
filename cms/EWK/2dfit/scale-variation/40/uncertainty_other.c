@@ -1,12 +1,12 @@
 void open(Int_t i);
-Int_t p=9;//the amount of bin
+Int_t p=6;//the amount of bin
 Int_t histo_number=8;//the histo_number equals the amount of pdf except the central value
-Double_t central_value[9],nlo_value[8][9];//[the amount of pdf][the amout of bin]
+Double_t central_value[6],nlo_value[8][6];//[the amount of pdf][the amout of bin]
 ofstream f1("./uncertainty-other.txt");
 vector<Double_t> vector_nlo,vector_center;
 vector<Double_t>:: iterator biggest_nlo;
 vector<Double_t>:: iterator smallest_nlo;
-Double_t biggest[9],smallest[9];
+Double_t biggest[6],smallest[6];
 void open(Int_t i){
     ifstream file(Form("./scale-txt/content-hist_no%d",i));
     if(!file.is_open()){cout<<"can not open the "<<i<<" file"<<endl;   }
