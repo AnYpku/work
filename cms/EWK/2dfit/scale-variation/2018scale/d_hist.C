@@ -17,7 +17,7 @@ void run(std::string filename){
 
 	Double_t Mjj,zepp;
 	Double_t detajj;
-    Double_t theWeight,lumiWeight,scalef,pweight[703];
+    Double_t theWeight,lumiWeight,scalef,pweight[703],pileupWeight;
 //    Double_t pileupWeight;
 	Double_t actualWeight[9];
 
@@ -25,6 +25,7 @@ void run(std::string filename){
 	t->SetBranchAddress("zepp", &zepp);
 	t->SetBranchAddress("deltaetajj", &detajj);
 	t->SetBranchAddress("pweight", pweight);
+	t->SetBranchAddress("pileupWeight",&pileupWeight);
 	t->SetBranchAddress("scalef", &scalef);
 	t->SetBranchAddress("theWeight", &theWeight);
 	t->SetBranchAddress("lumiWeight", &lumiWeight);
@@ -44,10 +45,10 @@ void run(std::string filename){
         p=0;
 		t->GetEntry(j);
         if( !(zepp<2.4) ) continue;
-        for(Int_t i=104;i<113;i++){
-         if(p==0)  actualWeight[p]=scalef*lumiWeight*pweight[i];
-         else  actualWeight[p]=2*scalef*lumiWeight*pweight[i];
-
+        for(Int_t i=0;i<9;i++){
+         /*if(p==0)  actualWeight[p]=scalef*lumiWeight*pweight[i];
+         else  actualWeight[p]=2*scalef*lumiWeight*pweight[i];*/
+        actualWeight[p]=scalef*lumiWeight*pweight[i];//*pileupWeight;
 		if(Mjj<2000 && detajj<6.5) th2[p]->Fill(Mjj, detajj, actualWeight[p]);
 		if(Mjj>=2000 && detajj<6.5) th2[p]->Fill(1999, detajj, actualWeight[p]);
 		if(Mjj<2000 && detajj>=6.5) th2[p]->Fill(Mjj, 6.1, actualWeight[p]);
@@ -57,8 +58,9 @@ void run(std::string filename){
          cout<<"p = "<<p<<endl;
          cout<<"entry "<<j<<endl;
          cout<<"scalef = "<<scalef<<endl;
-         cout<<"lumiWeight = "<<lumiWeight<<endl;
-         for(Int_t k=104;k<113;k++){
+//         cout<<"pileupWeight = "<<pileupWeight<<endl;
+         if(pileupWeight>2)  cout<<"!!!!!!!!!!!!!!!!!!!!!!!pileupWeight = "<<pileupWeight<<endl;
+         for(Int_t k=0;k<9;k++){
              cout<<"pweight ["<<k<<"] = "<<pweight[k]<<endl;
           }
          for(Int_t k=0;k<9;k++){
@@ -70,7 +72,7 @@ void run(std::string filename){
 }
 
 int d_hist(){
-	run("outZA-mu-ele_2017");
+	run("outZA-mu-ele_2018");
 	TFile* f5=new TFile("th2-histo.root","RECREATE");
     for(Int_t i=0;i<9;i++){
 	   th2[i]->Write();}
