@@ -6,7 +6,7 @@ ofstream f1("./uncertainty-other.txt");
 vector<Double_t> vector_nlo,vector_center;
 vector<Double_t>:: iterator biggest_nlo;
 vector<Double_t>:: iterator smallest_nlo;
-Double_t biggest[9],smallest[9];
+Double_t biggest[histo_number+1],smallest[histo_number+1];
 void open(Int_t i){
     ifstream file(Form("./scale-txt/content-hist_no%d",i));
     if(!file.is_open()){cout<<"can not open the "<<i<<" file"<<endl;   }
@@ -68,7 +68,7 @@ for(Int_t j=0;j<p;j++){
 
 const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
 TH1D* h1 =new TH1D("h1","uncertainty",9,0,0.5);
-for(Int_t i=0;i<9;i++){
+for(Int_t i=0;i<p;i++){
     h1->SetBinContent(i+1,uncertainty[i]);
     h1->SetTitle("uncertainty;;uncertainty");
     h1->GetXaxis()->SetBinLabel(i+1,name[i]);
