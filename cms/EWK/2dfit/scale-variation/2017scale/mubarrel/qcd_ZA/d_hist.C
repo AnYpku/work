@@ -2,7 +2,7 @@
 #include "TFile.h"
 #include "TTree.h"
 #include <string>
-#define num 7
+#define num 9
 
 using namespace std;
 
@@ -78,7 +78,7 @@ void run(std::string filename){
 }
 
 int d_hist(){
-	run("../outZA-mu-ele_2017");
+	run("./outZA-mu-ele_2017");
 	TFile* f5=new TFile("th2-histo.root","RECREATE");
     for(Int_t i=0;i<num;i++){
 	   th2[i]->Write();}
