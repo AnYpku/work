@@ -1,0 +1,120 @@
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 0.25e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 -0.25e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 0.5e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 -0.5e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 1.0e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 -1.0e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 -2.0e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 -2.0e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 4.0e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 -4.0e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 8.0e-12
+#weight_
+launch
+        set FT0 0.0
+        set FT1 0.0
+        set FT2 0.0
+        set FT5 0.0
+        set FT6 0.0
+        set FT7 0.0
+        set FT8 -0.25e-12
+        set FT9 -8.0e-12
