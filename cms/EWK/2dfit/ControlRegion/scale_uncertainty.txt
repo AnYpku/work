@@ -1,0 +1,4 @@
+the first way 	max-min/(2*center)
+bin 1	0.0728625	0.0992866
+bin 2	0.14513	0.199815
+bin 3	nan	nan

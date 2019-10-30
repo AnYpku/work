@@ -48,7 +48,7 @@ void run(std::string filename){
 	{
         p=0;
 		t->GetEntry(j);
-        if( !( (fabs(photoneta)<2.5&&fabs(photoneta)>1.566) && lep==13 ) ) continue;
+        if( !( (fabs(photoneta)<2.5&&fabs(photoneta)>1.566) && lep==11 ) ) continue;
         for(Int_t i=0;i<9;i++){
          /*if(p==0)  actualWeight[p]=scalef*lumiWeight*pweight[i];
          else  actualWeight[p]=2*scalef*lumiWeight*pweight[i];*/

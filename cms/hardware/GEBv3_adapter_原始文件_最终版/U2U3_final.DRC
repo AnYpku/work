@@ -1,0 +1,23 @@
+Protel Design System Design Rule Check
+PCB File : U2U3_final.PCB
+Date     : 20-Dec-2017
+Time     : 01:35:34
+
+Processing Rule : Short-Circuit Constraint (Allowed=Not Allowed) (On the board ),(On the board )
+Rule Violations :0
+
+Processing Rule : Broken-Net Constraint ( (On the board ) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (On the board ),(On the board )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=10mil) (Prefered=10mil) (On the board )
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (On the board )
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:00

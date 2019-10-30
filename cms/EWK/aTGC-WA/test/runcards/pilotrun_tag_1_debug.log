@@ -1,0 +1,76 @@
+#************************************************************
+#*                    MadGraph5_aMC@NLO                     *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 5.2.4.2               20xx-xx-xx         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                           and                            *
+#*                http://amcatnlo.cern.ch                   *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for aMCatNLO                  *
+#*                                                          *
+#*     run as ./bin/aMCatNLO.py filename                    *
+#*                                                          *
+#************************************************************
+launch -n pilotrun
+Traceback (most recent call last):
+  File "/data/pku/home/anying/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/bin/internal/extended_cmd.py", line 1009, in onecmd
+    return self.onecmd_orig(line, **opt)
+  File "/data/pku/home/anying/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/bin/internal/extended_cmd.py", line 964, in onecmd_orig
+    return func(arg, **opt)
+  File "/data/pku/home/anying/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/bin/internal/amcatnlo_run_interface.py", line 1205, in do_launch
+    evt_file = self.run(mode, options)
+  File "/data/pku/home/anying/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/bin/internal/amcatnlo_run_interface.py", line 1445, in run
+    return self.reweight_and_collect_events(options, mode, nevents, event_norm)
+  File "/data/pku/home/anying/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/bin/internal/amcatnlo_run_interface.py", line 2800, in reweight_and_collect_events
+    'The event file has not been created. Check collect_events.log')
+aMCatNLOError: An error occurred during event generation. The event file has not been created. Check collect_events.log
+Value of current Options:
+              text_editor 	:	None
+              web_browser 	:	None
+        cluster_temp_path 	:	None
+                  timeout 	:	60
+       cluster_local_path 	:	/cvmfs/cms.cern.ch/slc6_amd64_gcc481/external/lhapdf/6.2.1/share/LHAPDF
+            cluster_queue 	:	local
+         madanalysis_path 	:	None
+                   lhapdf 	:	/cvmfs/cms.cern.ch/slc6_amd64_gcc481/external/lhapdf/6.2.1/share/LHAPDF/../../bin/lhapdf-config
+             cluster_size 	:	100
+           cluster_memory 	:	None
+                    pjfry 	:	None
+    cluster_status_update 	:	(600, 30)
+             cluster_time 	:	None
+            f2py_compiler 	:	None
+               hepmc_path 	:	None
+             pythia8_path 	:	None
+                hwpp_path 	:	None
+   automatic_html_opening 	:	False
+       cluster_retry_wait 	:	300
+             stdout_level 	:	None
+          pythia-pgs_path 	:	None
+                 mg5_path 	:	/data/pku/home/anying/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/MG5_aMC_v2_4_2
+                  td_path 	:	None
+             delphes_path 	:	None
+              thepeg_path 	:	None
+             cluster_type 	:	condor
+         cluster_nb_retry 	:	1
+         fortran_compiler 	:	None
+                  nb_core 	:	56
+              auto_update 	:	0
+      exrootanalysis_path 	:	None
+               eps_viewer 	:	None
+             syscalc_path 	:	/data/pku/home/anying/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/MG5_aMC_v2_4_2/SysCalc
+                  fastjet 	:	None
+                    golem 	:	None
+             cpp_compiler 	:	None
+      notification_center 	:	True
+                 run_mode 	:	2

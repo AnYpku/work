@@ -1,0 +1,77 @@
+Releases:
+CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021
+
+
+FullSimReport:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/
+            RelValQCD_flatpt:
+            JETValidation:
+            https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValQCD_FlatPt_15_3000HS_14_106X_upgrade2021_realistic_v4_LowSigmaZ/e81138013e.html
+                    ak4PFJetsCHS        0
+                    slimmedJets         0
+                    slimmedJetsPuppi    0
+                    slimmedJetsAK8      0
+                    ak4CaloJets         0
+                    ak4PFJets           0
+                    MiniAOD_over_RECO   0
+                    
+                    
+
+            RelValTTbar:
+            JETValidation: 10.7% (97)
+            https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValTTbar_14TeV_106X_upgrade2021_realistic_v4_LowSigmaZ/e81138013e.html
+                    ak4CaloJets         PtCorrOverGen_GenEta_600_1500, PtRecoOverGen_GenEta_600_1500.[1][2]
+                    slimmedJetsPuppi    same with ak4CaloJets    
+                    slimmedJetsAK8      same with ak4CaloJets and PtRecoOverGen_GenEta_20_40[3]     
+                    ak4PFJets           same with ak4CaloJets
+                    ak4PFJetsCHS        same with ak4CaloJets
+                    slimmedJets         same with ak4CaloJets
+                    MiniAOD_over_RECO   0
+[1]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValTTbar_14TeV%2FCMSSW_10_6_0%2D106X_upgrade2021_realistic_v4_LowSigmaZ%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtCorrOverGen_GenEta_600_1500;obj=archive%2F1%2FRelValTTbar_14TeV%2FCMSSW_10_6_1_patch1%2D106X_mcRun3_2021_realistic_v3_rsb%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtCorrOverGen_GenEta_600_1500;w=600;h=600;ref=ratiooverlay
+[2]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValTTbar_14TeV%2FCMSSW_10_6_0%2D106X_upgrade2021_realistic_v4_LowSigmaZ%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtRecoOverGen_GenEta_600_1500;obj=archive%2F1%2FRelValTTbar_14TeV%2FCMSSW_10_6_1_patch1%2D106X_mcRun3_2021_realistic_v3_rsb%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtRecoOverGen_GenEta_600_1500;w=600;h=600;ref=ratiooverlay
+[3]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValTTbar_14TeV%2FCMSSW_10_6_0%2D106X_upgrade2021_realistic_v4_LowSigmaZ%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtRecoOverGen_GenEta_20_40;obj=archive%2F1%2FRelValTTbar_14TeV%2FCMSSW_10_6_1_patch1%2D106X_mcRun3_2021_realistic_v3_rsb%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtRecoOverGen_GenEta_20_40;w=600;h=600;ref=ratiooverlay
+                    
+
+
+
+            RelValZEE:
+            JETValidation: 5.5% (50)
+            https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValZEE_14_106X_upgrade2021_realistic_v4_LowSigmaZ/e81138013e.html
+                    slimmedJetsAK8      PtRecoOverGen_GenEta_200_600,PtCorrOverGen_GenEta_200_600,PtRecoOverGen_GenEta_20_40.[1][2][3]
+                    ak4CaloJets         0                                                                         
+                    slimmedJetsPuppi    0
+                    ak4PFJets           0 
+                    ak4PFJetsCHS        0
+                    slimmedJets         0
+                    MiniAOD_over_RECO   0
+[1]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZEE_14%2FCMSSW_10_6_0%2D106X_upgrade2021_realistic_v4_LowSigmaZ%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtRecoOverGen_GenEta_200_600;obj=archive%2F1%2FRelValZEE_14%2FCMSSW_10_6_1_patch1%2D106X_mcRun3_2021_realistic_v3_rsb%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtRecoOverGen_GenEta_200_600;w=600;h=600;ref=ratiooverlay                    
+[2]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZEE_14%2FCMSSW_10_6_0%2D106X_upgrade2021_realistic_v4_LowSigmaZ%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtCorrOverGen_GenEta_200_600;obj=archive%2F1%2FRelValZEE_14%2FCMSSW_10_6_1_patch1%2D106X_mcRun3_2021_realistic_v3_rsb%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtCorrOverGen_GenEta_200_600;w=600;h=600;ref=ratiooverlay
+[3]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZEE_14%2FCMSSW_10_6_0%2D106X_upgrade2021_realistic_v4_LowSigmaZ%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtRecoOverGen_GenEta_20_40;obj=archive%2F1%2FRelValZEE_14%2FCMSSW_10_6_1_patch1%2D106X_mcRun3_2021_realistic_v3_rsb%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtRecoOverGen_GenEta_20_40;w=600;h=600;ref=ratiooverlay
+
+
+            RelValZMM:
+            JETValidation:8.8% (80)
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValZMM_14_106X_upgrade2021_realistic_v4_LowSigmaZ/e81138013e.html
+                    ak4PFJets           PtRecoOverGen_GenEta_200_600,PtCorrOverGen_GenEta_200_600.[1][2]
+                    ak4CaloJets         same with ak4PFJets 
+                    slimmedJetsPuppi    same with ak4PFJets
+                    slimmedJetsAK8      same with ak4PFJets
+                    ak4PFJetsCHS        same with ak4PFJets
+                    slimmedJets         same with ak4PFJets
+                    MiniAOD_over_RECO   0
+             
+
+
+#############report FullSimReport
+Target:    10_6_1_patch1  (blue)
+Reference: 10_6_0    (black)
+samples: QCD_flatpt,TTbar,ZMM,ZEE [1][2][3][4]
+
+Besides the variables PtRecoOverGen_GenEta_XX_XX and PtCorrOverGen_GenEta_XX_XX, others has good statistical agreement between two releases for each sample.
+
+[1]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValQCD_FlatPt_15_3000HS_14_106X_upgrade2021_realistic_v4_LowSigmaZ/55fbd77b86.html
+[2]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValTTbar_14TeV_106X_upgrade2021_realistic_v4_LowSigmaZ/55fbd77b86.html
+[3]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValZMM_14_106X_upgrade2021_realistic_v4_LowSigmaZ/55fbd77b86.html
+[4]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_1_patch1_2021_vs_CMSSW_10_6_0_2021/FullSimReport/RelValZEE_14_106X_upgrade2021_realistic_v4_LowSigmaZ/55fbd77b86.html
+#############report FullSimReport
+

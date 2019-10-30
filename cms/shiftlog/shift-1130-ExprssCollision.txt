@@ -1,0 +1,10 @@
+/Express/HICollisions2018/DQM
+         DT     CSC       RPC      DT-STATE     CSC-STATE   RPC-STATE
+327495 low stas low stas low stas  SIGNOFF       SIGNOFF    SIGNOFF 
+327489  OK      OK        OK       SIGNOFF       SIGNOFF    SIGNOFF  
+327488  OK      OK        OK       SIGNOFF       SIGNOFF    SIGNOFF   
+327466  OK    low stas    OK       SIGNOFF       SIGNOFF    SIGNOFF
+327465  OK     OK         OK       SIGNOFF       SIGNOFF    SIGNOFF
+327464  OK     OK         OK       SIGNOFF       SIGNOFF    SIGNOFF
+327463  OK    low stas    OK       SIGNOFF       SIGNOFF    SIGNOFF
+327462  OK    OK          OK       SIGNOFF       SIGNOFF    SIGNOFF

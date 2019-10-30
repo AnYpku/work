@@ -1,0 +1,42 @@
+###############report 11_0_0_pre2_2016 FastSimReport_PU################
+Target: 11_0_0_pre2_2016  (blue)
+Reference: 10_6_0_2016    (black)
+Samples:  ZMM [1] ZEE[2] TTbar[3] QCD_flat[4]
+
+Except variables PtRecoOverGen_GenEta_200_600 and PtCorrOverGen_GenEta_200_600 from ZMM->ak4CaloJets have some discrepancy, for others I didn't see apparent deviations in histograms but statistical fluctuations.
+
+ZMM->ak4CaloJets
+PtRecoOverGen_GenEta_200_600[5] maybe because the binning, there are some discrepancies.
+PtCorrOverGen_GenEta_200_600[6] maybe because the binning, there are some discrepancies.
+
+[1]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport_PU/RelValZMM_13_PU25ns_106X_mcRun2_asymptotic_v3_FastSim/c11aa714a1.html
+[2]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport_PU/RelValZEE_13_PU25ns_106X_mcRun2_asymptotic_v3_FastSim/66a35b6e3a.html
+[3]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport_PU/RelValTTbar_13_PU25ns_106X_mcRun2_asymptotic_v3_FastSim/c11aa714a1.html
+[4]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport_PU/RelValQCD_FlatPt_15_3000HS_13_PU25ns_106X_mcRun2_asymptotic_v3_FastSim/c35cdada94.html
+[5]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_10_6_0%2DPU25ns_106X_mcRun2_asymptotic_v3_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtRecoOverGen_GenEta_200_600;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2DPU25ns_106X_mcRun2_asymptotic_v5_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtRecoOverGen_GenEta_200_600;w=600;h=600;ref=ratiooverlay
+[6]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_10_6_0%2DPU25ns_106X_mcRun2_asymptotic_v3_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtCorrOverGen_GenEta_200_600;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2DPU25ns_106X_mcRun2_asymptotic_v5_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtCorrOverGen_GenEta_200_600;w=600;h=600;ref=ratiooverlay
+
+###############report 11_0_0_pre2_2016 FastSimReport_PU################
+
+
+###############report 11_0_0_pre2_2016 FastSimReport################
+Target: 11_0_0_pre2_2016  (blue)
+Reference: 10_6_0_2016    (black)
+Samples:  ZMM [1] ZEE[2] TTbar[3] QCD_flat[4]
+
+Except ak4PFJets:PtCorrOverGen_GenPt_F, ak4PFJetsCHS:PtCorrOverGen_GenPt_Fa and ak4CaloJets:PtRecoOverGen_GenEta_200_600 and PtCorrOverGen_GenEta_200_600 in ZMM sample comparison, I didn't see apparent deviations in histograms but statistical fluctuations.
+
+ZMM:
+ak4PFJets:   PtCorrOverGen_GenPt_F[5]
+ak4PFJetsCHS:PtCorrOverGen_GenPt_F[6]
+ak4CaloJets:PtRecoOverGen_GenEta_200_600[7];PtCorrOverGen_GenEta_200_600[8]
+
+
+[1]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport/RelValZMM_13_106X_mcRun2_asymptotic_v3_FastSim/e81138013e.html
+[2]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport/RelValZEE_13_106X_mcRun2_asymptotic_v3_FastSim/55fbd77b86.html
+[3]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport/RelValTTbar_13_106X_mcRun2_asymptotic_v3_FastSim/55fbd77b86.html
+[4]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_2016vsCMSSW_10_6_0_2016/FastSimReport/RelValQCD_Pt_80_120_13_106X_mcRun2_asymptotic_v3_FastSim/55fbd77b86.html
+[5]http://cmsweb.cern.ch//dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_10_6_0%2D106X_mcRun2_asymptotic_v3_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4PFJets%2FPtCorrOverGen_GenPt_F;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2D106X_mcRun2_asymptotic_v5_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4PFJets%2FPtCorrOverGen_GenPt_F;w=600;h=600;ref=ratiooverlay
+[6]http://cmsweb.cern.ch//dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_10_6_0%2D106X_mcRun2_asymptotic_v3_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4PFJetsCHS%2FPtCorrOverGen_GenPt_F;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2D106X_mcRun2_asymptotic_v5_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4PFJetsCHS%2FPtCorrOverGen_GenPt_F;w=600;h=600;ref=ratiooverlay
+[7]http://cmsweb.cern.ch//dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_10_6_0%2D106X_mcRun2_asymptotic_v3_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtRecoOverGen_GenEta_200_600;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2D106X_mcRun2_asymptotic_v5_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtRecoOverGen_GenEta_200_600;w=600;h=600;ref=ratiooverlay
+[8]http://cmsweb.cern.ch//dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_10_6_0%2D106X_mcRun2_asymptotic_v3_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtCorrOverGen_GenEta_200_600;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2D106X_mcRun2_asymptotic_v5_FastSim%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2Fak4CaloJets%2FPtCorrOverGen_GenEta_200_600;w=600;h=600;ref=ratiooverlay

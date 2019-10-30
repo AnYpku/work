@@ -1,0 +1,22 @@
+/PromptReco/HICollisions2018A/DQM
+           DT     CSC       RPC      DT-STATE     CSC-STATE   RPC-STATE
+326547     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326549     OK   low stas    OK       SIGNOFF      SIGNOFF      SIGNOFF
+326572     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326575     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326577     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326580     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326585     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326586     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326587     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326617     OK     OK        OK       SIGNOFF      SIGNOFF      SINGOFF
+326619     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326622     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326623     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326627     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+326636     OK   low stas   low stas  SIGNOFF      SIGNOFF      SIGNOFF
+327220     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+327237     OK     OK        OK       SIGNOFF      SIGNOFF      SINGOFF
+327238     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+327400     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF
+327402     OK     OK        OK       SIGNOFF      SIGNOFF      SIGNOFF

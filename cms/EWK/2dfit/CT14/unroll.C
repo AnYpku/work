@@ -67,9 +67,9 @@ int unroll(){
 	std::ostringstream strs;
 	std::string lumivalue = strs.str();
 	Double_t lumi=35.866;
-	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+	Double_t mjj_bins[4]={500, 800, 1200, 2000};
     Double_t detajj_bins[4]={2.5,4.5,6,6.5};
-	const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
+	const char *name[9]={"Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~800","Mjj 800~1200","Mjj 1200~2000"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
 	TH2D* th2_ZA[57];
@@ -103,6 +103,10 @@ int unroll(){
      t_ZA[0]->Draw("HIST");
      t_ZA[0]->SetLineStyle(7);
      t_ZA[0]->SetLineColor(kRed);
+     t_ZA[0]->GetXaxis()->SetTitle("mjj(GeV)");
+     t_ZA[0]->GetXaxis()->SetTitleSize(0.065);
+     t_ZA[0]->GetXaxis()->SetTitleFont(12);
+
      for(Int_t i=1;i<57;i++){
  //         t_ZA[i]->SetFillColor(kMagenta);
  //         t_ZA[i]->SetMarkerColor(kMagenta);
@@ -158,7 +162,8 @@ int unroll(){
     c1->Write();
     for(Int_t i=0;i<57;i++){
 	t_ZA[i]->Write();
-    cc[i]->Write();}
+//    cc[i]->Write();
+    }
 	fout->Close();
 return 0;
 

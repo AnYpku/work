@@ -1,0 +1,15 @@
+Universe = vanilla
+
+Executable = wrapper.sh
+
+should_transfer_files = YES
+transfer_input_files = /etc/ciconnect/templates/cmssw_setup.sh
+
+Error = log/job.err_$(Cluster)-$(Process)
+Output = log/job.out_$(Cluster)-$(Process)
+Log = log/job.log_$(Cluster)
+
+transfer_output_remaps = "sherpa_13TeV_dyjets.yoda = sherpa_13TeV__dyjets_$(Cluster)_$(Process).root"
+when_to_transfer_output = ON_EXIT
+
+Queue 1000

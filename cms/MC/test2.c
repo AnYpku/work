@@ -32,8 +32,8 @@ for(int i=0; i<=numberOfEntries-1; i++)
     treeReader->ReadEntry(i);
     TRootLHEFEvent *event=(TRootLHEFEvent*) branchEvent->At(0);
     int np=event->Nparticles;
-    for(int j=2; j<np; j++) {
-     TRootLHEFParticle *particle1=(TRootLHEFParticle*) branchParticle->At(j);
+    for(int j=2; j<np; j++){
+      TRootLHEFParticle *particle1=(TRootLHEFParticle*) branchParticle->At(j);
       if((abs(particle1->PID)<6 || (particle1->PID)==21) ) {
           if(J1.E()>0){
           J2.SetPtEtaPhiE(particle1->PT,particle1->Eta,particle1->Phi,particle1->E);
@@ -43,7 +43,7 @@ for(int i=0; i<=numberOfEntries-1; i++)
              }
         }
      }
-    JJ=J1+J2;
+     JJ=J1+J2;
     h1->Fill(JJ.M(), 289.6/float(numberOfEntries)); 
 ////*****************************************************************
 }

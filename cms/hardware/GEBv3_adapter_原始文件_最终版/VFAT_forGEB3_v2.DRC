@@ -1,0 +1,25 @@
+Protel Design System Design Rule Check
+PCB File : VFAT_forGEB3_v2.pcb
+Date     : 20-Dec-2017
+Time     : 01:36:44
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (On the board )
+   Violation         Pad Free-0(3880mil,1120mil)  MultiLayer  Actual Hole Size = 160mil
+   Violation         Pad Free-0(3880mil,2170mil)  MultiLayer  Actual Hole Size = 160mil
+Rule Violations :2
+
+Processing Rule : Width Constraint (Min=10mil) (Max=100mil) (Prefered=10mil) (On the board )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=9mil) (On the board ),(On the board )
+Rule Violations :0
+
+Processing Rule : Broken-Net Constraint ( (On the board ) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Not Allowed) (On the board ),(On the board )
+Rule Violations :0
+
+
+Violations Detected : 2
+Time Elapsed        : 00:00:00

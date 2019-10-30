@@ -1,0 +1,2 @@
+the first way 	max-min/(2*center)
+bin 1	0.099817	0.138099

@@ -67,9 +67,9 @@ int unroll(){
 	std::ostringstream strs;
 	std::string lumivalue = strs.str();
 	Double_t lumi=35.866;
-	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+	Double_t mjj_bins[4]={500, 800, 1200, 2000};
     Double_t detajj_bins[4]={2.5,4.5,6,6.5};
-	const char *name[9]={"Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000","Mjj 500~750","Mjj 750~1000","Mjj 1000~2000"};
+	const char *name[9]={"Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~800","Mjj 800~1200","Mjj 1200~2000"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
 	TH2D* th2_ZA[51];
@@ -81,7 +81,7 @@ int unroll(){
 //        cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
         th2_ZA[i]=(TH2D*)f_ZA->Get(Form("th2_%d",i));
         t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 3,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
-        ofstream file2(Form("content-hist_%d",i+1));
+        ofstream file2(Form("./MMH-txt/content-hist_%d",i+1));
     cout<<"***************************histo "<<i+1<< " has been created*********************"<<endl;
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+1);
@@ -103,6 +103,10 @@ int unroll(){
      t_ZA[0]->Draw("HIST");
      t_ZA[0]->SetLineStyle(7);
      t_ZA[0]->SetLineColor(kRed);
+     t_ZA[0]->GetXaxis()->SetTitle("mjj(GeV)");
+     t_ZA[0]->GetXaxis()->SetTitleSize(0.065);
+     t_ZA[0]->GetXaxis()->SetTitleFont(12);
+
      l2->AddEntry(t_ZA[0],"central MMH2014lo pdf value");
      for(Int_t i=1;i<51;i++){
  //         t_ZA[i]->SetFillColor(kMagenta);

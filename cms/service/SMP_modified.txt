@@ -1,0 +1,108 @@
+---+!! Standard Model Physics: SMP-EGM Electron Coordination
+
+---++!! Contents
+
+   * [[#CoOrdinator][Coordinator]]
+   * [[#EgMRecommendations][EGM Recommendations]]
+   * [[#SmPUsage][SMP Usage]]
+   * [[#SmPProjects][SMP Projects]]
+   * [[#RePorts][Reports]]
+   * [[#LiNks][Links]]
+
+#CoOrdinator
+---++!! Coordinator
+   * [[mailto:Ridhi.Chawla@cern.ch][Ridhi Chawla]]
+
+#EgMRecommendations
+---++!! EGM Recommendations
+
+The latest recommendations by EGM POG are available [[EGMRegression#Consistent_EGMSmearer][Energy regression for 80X]] on the regression and smearing corrections for both electrons and photons. These corrections can be used in data and MC by the analyses groups working on 2016 data.
+
+According to the [[https://indico.cern.ch/getFile.py/access?contribId=0&resId=0&materialId=slides&confId=146391][statement from the EGM POG conveners]] from January 9, 2012, the EGM group plans to unify the work on electron ID and arrive to a limited number of electron ID packages and associated sets of efficiency and fake rate measurements as well as systematics. The EGM group will rely on PAG members, which in our case are the authors of individual SMP analyses that use electrons. The organizational details of this standardization process are being shaken down. Any contributions from PAG along these lines is to be officially counted as service work. The initial phase is the inventory of electron IDs in use in SMP and other physics groups.
+
+According to the [[%PUBURL%/CMS/EgIdentification/OE_POG_charge_final.pdf]["Charge to POGs regarding object approval"]] from CMS Physics Management, electron ID packages used in physics analysis have to be either the standard ones provided by EGM, or when non-standard selection is required, it should be presented at EGM meetings and approved.
+
+%RED%
+   Specific recommendations are found for specific time periods below. It is required that analyses use the EGM-approved electron selection only. For analyses that have a good reason to deviate from the centrally approved selection, a detailed presentation at an EGM meeting is requested.
+%ENDCOLOR%
+
+---+++!! Winter 2012 (2011 data, 4_X_Y)
+
+*For the winter 2012 season, SMP analyses are allowed to stay with their traditional electron selection.* The selections of all measurements that targeted Moriond have been reviewed and found satisfactory (with minor corrections in a few cases). They have been approved in the electron object review session on Feb 8, 2012 [[https://indico.cern.ch/getFile.py/access?subContId=0&contribId=3&resId=0&materialId=slides&confId=172431][(see the approval slides under this link]]). The details of the selection in use in about 10 SMP Moriond-scale analyses are found [[SmpElectronWinter12Usage][here]].
+
+---+++!! Summer 2012 (2012 and/or 2011 data, 5_X_Y)
+
+#Summer2012Recommendations  
+
+  *Final word for the summer* The selection described in [[EgammaIDRecipes][this EGM page]] should be used.
+
+  *Feb 29, 2012 update:*
+
+The electron selection recommendations are being developed at this time. The time scales:
+   * for analyses on 2011 data: new selection is expected before end of March
+   * for analyses on 2012 data: new selection needs to be optimized for 8 !TeV and new PU conditions, and is expected by the end of April
+
+The interim recommendations:
+   * analyses in progress may stay with the selection they are currently using until the recommendations are available
+   * new analyses that need something to start with, can adopt one of 2011 selections (such as [[VbtfEleID2011][this one]] or [[%SCRIPTURL{"view"}%auth/CMS/SimpleCutBasedEleID2011][this one]], especially with respect to shower shape (%$\sigma_{i\eta i\eta}$%), matching (%$\Delta\eta_{in}$%, %$\Delta\phi_{in}$%), H/E.
+   * it is recommended that the "GsfElectrons" collection that contains the best PF and non-PF electrons is used
+   * the use of !ParicleFlow isolation is most likely, so analyses that are ready can start the transition
+      * the details, however, are not yet fleshed out.
+      * the likely components of PF isolation calculation: !PFnoPU to prune PF particles contributing to isolation and not originating from the primary vertex of interest, vetoes (particles dropped from isolation calculations even though found in the isolation cone), cone 0.3 or 0.4 (0.3 appears better for ET&gt;20 !GeV), effective area correction for PU. While this is to be decided, a good feel for cut values can be obtained from [[https://indico.cern.ch/getFile.py/access?contribId=0&resId=0&materialId=slides&confId=154207][this presentation]].
+   * the conversion suppression is expected to be done with the vertex method, but for the time being the older dcot/dist method is ok to use. No missing expected inner hits is required in either case.
+
+The contribution from SMP analyses authors is needed at this time. Please sign up at [[%SCRIPTURL{"view"}%auth/CMS/ElectronID2012][this EGM page]] or
+contact your SMP-EGM electrons OE.
+
+An expected list of EGM recommendations (or links to recommendations) to come:
+   * supported EGM objects types
+   * supported EGM object selections
+   * supported recipes for corrections to energy or momentum scale and resolution
+   * supported recipes for efficiency estimation (or corrections to MC efficiency)
+   * other supported tools of interest to SMP analysis
+
+---+++!! Winter 2013 (2012 data, 5_X_Y)
+
+#Winter2012Recommendations  
+
+Documentation on EGM-recommended selection is [[EgammaIDRecipes][found here]].
+
+The recommendations include MVA and cut based selection for different working points, ways to compute isolation, etc.
+
+*Update Nov 21, 2012* The effective area EA constants are now available derived specifically for 2012 data. They are found [[EgammaEARhoCorrection][under this link]].
+
+#SmPUsage
+---++!! SMP Usage
+
+An inventory of SMP usage of EGM objects and tools for active analysis.  For Winter 2012 that can be a bulleted list of active (seeking (pre)approval or younger) CADI entries and their practices.
+
+---+++!! Winter 2012 (2011 data, 4_X_Y)
+
+Approximately 10 SMP analyses involving electrons are planned to go for approval for Moriond 2012. The full report on the details is found under [[SmpElectronWinter12Usage][this link]].
+
+---+++!! Summer 2012 (2012 and/or 2011 data, 5_X_Y)
+
+---+++!! Winter 2013 (2011 and 2012 data, 4_X_Y and 5_X_Y)
+
+The full report on analyses involving electrons, most of which target Moriond 2013, is found under [[SmpElectronWinter13Usage][this link]].
+
+#SmPProjects
+---++!! SMP Projects
+
+A list of active or foreseen EGM projects driven by SMP analysis needs or supported by SMP authors.  Supporting twikis/material should be linked and participating manpower listed.  
+---+++!! Winter 2012 (2011 data, 4_X_Y)
+
+---+++!! Summer 2012 (2012 and/or 2011 data, 5_X_Y)
+
+#RePorts
+---++!! Reports
+
+Links to reports made by SMP-EGM Electron coordination or reports related to the SMP Projects list.
+
+#LiNks
+
+---++!! Links
+   * [[TWikiSMP][SMP Main page]]
+   * [[EgammaPOG][EGM Main page]]
+
+-- Main.JeffreyBerryhill - 06-Jan-2012

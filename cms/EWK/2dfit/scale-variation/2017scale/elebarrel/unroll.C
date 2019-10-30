@@ -27,7 +27,7 @@ void cmsLumi(bool channel)
         latex.DrawLatex(0.18,0.82,"Preliminary");
         latex.DrawLatex(0.18,0.86,"CMS");
         latex.SetTextSize(0.03);
-        latex.DrawLatex(0.76,0.92,Form("42.52 fb^{-1} (%d TeV)", (beamcomenergytev)));
+        latex.DrawLatex(0.76,0.92,Form("41.52 fb^{-1} (%d TeV)", (beamcomenergytev)));
 }
 
 TH1D* unroll(TH2D* th2_in,Double_t* xbin, Double_t* ybin,  Int_t xbins_in, Int_t ybins_in,char *hname)//,char* htitle)
@@ -37,16 +37,27 @@ TH1D* unroll(TH2D* th2_in,Double_t* xbin, Double_t* ybin,  Int_t xbins_in, Int_t
 	Int_t nbinsy =ybins_in;////2D histo的bin的数量,y
 	Int_t nbins = nbinsx*nbinsy;// 2d histo一共被分为多少区域
 
-    TH1D* h1_out= new TH1D(hname, "", nbins, 0, nbins);
+    TH1D* h1= new TH1D("h1", "", nbins, 0, nbins);
+    TH1D* h1_out= new TH1D(hname, "", nbins-1, 0, nbins-1);
 	for(Int_t iy=1; iy<=nbinsy; iy++){
 		for(Int_t ix=1; ix<=nbinsx; ix++){
 			Double_t x_temp = 0.5*(xbin[ix-1]+xbin[ix]);//取一个bin两个端点的均值,x direction,得到the BinContent
 			Double_t y_temp = 0.5*(ybin[iy-1]+ybin[iy]);////取一个bin两个端点的均值,y direction
-			   h1_out->SetBinContent(ix+(iy-1)*nbinsx,th2->GetBinContent(th2->FindBin(x_temp, y_temp)));//void SetBinContent(Int_t bin, Double_t content),the FindBin function can return Global bin number corresponding to x,y
-			   h1_out->SetBinError(ix+(iy-1)*nbinsx,th2->GetBinError(th2->FindBin(x_temp, y_temp)));
+			   h1->SetBinContent(ix+(iy-1)*nbinsx,th2->GetBinContent(th2->FindBin(x_temp, y_temp)));//void SetBinContent(Int_t bin, Double_t content),the FindBin function can return Global bin number corresponding to x,y
+			   h1->SetBinError(ix+(iy-1)*nbinsx,th2->GetBinError(th2->FindBin(x_temp, y_temp)));
                cout<<"ix = "<<ix<<", iy = "<<iy<<"; bin = "<<ix+(iy-1)*nbinsx<<", BinContent"<<41.52*th2->GetBinContent(th2->FindBin(x_temp, y_temp))<<endl;
 		}
     }
+        for(Int_t i=0;i<6;i++){
+        h1_out->SetBinContent(i+1,h1->GetBinContent(i+1));
+        h1_out->SetBinError(i+1,h1->GetBinError(i+1));
+    }
+    h1_out->SetBinContent(7,h1->GetBinContent(7) + h1->GetBinContent(8));
+    h1_out->SetBinError(7,sqrt(h1->GetBinError(7)*h1->GetBinError(7)+h1->GetBinError(8)*h1->GetBinError(8)));
+    h1_out->SetBinContent(8,h1->GetBinContent(9));
+    cout<<h1->GetBinContent(7)<<"; "<<h1->GetBinContent(8)<<"; "<<h1_out->GetBinContent(7)<<endl;
+
+    delete h1;
     return h1_out;
 }
 
@@ -79,7 +90,7 @@ int unroll(){
 //	Double_t mjj_bins[4]={500, 800, 1200, 2000};
 	Double_t mjj_bins[4]={500, 800, 1200,2000};
     Double_t detajj_bins[4]={2.5,4.5,6,6.5};
-	const char *name[9]={"Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~800","Mjj 800~1200","Mjj 1200~2000"};
+	const char *name[8]={"Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~800","Mjj 800~1200","Mjj 1200~2000","Mjj 500~1200","Mjj 1200~2000"};
 //	const char *name[6]={"Mjj 500~800","Mjj 800~1200","Mjj 500~800","Mjj 800~1200","Mjj 500~800","Mjj 800~1200"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
@@ -112,11 +123,11 @@ int unroll(){
      TCanvas* c1 = new TCanvas("c1","Mjj vs deltajj",900,600);
      TLine* line = new TLine(t_ZA[0]->GetXaxis()->GetXmin(),0,t_ZA[0]->GetXaxis()->GetXmax(),0);
      c1->SetFrameFillColor(41);
-     TLegend *l2 = new TLegend(0.55,0.4,0.8,0.9);
+     TLegend *l2 = new TLegend(0.7,0.4,0.9,0.9);
      t_ZA[0]->SetTitle("Mjj vs detajj");
      t_ZA[0]->SetLineWidth(3);
      t_ZA[0]->SetLineColor(kRed);
-     t_ZA[0]->GetYaxis()->SetRangeUser(-2,122);
+     t_ZA[0]->GetYaxis()->SetRangeUser(-2,30);
      t_ZA[0]->Draw("HIST");
      t_ZA[0]->GetXaxis()->SetTitle("mjj(GeV)");
      t_ZA[0]->GetXaxis()->SetTitleSize(0.065);
@@ -126,7 +137,7 @@ int unroll(){
      for(Int_t i=1;i<num;i++){
  //         t_ZA[i]->SetFillColor(kMagenta);
  //         t_ZA[i]->SetMarkerColor(kMagenta);
-          t_ZA[i]->SetLineColor(i+1);
+          t_ZA[i]->SetLineColor(i);
           t_ZA[i]->SetLineWidth(1);
           t_ZA[i]->SetLineStyle(2);
 //          t_ZA[i]->Scale(scale_factor[i]);
@@ -134,8 +145,8 @@ int unroll(){
           //t_ZA[i]->Draw("HIST,SAME");
           t_ZA[i]->Draw("HIST,SAME");
           if(i==0)         l2->AddEntry(t_ZA[i],Form("%d central scale variation",i+1));
-          else if(num==7 && i==5)    l2->AddEntry(t_ZA[i],Form("%d scale variation",i+2));
-          else if(num==7 && i==6)    l2->AddEntry(t_ZA[i],Form("%d scale variation",i+3));
+          else if(i==5)    l2->AddEntry(t_ZA[i],Form("%d scale variation",i+2));
+          else if(i==6)    l2->AddEntry(t_ZA[i],Form("%d scale variation",i+3));
           else             l2->AddEntry(t_ZA[i],Form("%d scale variation",i+1));
 
          // delete t_ZA[i];

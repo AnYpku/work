@@ -1,0 +1,228 @@
+void 120_200_endcap_phi()
+{
+//=========Macro generated from canvas: h_3/phi
+//=========  (Thu Oct 24 10:54:35 2019) by ROOT version6.10/08
+   TCanvas *h_3 = new TCanvas("h_3", "phi",0,45,900,600);
+   gStyle->SetOptStat(0);
+   h_3->Range(0,0,1,1);
+   h_3->SetFillColor(0);
+   h_3->SetBorderMode(0);
+   h_3->SetBorderSize(2);
+   h_3->SetGridx();
+   h_3->SetGridy();
+   h_3->SetTickx(1);
+   h_3->SetTicky(1);
+   h_3->SetLeftMargin(0.14);
+   h_3->SetRightMargin(0.05);
+   h_3->SetBottomMargin(0.3);
+   h_3->SetFrameBorderMode(0);
+  
+// ------------>Primitives in pad: phi_top
+   TPad *phi_top = new TPad("phi_top", "top_pad",0,0.35,1,1);
+   phi_top->Draw();
+   phi_top->cd();
+   phi_top->Range(-8.746914,-0.0009553619,7.302469,0.190117);
+   phi_top->SetFillColor(0);
+   phi_top->SetBorderMode(0);
+   phi_top->SetBorderSize(2);
+   phi_top->SetGridx();
+   phi_top->SetGridy();
+   phi_top->SetTickx(1);
+   phi_top->SetTicky(1);
+   phi_top->SetLeftMargin(0.14);
+   phi_top->SetRightMargin(0.05);
+   phi_top->SetBottomMargin(0.005);
+   phi_top->SetFrameBorderMode(0);
+   phi_top->SetFrameBorderMode(0);
+   
+   TH1D *hphi_eghlt__91 = new TH1D("hphi_eghlt__91","L1 Seed, Z mass with 120_200 in the endcap region",13,-6.5,6.5);
+   hphi_eghlt__91->SetBinContent(0,0.1473462);
+   hphi_eghlt__91->SetBinContent(4,0.1012886);
+   hphi_eghlt__91->SetBinContent(5,0.1563518);
+   hphi_eghlt__91->SetBinContent(6,0.1628664);
+   hphi_eghlt__91->SetBinContent(7,0.1617647);
+   hphi_eghlt__91->SetBinContent(8,0.157214);
+   hphi_eghlt__91->SetBinContent(9,0.1600642);
+   hphi_eghlt__91->SetBinContent(10,0.1004503);
+   hphi_eghlt__91->SetBinError(0,0.001878585);
+   hphi_eghlt__91->SetBinError(4,0.001557548);
+   hphi_eghlt__91->SetBinError(5,0.001935142);
+   hphi_eghlt__91->SetBinError(6,0.001975046);
+   hphi_eghlt__91->SetBinError(7,0.001968354);
+   hphi_eghlt__91->SetBinError(8,0.00194047);
+   hphi_eghlt__91->SetBinError(9,0.001957981);
+   hphi_eghlt__91->SetBinError(10,0.00155109);
+   hphi_eghlt__91->SetEntries(47904);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#3366ff");
+   hphi_eghlt__91->SetLineColor(ci);
+   hphi_eghlt__91->SetLineStyle(5);
+   hphi_eghlt__91->SetLineWidth(4);
+   hphi_eghlt__91->GetXaxis()->SetLabelFont(42);
+   hphi_eghlt__91->GetXaxis()->SetLabelSize(0.035);
+   hphi_eghlt__91->GetXaxis()->SetTitleSize(0.035);
+   hphi_eghlt__91->GetXaxis()->SetTitleFont(42);
+   hphi_eghlt__91->GetYaxis()->SetLabelFont(42);
+   hphi_eghlt__91->GetYaxis()->SetLabelSize(0.035);
+   hphi_eghlt__91->GetYaxis()->SetTitleSize(0.035);
+   hphi_eghlt__91->GetYaxis()->SetTitleOffset(0);
+   hphi_eghlt__91->GetYaxis()->SetTitleFont(42);
+   hphi_eghlt__91->GetZaxis()->SetLabelFont(42);
+   hphi_eghlt__91->GetZaxis()->SetLabelSize(0.035);
+   hphi_eghlt__91->GetZaxis()->SetTitleSize(0.035);
+   hphi_eghlt__91->GetZaxis()->SetTitleFont(42);
+   hphi_eghlt__91->Draw("hist");
+   
+   TH1D *hdetPhi_ele__92 = new TH1D("hdetPhi_ele__92","phi	120_200_endcap",13,-6.5,6.5);
+   hdetPhi_ele__92->SetBinContent(0,0.009461595);
+   hdetPhi_ele__92->SetBinContent(4,0.1013803);
+   hdetPhi_ele__92->SetBinContent(5,0.1562111);
+   hdetPhi_ele__92->SetBinContent(6,0.1620272);
+   hdetPhi_ele__92->SetBinContent(7,0.1613318);
+   hdetPhi_ele__92->SetBinContent(8,0.1576652);
+   hdetPhi_ele__92->SetBinContent(9,0.1598567);
+   hdetPhi_ele__92->SetBinContent(10,0.1015278);
+   hdetPhi_ele__92->SetBinError(0,0.0004465203);
+   hdetPhi_ele__92->SetBinError(4,0.001461624);
+   hdetPhi_ele__92->SetBinError(5,0.001814325);
+   hdetPhi_ele__92->SetBinError(6,0.001847791);
+   hdetPhi_ele__92->SetBinError(7,0.001843822);
+   hdetPhi_ele__92->SetBinError(8,0.001822749);
+   hdetPhi_ele__92->SetBinError(9,0.001835373);
+   hdetPhi_ele__92->SetBinError(10,0.001462687);
+   hdetPhi_ele__92->SetEntries(47904);
+
+   ci = TColor::GetColor("#66ccff");
+   hdetPhi_ele__92->SetLineColor(ci);
+   hdetPhi_ele__92->SetLineWidth(3);
+   hdetPhi_ele__92->GetXaxis()->SetLabelFont(42);
+   hdetPhi_ele__92->GetXaxis()->SetLabelSize(0.035);
+   hdetPhi_ele__92->GetXaxis()->SetTitleSize(0.035);
+   hdetPhi_ele__92->GetXaxis()->SetTitleFont(42);
+   hdetPhi_ele__92->GetYaxis()->SetLabelFont(42);
+   hdetPhi_ele__92->GetYaxis()->SetLabelSize(0.035);
+   hdetPhi_ele__92->GetYaxis()->SetTitleSize(0.035);
+   hdetPhi_ele__92->GetYaxis()->SetTitleOffset(0);
+   hdetPhi_ele__92->GetYaxis()->SetTitleFont(42);
+   hdetPhi_ele__92->GetZaxis()->SetLabelFont(42);
+   hdetPhi_ele__92->GetZaxis()->SetLabelSize(0.035);
+   hdetPhi_ele__92->GetZaxis()->SetTitleSize(0.035);
+   hdetPhi_ele__92->GetZaxis()->SetTitleFont(42);
+   hdetPhi_ele__92->Draw("hist same");
+   
+   TLegend *leg = new TLegend(0.6,0.6,0.9,0.9,NULL,"brNDC");
+   leg->SetBorderSize(1);
+   leg->SetTextSize(0.08);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("hdetPhi_ele","reco ele","lpf");
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#66ccff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(3);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(1);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("hphi_eghlt","HLT ele","lpf");
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#3366ff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(5);
+   entry->SetLineWidth(4);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(1);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   
+   TPaveText *pt = new TPaveText(0.2327617,0.9339967,0.7672383,0.995,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   pt->SetTextFont(42);
+   TText *pt_LaTex = pt->AddText("L1 Seed, Z mass with 120_200 in the endcap region");
+   pt->Draw();
+   phi_top->Modified();
+   h_3->cd();
+  
+// ------------>Primitives in pad: phi_bottom
+   TPad *phi_bottom = new TPad("phi_bottom", "bottom_pad",0,0.1,1,0.35);
+   phi_bottom->Draw();
+   phi_bottom->cd();
+   phi_bottom->Range(-8.746914,0.07142855,7.302469,1.5);
+   phi_bottom->SetFillColor(0);
+   phi_bottom->SetBorderMode(0);
+   phi_bottom->SetBorderSize(2);
+   phi_bottom->SetGridx();
+   phi_bottom->SetGridy();
+   phi_bottom->SetTickx(1);
+   phi_bottom->SetTicky(1);
+   phi_bottom->SetLeftMargin(0.14);
+   phi_bottom->SetRightMargin(0.05);
+   phi_bottom->SetTopMargin(0);
+   phi_bottom->SetBottomMargin(0.3);
+   phi_bottom->SetFrameBorderMode(0);
+   phi_bottom->SetFrameBorderMode(0);
+   
+   TH1D *hphi_eghlt__93 = new TH1D("hphi_eghlt__93","",13,-6.5,6.5);
+   hphi_eghlt__93->SetBinContent(0,15.57309);
+   hphi_eghlt__93->SetBinContent(4,0.9990955);
+   hphi_eghlt__93->SetBinContent(5,1.0009);
+   hphi_eghlt__93->SetBinContent(6,1.00518);
+   hphi_eghlt__93->SetBinContent(7,1.002683);
+   hphi_eghlt__93->SetBinContent(8,0.9971387);
+   hphi_eghlt__93->SetBinContent(9,1.001298);
+   hphi_eghlt__93->SetBinContent(10,0.9893873);
+   hphi_eghlt__93->SetBinError(0,0.7612866);
+   hphi_eghlt__93->SetBinError(4,0.02105982);
+   hphi_eghlt__93->SetBinError(5,0.01698833);
+   hphi_eghlt__93->SetBinError(6,0.01673299);
+   hphi_eghlt__93->SetBinError(7,0.01673841);
+   hphi_eghlt__93->SetBinError(8,0.01686315);
+   hphi_eghlt__93->SetBinError(9,0.0167984);
+   hphi_eghlt__93->SetBinError(10,0.02089437);
+   hphi_eghlt__93->SetMinimum(0.5);
+   hphi_eghlt__93->SetMaximum(1.5);
+   hphi_eghlt__93->SetEntries(21320.59);
+   hphi_eghlt__93->SetMarkerStyle(20);
+   hphi_eghlt__93->GetXaxis()->SetTitle("phi");
+   hphi_eghlt__93->GetXaxis()->CenterTitle(true);
+   hphi_eghlt__93->GetXaxis()->SetLabelFont(42);
+   hphi_eghlt__93->GetXaxis()->SetLabelSize(0.12);
+   hphi_eghlt__93->GetXaxis()->SetTitleSize(0.3);
+   hphi_eghlt__93->GetXaxis()->SetTitleOffset(0.4);
+   hphi_eghlt__93->GetXaxis()->SetTitleFont(42);
+   hphi_eghlt__93->GetYaxis()->SetTitle("HLT/Reco");
+   hphi_eghlt__93->GetYaxis()->CenterTitle(true);
+   hphi_eghlt__93->GetYaxis()->SetLabelFont(42);
+   hphi_eghlt__93->GetYaxis()->SetLabelSize(0.1);
+   hphi_eghlt__93->GetYaxis()->SetTitleSize(0.15);
+   hphi_eghlt__93->GetYaxis()->SetTitleOffset(0.22);
+   hphi_eghlt__93->GetYaxis()->SetTitleFont(42);
+   hphi_eghlt__93->GetZaxis()->SetLabelFont(42);
+   hphi_eghlt__93->GetZaxis()->SetLabelSize(0.035);
+   hphi_eghlt__93->GetZaxis()->SetTitleSize(0.035);
+   hphi_eghlt__93->GetZaxis()->SetTitleFont(42);
+   hphi_eghlt__93->Draw("EP");
+   TLine *line = new TLine(-6.5,1,6.5,1);
+
+   ci = TColor::GetColor("#ff0000");
+   line->SetLineColor(ci);
+   line->SetLineWidth(2);
+   line->Draw();
+   phi_bottom->Modified();
+   h_3->cd();
+   h_3->Modified();
+   h_3->cd();
+   h_3->SetSelected(h_3);
+}

@@ -1,0 +1,1719 @@
+change rwgt_dir rwgt
+
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+
+launch
+   set cwww  0.2
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  -0.2
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  1
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  -1
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  10
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  -10
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  100
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  -100
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0.2
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    -0.2
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0.5
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    -0.5
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    1
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    -1
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    4
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    -4
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    100
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    -100
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    200
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    -200
+   set cb    0
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    2.5
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    -2.5
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    5
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    -5
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    10
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    -10
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    20
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    -20
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    50
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    -50
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    200
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    -200
+   set cpwww 0
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0.1 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww -0.1
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0.25 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww -0.25 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0.5
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww -0.5
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0.8 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww -0.8 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 1.5 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww -1.5 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 5
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww -5 
+   set cpw   0
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   1
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   -1
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   2
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   -2
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   4
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   -4
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   10
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   -10
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0
+   set cpw   40
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   -40
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   100
+launch
+   set cwww  0
+   set cw    0
+   set cb    0
+   set cpwww 0 
+   set cpw   -100
+   
+launch
+   set cwww  -0.5
+   set cw    0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5 
+   set cw    0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.5
+   set cw    15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.5
+   set cw    -15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5 
+   set cw    0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.5
+   set cw    15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.5
+   set cw    -15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7 
+   set cw    0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  0.7
+   set cw    15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  0.7
+   set cw    -15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7 
+   set cw    0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww  -0.7
+   set cw    15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww  -0.7
+   set cw    -15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1 
+   set cw    0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   1
+   set cw    15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   1
+   set cw    -15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.2
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1 
+   set cw    0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.2
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.2
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.2
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.2
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.2
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.5
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.5
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.5
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.5
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.5
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -0.5
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -15
+   set cb    2.5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -15
+   set cb    -2.5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -15
+   set cb    5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -15
+   set cb    -5
+   set cpwww 0 
+   set cpw   0
+
+launch
+   set cwww   -1
+   set cw    15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -15
+   set cb    15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0
+launch
+   set cwww   -1
+   set cw    -15
+   set cb    -15
+   set cpwww 0 
+   set cpw   0

@@ -1,0 +1,12 @@
+/Express/HICollisions2018/DQM
+           DT     CSC       RPC      DT-STATE     CSC-STATE   RPC-STATE
+327564    OK      OK        OK       SIGNOFF      SIGNOFF     SIGNOFF 
+327560    OK      OK        OK       SIGNOFF      SIGNOFF     SIGNOFF 
+327554    OK      OK        OK       SIGNOFF      SIGNOFF     SIGNOFF
+327537    OK      OK        OK       SIGNOFF      SIGNOFF     SIGNOFF
+327527    OK     low stas   OK       SIGNOFF      SIGNOFF     SIGNOFF 
+327526    OK     low stas   OK       SIGNOFF      SIGNOFF     SIGNOFF
+327525    OK      OK        OK       SIGNOFF
+327524    OK      OK        OK       SIGNOFF
+327517    OK      OK        OK       SIGNOFF
+327516    OK      OK        OK       SIGNOFF

@@ -1,0 +1,221 @@
+void 50_120_barrel_eta()
+{
+//=========Macro generated from canvas: h_1/eta
+//=========  (Thu Oct 24 10:54:27 2019) by ROOT version6.10/08
+   TCanvas *h_1 = new TCanvas("h_1", "eta",0,45,900,600);
+   gStyle->SetOptStat(0);
+   h_1->Range(0,0,1,1);
+   h_1->SetFillColor(0);
+   h_1->SetBorderMode(0);
+   h_1->SetBorderSize(2);
+   h_1->SetGridx();
+   h_1->SetGridy();
+   h_1->SetTickx(1);
+   h_1->SetTicky(1);
+   h_1->SetLeftMargin(0.14);
+   h_1->SetRightMargin(0.05);
+   h_1->SetBottomMargin(0.3);
+   h_1->SetFrameBorderMode(0);
+  
+// ------------>Primitives in pad: eta_top
+   TPad *eta_top = new TPad("eta_top", "top_pad",0,0.35,1,1);
+   eta_top->Draw();
+   eta_top->cd();
+   eta_top->Range(-0.4320988,-0.002120439,2.654321,0.4219674);
+   eta_top->SetFillColor(0);
+   eta_top->SetBorderMode(0);
+   eta_top->SetBorderSize(2);
+   eta_top->SetGridx();
+   eta_top->SetGridy();
+   eta_top->SetTickx(1);
+   eta_top->SetTicky(1);
+   eta_top->SetLeftMargin(0.14);
+   eta_top->SetRightMargin(0.05);
+   eta_top->SetBottomMargin(0.005);
+   eta_top->SetFrameBorderMode(0);
+   eta_top->SetFrameBorderMode(0);
+   Double_t xAxis1[7] = {0, 0.5, 1, 1.4442, 1.566, 2, 2.5}; 
+   
+   TH1D *heta_eghlt__4 = new TH1D("heta_eghlt__4"," L1 Seed, Z mass with 50_120 in the barrel region",6, xAxis1);
+   heta_eghlt__4->SetBinContent(0,1.874302);
+   heta_eghlt__4->SetBinContent(1,0.3614844);
+   heta_eghlt__4->SetBinContent(2,0.3538006);
+   heta_eghlt__4->SetBinContent(3,0.2818207);
+   heta_eghlt__4->SetBinContent(4,0.002894356);
+   heta_eghlt__4->SetBinError(0,0.0080363);
+   heta_eghlt__4->SetBinError(1,0.003529239);
+   heta_eghlt__4->SetBinError(2,0.003491529);
+   heta_eghlt__4->SetBinError(3,0.003116182);
+   heta_eghlt__4->SetBinError(4,0.0003158001);
+   heta_eghlt__4->SetEntries(83418);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#3366ff");
+   heta_eghlt__4->SetLineColor(ci);
+   heta_eghlt__4->SetLineStyle(5);
+   heta_eghlt__4->SetLineWidth(4);
+   heta_eghlt__4->GetXaxis()->SetTitle("eta");
+   heta_eghlt__4->GetXaxis()->SetLabelFont(42);
+   heta_eghlt__4->GetXaxis()->SetLabelSize(0.035);
+   heta_eghlt__4->GetXaxis()->SetTitleSize(0.035);
+   heta_eghlt__4->GetXaxis()->SetTitleFont(42);
+   heta_eghlt__4->GetYaxis()->SetTitle("yields");
+   heta_eghlt__4->GetYaxis()->SetLabelFont(42);
+   heta_eghlt__4->GetYaxis()->SetLabelSize(0.035);
+   heta_eghlt__4->GetYaxis()->SetTitleSize(0.035);
+   heta_eghlt__4->GetYaxis()->SetTitleOffset(0);
+   heta_eghlt__4->GetYaxis()->SetTitleFont(42);
+   heta_eghlt__4->GetZaxis()->SetLabelFont(42);
+   heta_eghlt__4->GetZaxis()->SetLabelSize(0.035);
+   heta_eghlt__4->GetZaxis()->SetTitleSize(0.035);
+   heta_eghlt__4->GetZaxis()->SetTitleFont(42);
+   heta_eghlt__4->Draw("hist");
+   Double_t xAxis2[7] = {0, 0.5, 1, 1.4442, 1.566, 2, 2.5}; 
+   
+   TH1D *hdetEta_ele__5 = new TH1D("hdetEta_ele__5","eta	50_120_barrel",6, xAxis2);
+   hdetEta_ele__5->SetBinContent(0,1.0108);
+   hdetEta_ele__5->SetBinContent(1,0.3533666);
+   hdetEta_ele__5->SetBinContent(2,0.3472674);
+   hdetEta_ele__5->SetBinContent(3,0.2912659);
+   hdetEta_ele__5->SetBinContent(4,0.00402594);
+   hdetEta_ele__5->SetBinContent(5,0.001808057);
+   hdetEta_ele__5->SetBinContent(6,0.002266098);
+   hdetEta_ele__5->SetBinContent(7,0.0001928594);
+   hdetEta_ele__5->SetBinError(0,0.004936374);
+   hdetEta_ele__5->SetBinError(1,0.002918691);
+   hdetEta_ele__5->SetBinError(2,0.002893393);
+   hdetEta_ele__5->SetBinError(3,0.002649843);
+   hdetEta_ele__5->SetBinError(4,0.0003115366);
+   hdetEta_ele__5->SetBinError(5,0.0002087764);
+   hdetEta_ele__5->SetBinError(6,0.0002337301);
+   hdetEta_ele__5->SetBinError(7,6.818609e-05);
+   hdetEta_ele__5->SetEntries(83418);
+
+   ci = TColor::GetColor("#66ccff");
+   hdetEta_ele__5->SetLineColor(ci);
+   hdetEta_ele__5->SetLineWidth(3);
+   hdetEta_ele__5->GetXaxis()->SetLabelFont(42);
+   hdetEta_ele__5->GetXaxis()->SetLabelSize(0.035);
+   hdetEta_ele__5->GetXaxis()->SetTitleSize(0.035);
+   hdetEta_ele__5->GetXaxis()->SetTitleFont(42);
+   hdetEta_ele__5->GetYaxis()->SetLabelFont(42);
+   hdetEta_ele__5->GetYaxis()->SetLabelSize(0.035);
+   hdetEta_ele__5->GetYaxis()->SetTitleSize(0.035);
+   hdetEta_ele__5->GetYaxis()->SetTitleOffset(0);
+   hdetEta_ele__5->GetYaxis()->SetTitleFont(42);
+   hdetEta_ele__5->GetZaxis()->SetLabelFont(42);
+   hdetEta_ele__5->GetZaxis()->SetLabelSize(0.035);
+   hdetEta_ele__5->GetZaxis()->SetTitleSize(0.035);
+   hdetEta_ele__5->GetZaxis()->SetTitleFont(42);
+   hdetEta_ele__5->Draw("hist same");
+   
+   TLegend *leg = new TLegend(0.6,0.6,0.9,0.9,NULL,"brNDC");
+   leg->SetBorderSize(1);
+   leg->SetTextSize(0.08);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(1);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("hdetEta_ele","reco ele","lpf");
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#66ccff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(3);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(1);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   entry=leg->AddEntry("heta_eghlt","HLT ele","lpf");
+   entry->SetFillStyle(1001);
+
+   ci = TColor::GetColor("#3366ff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(5);
+   entry->SetLineWidth(4);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(1);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(42);
+   leg->Draw();
+   
+   TPaveText *pt = new TPaveText(0.2433408,0.9339967,0.7566592,0.995,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   pt->SetTextFont(42);
+   TText *pt_LaTex = pt->AddText(" L1 Seed, Z mass with 50_120 in the barrel region");
+   pt->Draw();
+   eta_top->Modified();
+   h_1->cd();
+  
+// ------------>Primitives in pad: eta_bottom
+   TPad *eta_bottom = new TPad("eta_bottom", "bottom_pad",0,0.1,1,0.35);
+   eta_bottom->Draw();
+   eta_bottom->cd();
+   eta_bottom->Range(-0.4320988,0.07142855,2.654321,1.5);
+   eta_bottom->SetFillColor(0);
+   eta_bottom->SetBorderMode(0);
+   eta_bottom->SetBorderSize(2);
+   eta_bottom->SetGridx();
+   eta_bottom->SetGridy();
+   eta_bottom->SetTickx(1);
+   eta_bottom->SetTicky(1);
+   eta_bottom->SetLeftMargin(0.14);
+   eta_bottom->SetRightMargin(0.05);
+   eta_bottom->SetTopMargin(0);
+   eta_bottom->SetBottomMargin(0.3);
+   eta_bottom->SetFrameBorderMode(0);
+   eta_bottom->SetFrameBorderMode(0);
+   Double_t xAxis3[7] = {0, 0.5, 1, 1.4442, 1.566, 2, 2.5}; 
+   
+   TH1D *heta_eghlt__6 = new TH1D("heta_eghlt__6","",6, xAxis3);
+   heta_eghlt__6->SetBinContent(0,1.854276);
+   heta_eghlt__6->SetBinContent(1,1.022973);
+   heta_eghlt__6->SetBinContent(2,1.018813);
+   heta_eghlt__6->SetBinContent(3,0.9675719);
+   heta_eghlt__6->SetBinContent(4,0.7189268);
+   heta_eghlt__6->SetBinError(0,0.01205045);
+   heta_eghlt__6->SetBinError(1,0.01308213);
+   heta_eghlt__6->SetBinError(2,0.01315849);
+   heta_eghlt__6->SetBinError(3,0.01385461);
+   heta_eghlt__6->SetBinError(4,0.09616647);
+   heta_eghlt__6->SetMinimum(0.5);
+   heta_eghlt__6->SetMaximum(1.5);
+   heta_eghlt__6->SetEntries(1420.664);
+   heta_eghlt__6->SetMarkerStyle(20);
+   heta_eghlt__6->GetXaxis()->SetTitle("eta");
+   heta_eghlt__6->GetXaxis()->CenterTitle(true);
+   heta_eghlt__6->GetXaxis()->SetLabelFont(42);
+   heta_eghlt__6->GetXaxis()->SetLabelSize(0.12);
+   heta_eghlt__6->GetXaxis()->SetTitleSize(0.3);
+   heta_eghlt__6->GetXaxis()->SetTitleOffset(0.4);
+   heta_eghlt__6->GetXaxis()->SetTitleFont(42);
+   heta_eghlt__6->GetYaxis()->SetTitle("HLT/Reco");
+   heta_eghlt__6->GetYaxis()->CenterTitle(true);
+   heta_eghlt__6->GetYaxis()->SetLabelFont(42);
+   heta_eghlt__6->GetYaxis()->SetLabelSize(0.1);
+   heta_eghlt__6->GetYaxis()->SetTitleSize(0.15);
+   heta_eghlt__6->GetYaxis()->SetTitleOffset(0.22);
+   heta_eghlt__6->GetYaxis()->SetTitleFont(42);
+   heta_eghlt__6->GetZaxis()->SetLabelFont(42);
+   heta_eghlt__6->GetZaxis()->SetLabelSize(0.035);
+   heta_eghlt__6->GetZaxis()->SetTitleSize(0.035);
+   heta_eghlt__6->GetZaxis()->SetTitleFont(42);
+   heta_eghlt__6->Draw("EP");
+   TLine *line = new TLine(0,1,2.5,1);
+
+   ci = TColor::GetColor("#ff0000");
+   line->SetLineColor(ci);
+   line->SetLineWidth(2);
+   line->Draw();
+   eta_bottom->Modified();
+   h_1->cd();
+   h_1->Modified();
+   h_1->cd();
+   h_1->SetSelected(h_1);
+}

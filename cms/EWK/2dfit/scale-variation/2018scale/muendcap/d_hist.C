@@ -1,4 +1,4 @@
-#define num 9
+#define num 7
 #include "TH2.h"
 #include "TFile.h"
 #include "TTree.h"

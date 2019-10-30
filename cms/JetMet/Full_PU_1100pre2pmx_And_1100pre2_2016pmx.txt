@@ -1,0 +1,41 @@
+###############report 11_0_0_pre2_pmx FullSimReport_PU
+Target: 11_0_0_pre2_pmx
+Reference: 11_0_0_pre2
+Samples:  ZMM [1] ZEE[4] TTbar[5]
+
+I didn't see apparent deviations in histograms but statistical fluctuations. Therefore the release is good.
+
+ZMM:SlimmedJetAK8:
+ PtCorrOverGen_GenPt_E [2] several bin have a little discrepancy maybe because statistical fluctuations. 
+ PtCorrOverGen_GenPt_F [3] several bin have a little discrepancy maybe because statistical fluctuations.
+
+[1]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_pmxvsCMSSW_11_0_0_pre2/FullSimReport_PU/RelValZMM_13v6-v1_PU25ns_106X_upgrade2018_realistic_v6/e81138013e.html
+[2]http://cmsweb.cern.ch//dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2DPU25ns_106X_upgrade2018_realistic_v6%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtCorrOverGen_GenPt_E;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2DPUpmx25ns_106X_upgrade2018_realistic_v6%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtCorrOverGen_GenPt_E;w=600;h=600;ref=ratiooverlay
+[3]https://cmsweb.cern.ch/dqm/relval/plotfairy/overlay?obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2DPU25ns_106X_upgrade2018_realistic_v6%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtCorrOverGen_GenPt_F;obj=archive%2F1%2FRelValZMM_13%2FCMSSW_11_0_0_pre2%2DPUpmx25ns_106X_upgrade2018_realistic_v6%2Dv1%2FDQMIO%2FJetMET%2FJetValidation%2FslimmedJetsAK8%2FPtCorrOverGen_GenPt_F;w=600;h=600;ref=ratiooverlay
+[4]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_pmxvsCMSSW_11_0_0_pre2/FullSimReport_PU/RelValZEE_13v6-v1_PU25ns_106X_upgrade2018_realistic_v6/e81138013e.html
+[5]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_pmxvsCMSSW_11_0_0_pre2/FullSimReport_PU/RelValTTbar_13v6-v1_PU25ns_106X_upgrade2018_realistic_v6/e81138013e.html
+###############report 11_0_0_pre2_pmx FullSimReport_PU
+
+
+###############report 11_0_0_pre2_2016_pmx FullSimReport_PU
+Target: 11_0_0_pre2_2016_pmx
+Reference: 11_0_0_pre2_2016
+Samples: ZMM[1] ttbar[3]
+
+I didn't see apparent deviations in histograms but statistical fluctuations. Therefore the release is good. For the ZMM->slimmedJetsAK8->PtRecoOverGen_GenPhi_F, it maybe because the statistical fluctuations and  the binning.
+
+ZMM:slimmedJetsAK8
+PtRecoOverGen_GenPhi_F[2] the comparison has a little dicrepancy
+
+[1]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_pmxvsCMSSW_11_0_0_pre2-2016/FullSimReport_PU/RelValZMM_13_PU25ns_106X_mcRun2_asymptotic_v5/55fbd77b86.html
+[2]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_pmxvsCMSSW_11_0_0_pre2-2016/FullSimReport_PU/RelValZMM_13_PU25ns_106X_mcRun2_asymptotic_v5/17eb493571.html
+[3]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2_pmxvsCMSSW_11_0_0_pre2-2016/FullSimReport_PU/RelValTTbar_13_PU25ns_106X_mcRun2_asymptotic_v5/55fbd77b86.html
+###############report 11_0_0_pre2_2016_pmx FullSimReport_PU
+
+
+###############report 11_0_0_pre2_2017_pmx FullSimReport_PU
+Target: 11_0_0_pre2_2016_pmx
+Reference: 11_0_0_pre2_2016
+Samples: 
+
+

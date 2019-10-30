@@ -1,0 +1,12 @@
+            DT     CSC       RPC      DT-STATE     CSC-STATE   RPC-STATE
+327242     OK    low stas  EXCLUDED                            
+327243     OK      OK        OK
+327244     OK      OK        OK
+327265     OK    EXCLUDED    OK
+327266     OK      OK        OK
+327267     OK    EXCLUDED    OK
+327268     OK    EXCLUDED    OK
+327270     OK    EXCLUDED    OK
+327295     OK    EXCLUDED    OK
+327317     OK     low stas   OK
+327318     OK    EXCLUDED    OK

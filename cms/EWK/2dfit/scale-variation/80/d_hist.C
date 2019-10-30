@@ -70,7 +70,7 @@ void run(std::string filename){
 }
 
 int d_hist(){
-	run("outZA-mu-ele_2017");
+	run("outZA-mu-ele");
 	TFile* f5=new TFile("th2-histo.root","RECREATE");
     for(Int_t i=0;i<9;i++){
 	   th2[i]->Write();}

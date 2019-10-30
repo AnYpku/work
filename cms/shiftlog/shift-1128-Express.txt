@@ -1,0 +1,31 @@
+
+/Express/HICosmics2018/DQM
+         DT     CSC       RPC     RPC-STATE     DT-STATE    CSC-STATE
+325871   OK   low stas     OK      SIGNOFF                   SIGNOFF 
+326453   OK   low stas     OK      SIGNOFF      
+326454   OK   low stas  EXCLUDEF   SIGNOFF     
+326486   OK      OK       OK       SIGNOFF     
+326513   OK      OK       OK       SIGNOFF               
+326537   OK      OK       OK       SIGNOFF                                  
+326554   OK      OK       OK       SIGNOFF         
+326581   OK      OK       OK       SIGNOFF          
+326651   OK  EXCLUDED     OK       SIGNOFF               
+326657   OK  EXCLUDED   low stas   SIGNOFF                     
+326658   OK      OK       OK       SIGNOFF                               
+326659   OK  EXCLUDED     OK       SIGNOFF 
+
+326786   OK      OK       OK       SIGNOFF 
+326793   OK      OK       OK
+326796   OK  EXCLUDED   low stas  
+326823   OK      OK       OK  
+326836   OK      OK       OK  
+326843   OK  EXCLUDED     OK
+326849   OK  EXCLUDED   low stas  
+326861   OK  EXCLUDED     OK
+326864   OK  EXCLUDED   low stas
+326865   OK  EXCLUDED   low stas
+326866   OK  EXCLUDED   low stas
+326867             
+326868               
+326870               
+326945                   

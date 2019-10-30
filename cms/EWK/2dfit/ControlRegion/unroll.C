@@ -8,9 +8,11 @@
 #include "THStack.h"
 #include "CMSTDRStyle.h"
 #include "CMS_lumi.C"
+#define num 9
 using namespace std;
 void cmsLumi(bool channel); 
 ofstream file1("scalefactor.txt");
+TString name="_content";
 TH1D* unroll(TH2D* th2_in,Double_t* xbin, Double_t* ybin,  Int_t xbins_in, Int_t ybins_in,char *hname);
 void cmsLumi(bool channel) 
 {
@@ -69,27 +71,30 @@ int unroll(){
 	Double_t lumi=35.866;
 	Double_t mjj_bins[2]={150, 400};
     Double_t detajj_bins[4]={2.5,4.5,6,6.5};
-	const char *name[9]={"Mjj 150~400","Mjj 150~400","Mjj 150~400"};
+	const char *name[1]={"Mjj 150~400"};
 
 	TFile* f_ZA=TFile::Open("./th2-histo.root");
-	TH2D* th2_ZA[9];
-	TH1D* t_ZA[9];
-    TCanvas* cc[9];
-    TLegend *ll[9];
-    for(Int_t i=0;i<9;i++){
+	TH2D* th2_ZA[num];
+	TH1D* t_ZA[num];
+    TCanvas* cc[num];
+    TLegend *ll[num];
+    for(Int_t i=0;i<num;i++){
         ll[i] = new TLegend(0.55,0.4,0.8,0.9);
 //        cc[i] = new TCanvas(Form("cc_%d",i),Form("Mjj vs deltajj %d",i+1),900,600);
         th2_ZA[i]=(TH2D*)f_ZA->Get(Form("th2_%d",i));
-        t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 1,3,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
+        t_ZA[i]= unroll(th2_ZA[i], mjj_bins, detajj_bins, 1,1,Form("hist_%d",i+1));//Form("%d central scale pdf variable",i+1));
+        ofstream file2(Form("./scale-txt/content-hist_%d",i+1));
         t_ZA[i]->SetLineWidth(3);
         t_ZA[i]->SetLineColor(i+1);
-        for(Int_t j=1;j<=3;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
+        for(Int_t j=1;j<=1;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
         t_ZA[i]->Scale(lumi*ZA_scale);
 //        t_ZA[i]->Draw("HIST");
 //        t_ZA[i]->DrawNormalized("HIST");
         ll[i]->AddEntry(t_ZA[i],Form("%d central scale pdf variable",i+1));
         ll[i]->Draw();
 //        cc[i]->Print(Form("tmp-hist2d_%d.eps",i+1));
+        for(Int_t k=0;k<1;k++){
+         file2<<t_ZA[i]->GetBinContent(k+1)<<endl;}
       }
      TCanvas* c1 = new TCanvas("c1","Mjj vs deltajj",900,600);
      c1->SetFrameFillColor(41);
@@ -98,7 +103,7 @@ int unroll(){
      t_ZA[0]->SetLineWidth(3);
      t_ZA[0]->Draw("HIST");
      file1<<"histo 1 1"<<endl;
-     for(Int_t i=1;i<9;i++){
+     for(Int_t i=1;i<num;i++){
  //         t_ZA[i]->SetFillColor(kMagenta);
  //         t_ZA[i]->SetMarkerColor(kMagenta);
           t_ZA[i]->SetLineColor(i+1);
@@ -108,7 +113,7 @@ int unroll(){
           file1<<"histo "<<i+1<<"\t"<<t_ZA[0]->Integral()/t_ZA[i]->Integral()<<endl;
           cout<<"histo "<<i+1<<" "<<t_ZA[0]->Integral()/t_ZA[i]->Integral()<<endl;
           t_ZA[i]->Scale(t_ZA[0]->Integral()/t_ZA[i]->Integral());
-          for(Int_t j=1;j<=3;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
+          for(Int_t j=1;j<=1;j++){ t_ZA[i]->GetXaxis()->SetBinLabel(j,name[j-1]);}
           //t_ZA[i]->Draw("HIST,SAME");
           t_ZA[i]->Draw("HIST,SAME");
           l2->AddEntry(t_ZA[i],Form("%d central scale pdf variations",i+1));
@@ -127,7 +132,7 @@ int unroll(){
 //    }
 	THStack* hs = new THStack("hs", "");
     TLegend *l1 = new TLegend(0.55,0.4,0.8,0.9);
-    for(Int_t i=0;i<9;i++){
+    for(Int_t i=0;i<num;i++){
 	   hs->Add(t_ZA[i]);
        l1->AddEntry(t_ZA[i],Form("%d central scale pdf variations",i+1));
       }
@@ -150,7 +155,7 @@ int unroll(){
 
 	fout->cd();
 
-    for(Int_t i=0;i<9;i++){
+    for(Int_t i=0;i<num;i++){
 	t_ZA[i]->Write();}
     hs->Write();
 	fout->Close();

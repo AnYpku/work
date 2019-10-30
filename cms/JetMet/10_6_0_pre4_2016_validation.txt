@@ -1,0 +1,97 @@
+CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016
+
+FastSimReport_PU
+           
+TTbar:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016/FastSimReport_PU/RelValTTbar_13_PU25ns_106X_mcRun2_asymptotic_v3_rsb_FastSim/af95c849ee.html
+
+I don't see changes in TTbar samples
+
+zEE:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016/FastSimReport_PU/RelValZEE_13_PU25ns_106X_mcRun2_asymptotic_v3_rsb_FastSim/af95c849ee.html
+
+I don't see changes in zEE samples
+
+
+zMM：
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016/FastSimReport_PU/RelValZMM_13_PU25ns_106X_mcRun2_asymptotic_v3_rsb_FastSim/55fbd77b86.html
+
+I don't see changes in zMM samples
+
+
+QCD FlatPt:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016/FastSimReport_PU/RelValQCD_FlatPt_15_3000HS_13_PU25ns_106X_mcRun2_asymptotic_v3_rsb_FastSim/55fbd77b86.html
+
+I don't see changes in QCD FlatPt samples
+
+
+FullSimReport_PU
+
+TTbar:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016/FullSimReport_PU/RelValTTbar_13_PU25ns_106X_mcRun2_asymptotic_v3/af95c849ee.html
+
+I don't see changes in TTbar samples
+zEE:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016/FullSimReport_PU/RelValZEE_13_PU25ns_106X_mcRun2_asymptotic_v3/af95c849ee.html
+
+I don't see changes in zEE samples
+
+
+zMM:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016/FullSimReport_PU/RelValZMM_13_PU25ns_106X_mcRun2_asymptotic_v3/af95c849ee.html
+
+I don't see changes in zMM samples
+
+For  CMSSW_10_6_0_pre4_2016_pmxvsCMSSW_10_6_0_pre4_2016, no FastSimReport and FullSimReport.  For FullSimReport_PU, there isn’t QCDFlatPt sample now.
+
+
+
+CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016
+
+FullSimReport
+
+TTbar:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport/RelValTTbar_13_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+I don't see changes in TTbar samples
+
+zEE:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport/RelValZEE_13_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+I don't see changes in zEE samples
+
+zMM:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport/RelValZMM_13_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+I don't see changes in zMM samples
+
+QCDFlatPt:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport/RelValQCD_FlatPt_15_3000HS_13_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+
+I don't see changes in QCDFlatPt samples.
+
+
+FullSimReport_PU
+
+TTbar:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport_PU/RelValTTbar_13_PU25ns_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+I don't see changes in TTbar samples.
+
+zEE:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport_PU/RelValZEE_13_PU25ns_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+I don't see changes in zEE samples.
+
+zMM:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport_PU/RelValZMM_13_PU25ns_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+don't see changes in zMM samples.
+
+QCDFlatPt:
+https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016/FullSimReport_PU/RelValQCD_FlatPt_15_3000HS_13_PU25ns_105X_mcRun2_asymptotic_v4/af95c849ee.html
+
+I don't see changes in QCDFlatPt samples.
+
+For CMSSW_10_6_0_pre4vsCMSSW_10_6_0_pre3-2016, there are not FastSimReport and FastSimReport_PU

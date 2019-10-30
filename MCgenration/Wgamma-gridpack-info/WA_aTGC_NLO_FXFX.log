@@ -1,0 +1,722 @@
+Starting job on  Fri Nov 16 04:07:25 CST 2018
+Running on  Linux login.uscms.org 4.9.120-1.ultra.el6.x86_64 #1 SMP Fri Aug 17 10:19:23 CDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+System release  Scientific Linux release 6.10 (Carbon)
+name: WA_aTGC_NLO_FXFX
+carddir: cards/WA_aTGC_NLO_FXFX/
+queue: condor
+scram_arch: slc6_amd64_gcc630
+cmssw_version: CMSSW_9_3_8
+Reusing existing directory assuming generated code already exists
+WARNING: If you changed the process card you need to clean the folder and run from scratch
+Reusing existing process directory - be careful!
+copying generated process to working directory
+
+        WARNING: You've chosen not to use the PDF sets recommended for 2017 production!
+        If this isn't intentional, and you prefer to use the recommended sets,
+        insert the following lines into your process-name_run_card.dat:
+
+            '$DEFAULT_PDF_SETS = lhaid'
+            '$DEFAULT_PDF_MEMBERS = reweight_PDF'
+        
+copying run_card.dat file
+copying custom reweight file
+starting NLO mode
+[?1034hNo module named madgraph
+INFO: ************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D G R A P H 5           *
+*                       a M C @ N L O                      *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 5.2.6.0               20xx-xx-xx         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*                 http://amcatnlo.cern.ch                  *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************ 
+INFO: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+INFO: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt  
+INFO: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+launch -n pilotrun
+The following switches determine which operations are executed:
+ 1 Perturbative order of the calculation:                               order=NLO
+ 2 Fixed order (no event generation and no MC@[N]LO matching):    fixed_order=OFF
+ 3 Shower the generated events:                                        shower=ON
+ 4 Decay particles with the MadSpin module:                           madspin=OFF
+ 5 Add weights to the events based on changing model parameters:     reweight=ON
+ 6 Run MadAnalysis5 on the events generated:                     madanalysis5=Not installed
+  Either type the switch number (1 to 6) to change its default setting,
+  or set any switch explicitly (e.g. type 'order=LO' at the prompt)
+  Type '0', 'auto', 'done' or just press enter when you are done.
+ [[4m0[0m, 1, 2, 3, 4, 5, auto, done, order=LO, ... ][60s to answer] 
+>The following switches determine which operations are executed:
+ 1 Perturbative order of the calculation:                               order=NLO
+ 2 Fixed order (no event generation and no MC@[N]LO matching):    fixed_order=OFF
+ 3 Shower the generated events:                                        shower=OFF
+ 4 Decay particles with the MadSpin module:                           madspin=OFF
+ 5 Add weights to the events based on changing model parameters:     reweight=ON
+ 6 Run MadAnalysis5 on the events generated:                     madanalysis5=Not installed
+  Either type the switch number (1 to 6) to change its default setting,
+  or set any switch explicitly (e.g. type 'order=LO' at the prompt)
+  Type '0', 'auto', 'done' or just press enter when you are done.
+ [[4m0[0m, 1, 2, 3, 4, 5, auto, done, order=LO, ... ][60s to answer] 
+>The following switches determine which operations are executed:
+ 1 Perturbative order of the calculation:                               order=NLO
+ 2 Fixed order (no event generation and no MC@[N]LO matching):    fixed_order=OFF
+ 3 Shower the generated events:                                        shower=OFF
+ 4 Decay particles with the MadSpin module:                           madspin=OFF
+ 5 Add weights to the events based on changing model parameters:     reweight=OFF
+ 6 Run MadAnalysis5 on the events generated:                     madanalysis5=Not installed
+  Either type the switch number (1 to 6) to change its default setting,
+  or set any switch explicitly (e.g. type 'order=LO' at the prompt)
+  Type '0', 'auto', 'done' or just press enter when you are done.
+ [[4m0[0m, 1, 2, 3, 4, 5, auto, done, order=LO, ... ][60s to answer] 
+>INFO: will run in mode: noshower 
+[1;34mWARNING: You have chosen not to run a parton shower. NLO events without showering are NOT physical.
+Please, shower the Les Houches events before using them for physics analyses. [0m
+[1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path][90s to answer] 
+>[1;60mINFO: modify param_card information BLOCK dim6 with id (1,) set to 0.5 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>[1;60mINFO: modify param_card information BLOCK dim6 with id (2,) set to 0.5 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>[1;60mINFO: modify param_card information BLOCK dim6 with id (3,) set to 5.0 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>[1;60mINFO: modify param_card information BLOCK dim6 with id (4,) set to 0.25 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>[1;60mINFO: modify param_card information BLOCK dim6 with id (5,) set to 2.0 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>[1;34mWARNING: invalid set command param_card dim6 6 0.000000e+00 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>[1;34mWARNING: invalid set command param_card dim6 7 0.000000e+00 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>[1;34mWARNING: invalid set command param_card dim6 8 0.000000e+00 [0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path] 
+>INFO: Update the dependent parameter of the param_card.dat 
+[1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m
+[1;34mWARNING: You are running with FxFx merging enabled.  To be able to merge
+    samples of various multiplicities without double counting, you
+    have to remove some events after showering 'by hand'.  Please
+    read http://amcatnlo.cern.ch/FxFx_merging.htm for more details. [0m
+INFO: Starting run 
+INFO: Compiling the code 
+[1;34mWARNING: Support of LHAPDF 6.2.x is still in beta phase. Consider to use LHAPDF 6.1.x in case of problem. [0m
+[1;34mWARNING: Support of LHAPDF 6.2.x is still in beta phase. Consider to use LHAPDF 6.1.x in case of problem. [0m
+[1;34mWARNING: Support of LHAPDF 6.2.x is still in beta phase. Consider to use LHAPDF 6.1.x in case of problem. [0m
+INFO: Using LHAPDF v6.2.1 interface for PDFs 
+[1;34mWARNING: Support of LHAPDF 6.2.x is still in beta phase. Consider to use LHAPDF 6.1.x in case of problem. [0m
+[1;34mWARNING: Support of LHAPDF 6.2.x is still in beta phase. Consider to use LHAPDF 6.1.x in case of problem. [0m
+INFO: Compiling source... 
+INFO:           ...done, continuing with P* directories 
+INFO: Compiling StdHEP (can take a couple of minutes) ... 
+INFO:           ...done. 
+INFO: Compiling CutTools (can take a couple of minutes) ... 
+INFO:           ...done. 
+INFO: Compiling IREGI (can take a couple of minutes) ... 
+INFO:           ...done. 
+INFO: Compiling directories... 
+INFO: Compiling on 24 cores 
+INFO:  Compiling P0_udx_epvea... 
+INFO:  Compiling P0_dux_emvexa... 
+INFO:  Compiling P0_uxd_emvexa... 
+INFO:  Compiling P0_dxu_epvea... 
+INFO:  Compiling P1_gu_epvead... 
+INFO:  Compiling P1_gd_emvexau... 
+INFO:  Compiling P1_gux_emvexadx... 
+INFO:  Compiling P1_gdx_epveaux... 
+INFO:  Compiling P1_ug_epvead... 
+INFO:  Compiling P1_udx_epveag... 
+INFO:  Compiling P1_dg_emvexau... 
+INFO:  Compiling P1_uxg_emvexadx... 
+INFO:  Compiling P1_uxd_emvexag... 
+INFO:  Compiling P1_dux_emvexag... 
+INFO:  Compiling P1_dxg_epveaux... 
+INFO:  Compiling P1_dxu_epveag... 
+INFO:     P0_dxu_epvea done. 
+INFO:     P0_dux_emvexa done. 
+INFO:     P0_udx_epvea done. 
+INFO:     P1_dxu_epveag done. 
+INFO:     P0_uxd_emvexa done. 
+INFO:     P1_gd_emvexau done. 
+INFO:     P1_uxd_emvexag done. 
+INFO:     P1_gu_epvead done. 
+INFO:     P1_gux_emvexadx done. 
+INFO:     P1_dux_emvexag done. 
+INFO:     P1_udx_epveag done. 
+INFO:     P1_uxg_emvexadx done. 
+INFO:     P1_dxg_epveaux done. 
+INFO:     P1_gdx_epveaux done. 
+INFO:     P1_dg_emvexau done. 
+INFO:     P1_ug_epvead done. 
+INFO: Checking test output: 
+INFO: P0_udx_epvea 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dux_emvexa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_uxd_emvexa 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dxu_epvea 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gu_epvead 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gd_emvexau 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gux_emvexadx 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_gdx_epveaux 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_ug_epvead 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_udx_epveag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dg_emvexau 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dux_emvexag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uxg_emvexadx 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_uxd_emvexag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dxg_epveaux 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P1_dxu_epveag 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: Starting run 
+INFO: Cleaning previous results 
+INFO: Generating events without running the shower. 
+INFO: Setting up grids 
+INFO:  Idle: 28,  Running: 0,  Completed: 0 [  1.4s  ] 
+INFO:  Idle: 0,  Running: 26,  Completed: 2 [  2m 2s  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 5 [  4m 3s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 11 [  6m 4s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 13 [  8m 5s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 13 [  10m 6s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 18 [  12m 6s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 21 [  14m 7s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 21 [  16m 7s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 24 [  18m 7s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 24 [  20m 8s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 24 [  22m 8s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  24m 8s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  26m 9s  ] 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 28 [  28m 9s  ] 
+INFO: Determining the number of unweighted events per channel
+
+      Intermediate results:
+      Random seed: 33
+      Total cross section:      1.065e-02 +- 7.4e-05 pb
+      Total abs(cross section): 1.988e-02 +- 8.6e-05 pb 
+
+ 
+INFO: Computing upper envelope 
+INFO:  Idle: 28,  Running: 0,  Completed: 0 [  1.6s  ] 
+INFO:  Idle: 0,  Running: 28,  Completed: 0 [  2m 2s  ] 
+INFO:  Idle: 0,  Running: 27,  Completed: 1 [  4m 4s  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 5 [  6m 5s  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 5 [  8m 6s  ] 
+INFO:  Idle: 0,  Running: 22,  Completed: 6 [  10m 8s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 8 [  12m 8s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 9 [  14m 9s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 9 [  16m 10s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 10 [  18m 11s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 10 [  20m 12s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 10 [  22m 13s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 10 [  24m 14s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 10 [  26m 15s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 10 [  28m 16s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 11 [  30m 17s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 11 [  32m 18s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 11 [  34m 18s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 11 [  36m 19s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 11 [  38m 20s  ] 
+INFO: Start to wait 300s between checking status.
+Note that you can change this time in the configuration file.
+Press ctrl-C to force the update. 
+INFO:  Idle: 0,  Running: 15,  Completed: 13 [  43m 21s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  48m 22s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  53m 22s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  58m 23s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 3m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 8m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 13m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 18m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 23m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 28m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 33m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 14 [  1h 38m  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 15 [  1h 43m  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 15 [  1h 48m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 16 [  1h 53m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 16 [  1h 58m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 16 [  2h 3m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 16 [  2h 8m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 16 [  2h 13m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 16 [  2h 18m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 17 [  2h 23m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 17 [  2h 28m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 17 [  2h 33m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 17 [  2h 38m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 17 [  2h 43m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 17 [  2h 48m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 17 [  2h 53m  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 18 [  2h 58m  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 18 [  3h 3m  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 19 [  3h 8m  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 19 [  3h 13m  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 19 [  3h 18m  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 20 [  3h 23m  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 21 [  3h 28m  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 22 [  3h 33m  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 22 [  3h 38m  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 22 [  3h 43m  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 22 [  3h 48m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  3h 53m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  3h 58m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 3m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 8m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 13m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 18m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 23m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 28m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 33m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 38m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 43m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 48m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 23 [  4h 53m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  4h 58m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 3m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 8m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 13m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 18m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 23m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 28m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 33m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 38m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 43m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 48m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 53m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  5h 58m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 25 [  6h 3m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 8m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 13m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 18m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 23m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 29m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 34m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 39m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 44m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 49m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 54m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  6h 59m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 4m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 9m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 14m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 19m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 24m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 29m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 34m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 39m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 44m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 49m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 26 [  7h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  7h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  8h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  9h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  10h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  11h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  12h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  13h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  14h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 24m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 29m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 34m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 39m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 44m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 49m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 54m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  15h 59m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  16h 4m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  16h 9m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  16h 14m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  16h 19m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 27 [  16h 24m  ] 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 28 [  16h 29m  ] 
+INFO: Updating the number of unweighted events per channel
+
+      Intermediate results:
+      Random seed: 33
+      Total cross section:      1.066e-02 +- 1.9e-05 pb
+      Total abs(cross section): 2.062e-02 +- 2.0e-05 pb 
+
+ 
+INFO: Generating events 
+Start waiting for update. (more info in debug mode)
+INFO:  Idle: 0,  Running: 1,  Completed: 10012 [  3m 23s  ] 
+INFO: All jobs finished 
+INFO:  Idle: 0,  Running: 0,  Completed: 10013 [  5m 23s  ] 
+quit
+INFO:  
+ 
+preparing reweighting step
+preparing reweighting step
+[?1034hRunning MG5 in debug mode
+No module named madgraph
+INFO: ************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D G R A P H 5           *
+*                       a M C @ N L O                      *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 5.2.6.0               20xx-xx-xx         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*                 http://amcatnlo.cern.ch                  *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************ 
+INFO: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+INFO: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt  
+INFO: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+reweight pilotrun
+[1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. reweight : [32mreweight_card.dat[0m                           |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card.
+ [[4m0[0m, done, 1, reweight, enter path][90s to answer] 
+>INFO: Update the dependent parameter of the param_card.dat 
+[1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m
+[1;32mDEBUG: [?1034hNo module named madgraph [0m
+[1;32mDEBUG: /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/bin/internal/me5_logging.conf [0m
+[1;32mDEBUG: INFO: ************************************************************ [0m
+[1;32mDEBUG: *                                                          * [0m
+[1;32mDEBUG: *           W E L C O M E  to  M A D G R A P H 5           * [0m
+[1;32mDEBUG: *                       a M C @ N L O                      * [0m
+[1;32mDEBUG: *                                                          * [0m
+[1;32mDEBUG: *                 *                       *                * [0m
+[1;32mDEBUG: *                   *        * *        *                  * [0m
+[1;32mDEBUG: *                     * * * * 5 * * * *                    * [0m
+[1;32mDEBUG: *                   *        * *        *                  * [0m
+[1;32mDEBUG: *                 *                       *                * [0m
+[1;32mDEBUG: *                                                          * [0m
+[1;32mDEBUG: *         VERSION 5.2.6.0               20xx-xx-xx         * [0m
+[1;32mDEBUG: *                                                          * [0m
+[1;32mDEBUG: *    The MadGraph5_aMC@NLO Development Team - Find us at   * [0m
+[1;32mDEBUG: *                 http://amcatnlo.cern.ch                  * [0m
+[1;32mDEBUG: *                                                          * [0m
+[1;32mDEBUG: *               Type 'help' for in-line help.              * [0m
+[1;32mDEBUG: *                                                          * [0m
+[1;32mDEBUG: ************************************************************  [0m
+REWEIGHT: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+REWEIGHT: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt  
+REWEIGHT: load configuration from /home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+[1;32mDEBUG: Using default text editor "vi". Set another one in ./input/mg5_configuration.txt [0m
+[1;32mDEBUG: No valid eps viewer found. Please set in ./input/mg5_configuration.txt [0m
+[1;32mDEBUG: No valid web browser found. Please set in ./input/mg5_configuration.txt [0m
+[1;32mDEBUG: reweight pilotrun -from_cards [0m
+[1;32mDEBUG: [1;60mFor consistency in the FxFx merging, 'jetradius' has been set to 1.0[0m [0m
+[1;32mDEBUG: [1;31mCommand "reweight pilotrun -from_cards" interrupted with error: [0m
+[1;32mDEBUG: InvalidCmd : No events file corresponding to pilotrun run.  [0m
+[1;32mDEBUG: Please report this bug on https://bugs.launchpad.net/mg5amcnlo [0m
+[1;32mDEBUG: More information is found in '/home/anying/GEN/NLOReweight/genproductions/bin/MadGraph5_aMCatNLO/WA_aTGC_NLO_FXFX/WA_aTGC_NLO_FXFX_gridpack/work/processtmp/pilotrun_tag_1_debug.log'. [0m
+[1;32mDEBUG: Please attach this file to your report.[0m [0m
+[1;32mDEBUG: quit [0m
+REWEIGHT:  
+[1;32mDEBUG:   [0m
+quit
+INFO:  
+ 
+finished pilot run
+cleaning unneeded files from gridpack

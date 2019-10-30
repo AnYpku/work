@@ -1,0 +1,24 @@
+###############report 11_0_0_pre2 FastSimReport_PU
+Target: 11_0_0_pre2 (blue)
+Reference: 10_6_0    (black)
+Samples:  ZMM [1] ZEE[2] TTbar[3] QCD_flat[4]
+
+I didn't see another apparent deviations in histograms but statistical fluctuations.
+
+[1]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport_PU/RelValZMM_13FastSim-v1_PU25ns_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html
+[2]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport_PU/RelValZEE_13FastSim-v1_PU25ns_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html
+[3]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport_PU/RelValTTbar_13FastSim-v1_PU25ns_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html
+[4]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport_PU/RelValQCD_FlatPt_15_3000HS_13FastSim-v1_PU25ns_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html
+###############report 11_0_0_pre2 FastSimReport_PU
+
+
+###############report 11_0_0_pre2 FastSimReport
+Target: 11_0_0_pre2 (blue)
+Reference: 10_6_0    (black)
+Samples:  ZMM [1] ZEE[2] TTbar[3] QCD_flat[4]
+
+I didn't see another apparent deviations in histograms but statistical fluctuations.
+[1]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport/RelValZMM_13_UP18FastSim-v1_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html
+[2]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport/RelValZEE_13_UP18FastSim-v1_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html
+[3]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport/RelValTTbar_13_UP18FastSim-v1_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html
+[4]https://cms-pdmv.cern.ch/ReleaseMonitoring/CMSSW_11_0_0_pre2vsCMSSW_10_6_0/FastSimReport/RelValQCD_FlatPt_15_3000_13_UP18FastSim-v1_106X_upgrade2018_realistic_v4_FastSim/e81138013e.html

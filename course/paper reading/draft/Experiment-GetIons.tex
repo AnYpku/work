@@ -1,0 +1,33 @@
+The mass spectrometer has been widely used in the aspect of ion beam acquirement. Here, we take a measure of eletron ionization giving a high degree of fragmentation and yielding highly detailed mass spectra. Then, doing the mass selection with the help of mass analyzers which separate the ions according to their mass-to-charge ratio. The following two laws govern the dynamics of charged particles in electric and magnetic fields in vacuum:
+
+\begin{align*}
+F=Q(\vec{E}+\vec{v} \times \vec{B})\\
+F=m\vec{a}
+\end{align*}
+
+in which F is the force applied to the ion, m is the mass of the ion, $\vec{a}$ is the acceleration and Q is the ion charge. $\vec{E}$ is the electric field, and $\vec{v}\times\vec{B}$ is the vector cross product of the ion velocity and magnetic field.
+
+When get the cloud-ions, inject them into the one of trap of penning trap to cool and store. There are five electrodes in the PT with cylindrical, compensated design\cite{GABRIELSE1989319}\cite{1367-2630-10-10-103009} in the center of a homogeneous magnetic field produced by superconducting magnet. The magnetic field, whose value is B = 1.899 T, the direction is oriented along the symmetry axis of the trap electrodes. The five electrodes are made up of gold-plated oxygen-free copper which have an inner radius of 3.5 mm. In order to form a quadrupolar potential near the center of the trap, voltages are applied to the electrodes. We can clean the ion beam furthermore. Contaminants are heated out of the trap by applying selective radio frequency driven to the electrodes. The axial frequency of the protons, $\nu_z=\frac{1}{2\pi}\sqrt{\frac{qV_0}{md_0^2}}$, is tuned on resonance with the highly sensitive axial detection system by adjusting the trapping voltage, and the value is $V_0\cdot d_0$, a characteristic trap parameter. The detection system has a superconducting Nb/Ti inductor and an ultralow-noise amplifier. Together with the parasitic capacitance of the trap system, the inductor forms a tuned circuit with a resonance frequency $\nu_0 = 694kHz$ and a quality factor of 4000. The effective parallel resistance at resonance is $R = 25M\Omega$. The oscillation of the trapped charged particles induces image currents in the trap electrodes which leads to a RF-voltage signal across the resistor R. This signal is amplified, mixed down, and analyzed with a fast Fourier transform (FFT) spectrum analyzer. The ions are resistively cooled to thermal equilibrium thus decrease the thermal noise $e_{th}=\sqrt{4k_BT_zR\Delta F}$ of the detection system. $T_z$ is the temperature of the detector and $\Delta F$ the measured bandwidth. At the axial frequency $\nu_z$ a dig occurs in the FFT nosie spectrum, as Fig.4. The full width at half maximum $\Delta\nu_z$ of the "particle dig" is given by the relation 
+
+\begin{align*}
+\Delta\nu_z = \frac{1}{2\pi}\frac{NR}{m}\frac{q^2}{D^2} = N \times 1.1 Hz
+\end{align*}
+
+\begin{figure}[]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{plots/Experiment/GetIons/dip.png}
+\end{center}
+\caption{One single ions in thermal equilibrium with the axial detector.}
+\label{fig:particle dip}
+\end{figure}
+
+
+where D=7.5 mm is a characteristic trap length and N is the number of trapped ions\cite{doi:10.1063/1.321602}. As their proportional dempendency, it is used to count the number of particles stored in the trap. Fig.5 shows the linewidth $\Delta\nu_z$ of the axial dip as a function of the particle number. Broadband white noise is applied to the trap electrodes and the trapping potential is lowered. By means of that method the particle number is reduced until one single ion remains in the Penning trap.
+
+\begin{figure}[]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{plots/Experiment/GetIons/relation.png}
+\end{center}
+\caption{$\Delta\nu_z$ of the axial dip as a function of the number of protons.}
+\label{fig:relation}
+\end{figure}

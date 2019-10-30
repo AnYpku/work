@@ -1,0 +1,17 @@
+------------
+bin             recobin1 recobin2 recobin3 recobin4 recobin5 recobin6   
+observation     64 43 13 77 48 30 
+------------
+bin                recobin1 recobin1 recobin1 recobin1 recobin1 recobin1 recobin1 recobin2 recobin2 recobin2 recobin2 recobin2 recobin2 recobin2 recobin3 recobin3 recobin3 recobin3 recobin3 recobin3 recobin3 recobin4 recobin4 recobin4 recobin4 recobin4 recobin4 recobin4 recobin5 recobin5 recobin5 recobin5 recobin5 recobin5 recobin5 recobin6 recobin6 recobin6 recobin6 recobin6 recobin6 recobin6            
+process            genbin1 genbin2 genbin3 genbin4 genbin5 genbin6 bkg genbin1 genbin2 genbin3 genbin4 genbin5 genbin6 bkg genbin1 genbin2 genbin3 genbin4 genbin5 genbin6 bkg genbin1 genbin2 genbin3 genbin4 genbin5 genbin6 bkg genbin1 genbin2 genbin3 genbin4 genbin5 genbin6 bkg genbin1 genbin2 genbin3 genbin4 genbin5 genbin6 bkg
+process            -5 -4 -3 -2 -1 0 1 -5 -4 -3 -2 -1 0 1 -5 -4 -3 -2 -1 0 1 -5 -4 -3 -2 -1 0 1 -5 -4 -3 -2 -1 0 1 -5 -4 -3 -2 -1 0 1
+rate               50 3 5 1 0 0 7 9 20 9 2 0 0 4 0 1 5 5 1 0 4 0 0 6 60 6 0 6 0 0 0 6 35 4 8 0 0 0 0 8 20 6
+------------
+QCDscale lnN  1.05 1.05 1.05 1.05 1.05 1.05 - 1.05 1.05 1.05 1.05 1.05 1.05 -   1.05 1.05 1.05 1.05 1.05 1.05 -   1.05 1.05 1.05 1.05 1.05 1.05 -   1.05 1.05 1.05 1.05 1.05 1.05 -   1.05 1.05 1.05 1.05 1.05 1.05 -    
+pdf       lnN   1.02 1.02 1.02 1.02 1.02 1.02 -  1.02 1.02 1.02 1.02 1.02 1.02 -   1.02 1.02 1.02 1.02 1.02 1.02 -   1.02 1.02 1.02 1.02 1.02 1.02 -   1.02 1.02 1.02 1.02 1.02 1.02 -   1.02 1.02 1.02 1.02 1.02 1.02 -  
+lumi lnN 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 1.025 
+
+constr1 constr const1_In[0.],RooFormulaVar::fconstr1("@0+@2-2*@1",{r_1,r_2,r_3}),delta[10.]
+constr2 constr const2_In[0.],RooFormulaVar::fconstr2("@0+@2-2*@1",{r_2,r_3,r_4}),delta[10.]
+constr3 constr const3_In[0.],RooFormulaVar::fconstr3("@0+@2-2*@1",{r_3,r_4,r_5}),delta[10.]
+constr4 constr const4_In[0.],RooFormulaVar::fconstr4("@0+@2-2*@1",{r_4,r_5,r_6}),delta[10.]

@@ -12,7 +12,7 @@ void run(std::string filename){
 	std::string file = filename+".root";
 	TFile* f1 = TFile::Open(file.c_str());
 
-	TTree* t = (TTree*)f1->Get("demo");
+	TTree* t = (TTree*)f1->Get("ZPKUCandidates");
 
 	Double_t Mjj;
 	Double_t detajj;
@@ -26,8 +26,10 @@ void run(std::string filename){
 	t->SetBranchAddress("theWeight", &theWeight);
 	t->SetBranchAddress("lumiWeight", &lumiWeight);
 
-	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+//	Double_t mjj_bins[4]={500, 750, 1000, 2000};
+	Double_t mjj_bins[4]={500, 800, 1200, 2000};
 	Double_t detajj_bins[4]={2.5, 4.5, 6, 6.5};
+//    Double_t mjj_bins[4]={500, 800,1200, 2000};
     char th2name[51];
     for(Int_t i=0;i<51;i++){
        sprintf(th2name,"th2_%d",i);
@@ -64,7 +66,7 @@ void run(std::string filename){
 
 int d_hist(){
     cout<<"test"<<endl;
-	run("outZA-cut1");
+	run("outZA-mu-ele");
 	TFile* f5=new TFile("th2-histo.root","RECREATE");
     for(Int_t i=0;i<51;i++){
 	   th2[i]->Write();}

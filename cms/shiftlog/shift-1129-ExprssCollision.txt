@@ -1,0 +1,13 @@
+/Express/HICollisions2018/DQM
+          DT     CSC       RPC      DT-STATE     CSC-STATE   RPC-STATE
+327455    OK   low stas   OK        SIGNOFF       SIGNOFF   SIGNOFF
+327431    OK     OK       OK        SIGNOFF       SIGNOFF   SIGNOFF
+327430	  OK     OK       OK        SIGNOFF       SIGNOFF   SIGNOFF
+327424	  OK     OK       OK        SIGNOFF       SIGNOFF   SIGNOFF
+327403	  OK     OK       OK        SIGNOFF       SIGNOFF   SIGNOFF
+327402	  OK     OK       OK        SIGNOFF       SIGNOFF   SIGNOFF
+327400	  OK     OK       OK        SIGNOFF       SIGNOFF   SIGNOFF
+327327	  OK     OK       OK        SIGNOFF       SIGNOFF   SIGNOFF
+327311 low stas low stas  low stas  SIGNOFF       SIGNOFF   SIGNOFF     
+327310 low stas STANDBY  EXCLUDED   SIGNOFF       SIGNOFF   SIGNOFF             
+327308 low stas EXCLUDED EXCLUDED   SIGNOFF       SIGNOFF   SIGNOFF

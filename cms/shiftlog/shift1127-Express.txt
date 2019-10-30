@@ -1,0 +1,32 @@
+/StreamExpressCosmics/Run2018C-Express-v1/DQMIO
+        DT      DT-STATE      CSC       CSC-STATE     RPC     RPC-STATE     
+319826  OK       SIGNOFF      OK         SIGNOFF      OK       SIGNOFF     
+324901  OK       SIGNOFF     low stas    SIGNOFF    low stas   SIGNOFF 
+324932  OK       SIGNOFF     EXCLUDED    SIGNOFF    EXCLUDED   SIGNOFF  
+324944  OK       SIGNOFF      OK         SIGNOFF    EXCLUDED   SIGNOFF
+325004  OK       SIGNOFF     EXCLUDED    SIGNOFF    low stas   SIGNOFF
+325026  OK       SIGNOFF     low stas    SIGNOFF    low stas   SIGNOFF  
+325063  OK       SIGNOFF     EXCLUDED    SIGNOFF    low stas   SIGNOFF
+325066  OK       SIGNOFF     EXCLUDED    SIGNOFF    low stas   SIGNOFF
+325067  OK       SIGNOFF     EXCLUDED    SIGNOFF    low stas   SIGNOFF
+325073  OK       SIGNOFF     low stas    SIGNOFF    low stas   SIGNOFF    
+
+325083  OK       SIGNOFF       OK      SIGNOFF       OK      SIGNOFF    
+325087  OK       SIGNOFF       OK      SIGNOFF       OK      SIGNOFF     
+325088  OK       SIGNOFF     low stas  SIGNOFF    low stas   SIGNOFF   
+325139  OK       SIGNOFF     EXCLUDED  SIGNOFF       OK      SIGNOFF
+325177  OK       SIGNOFF       OK      SIGNOFF       OK      SIGNOFF            
+ 
+/Express/HICosmics2018/DQM
+325873  OK   SIGNOFF        EXCLUDED   SIGNOFF     OK         SIGNOFF    
+326076  OK   SIGNOFF           OK      SIGNOFF     OK         SIGNOFF      
+326314  OK   SIGNOFF           OK      SIGNOFF     low stas   SIGNOFF    
+326321  OK   SIGNOFF           OK      SIGNOFF     low stas   SIGNOFF     
+326322  OK   SIGNOFF           OK      SIGNOFF     OK         SIGNOFF    
+326334  OK   SIGNOFF         EXCLUDED  SIGNOFF     low stas   SIGNOFF
+326340  OK   SIGNOFF           OK      SIGNOFF     OK         SIGNOFF    
+326366  OK   SIGNOFF           OK      SIGNOFF     OK         SIGNOFF    
+326395  OK   SIGNOFF           OK      SIGNOFF     OK         SIGNOFF  
+326404  OK   SIGNOFF           OK      SIGNOFF     OK         SIGNOFF    
+326442  OK   SIGNOFF         low stas  SIGNOFF     OK         SIGNOFF     
+326443  OK   SIGNOFF           OK      SIGNOFF     OK         SIGNOFF                                              

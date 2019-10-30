@@ -5,27 +5,17 @@
 #include "RooRealVar.h"
 #include "RooAddPdf.h"
 using namespace RooFit;
-TFile* fdataT = TFile::Open("./rootfiles/dataTrue_template.root");
-TFile* fdataF = TFile::Open("./rootfiles/dataFake_template.root");
-TFile* fmcT = TFile::Open("./rootfiles/mcTrue_template.root");
-TFile* fmcF = TFile::Open("./rootfiles/mcFake_template.root");
-TFile* fdata = TFile::Open("./rootfiles/waData_template.root");
-TFile* fmc = TFile::Open("./rootfiles/waMC_template.root");
 ofstream file3("info_fit.txt");
+TFile* fdata = TFile::Open("./root/Data_template-cutLEP-outDMuon.root");
+TFile* ftrue = TFile::Open("./root/True_template-cutLEP-outZA.root");
+TFile* ffake = TFile::Open("./root/Fake_template-cutLEP-outDMuon.root");
 void fit(float lowpt, float highpt){
 //TString b="chiso5-12_";
-    TFile *f0 = new TFile(Form("./rootfiles/fdata_%0.f_%0.f.root",lowpt,highpt));
-    TTree *tree_datawa = (TTree*)f0->Get("tree_datawa");
-    TH1F* hsieie = (TH1F*)fdata->Get(Form("hsieie_pt%0.f-%0.f",lowpt,highpt));
-    TH1F* hmt_ = (TH1F*)fmcT->Get(Form("h2_pt%0.f-%0.f",lowpt,highpt));
-    TH1F* hmf_ = (TH1F*)fmcF->Get(Form("h1_pt%0.f-%0.f",lowpt,highpt));
-    TH1F* hmc = (TH1F*)fmc->Get(Form("hmcwa_pt%0.f-%0.f",lowpt,highpt));
-    TH1F* hdata_ = (TH1F*)fdata->Get(Form("hdatawa_pt%0.f-%0.f",lowpt,highpt));
-    TH1F* hfake_ = (TH1F*)fdataF->Get(Form("h3_pt%0.f-%0.f",lowpt,highpt));
-    TH1F* htrue_ = (TH1F*)fdataT->Get(Form("h4_pt%0.f-%0.f",lowpt,highpt));
-    htrue_ -> Add(hmt_,-35);
-    hfake_ -> Add(hmf_,-35);
-    /*Int_t nBins = hdata->GetNbinsX(); */
+
+	TH1F* hdata_ = (TH1F*)fdata->Get(Form("h3_pt%0.f-%0.f",lowpt,highpt));
+	TH1F* hfake_ = (TH1F*)ffake->Get(Form("h2_pt%0.f-%0.f",lowpt,highpt));
+	TH1F* htrue_ = (TH1F*)ftrue->Get(Form("h1_pt%0.f-%0.f",lowpt,highpt));
+
 	Int_t nBins = 9;
 	Double_t bins[10];
 	for (Int_t i=0;i<10;i++){
@@ -48,8 +38,6 @@ void fit(float lowpt, float highpt){
 	}
 
 	Double_t nData = hdata->GetSumOfWeights();
-    Double_t nt = htrue->GetSumOfWeights();
-    Double_t nf = hfake->GetSumOfWeights();
 	RooRealVar sieie("sieie", "sieie", 0.004, 0.02);
 	
 
@@ -60,8 +48,8 @@ void fit(float lowpt, float highpt){
 	RooHistPdf true_pdf("truepdf", "truepdf", sieie, true_hist);
 	RooHistPdf fake_pdf("fakepdf", "fakepdf", sieie, fake_hist);
 
-	RooRealVar nTrue("true number", "true number", nt, 0, nData);
-	RooRealVar nFake("fake number", "fake number", nf, 0, nData);
+	RooRealVar nTrue("true number", "true number", 0.5*nData, 0, nData);
+	RooRealVar nFake("fake number", "fake number", 0.5*nData, 0, nData);
 
 	RooExtendPdf etrue_pdf("ntrue", "ntrue", true_pdf, nTrue);
 	RooExtendPdf efake_pdf("nfake", "nfake", fake_pdf, nFake);
@@ -118,12 +106,12 @@ void fit(float lowpt, float highpt){
 
 	Double_t nDataInWindowErr = 0.;
 	Double_t nDataInWindow_1 = hdata->Integral(1,1);
-    Double_t nDataInWindow_2 = hdata->Integral(2,2);
-    Double_t nDataInWindow_3 = hdata->Integral(3,3);
-    Double_t nDataInWindow_4 = hdata->Integral(4,4);
-    Double_t nDataInWindow_5 = hdata->Integral(5,5);
-    Double_t nDataInWindow_6 = hdata->Integral(6,6);
-    Double_t nDataInWindow_7 = hdata->Integral(7,7);
+        Double_t nDataInWindow_2 = hdata->Integral(2,2);
+        Double_t nDataInWindow_3 = hdata->Integral(3,3);
+        Double_t nDataInWindow_4 = hdata->Integral(4,4);
+        Double_t nDataInWindow_5 = hdata->Integral(5,5);
+        Double_t nDataInWindow_6 = hdata->Integral(6,6);
+	Double_t nDataInWindow_7 = hdata->Integral(7,7);
 	Double_t nDataInWindow = hdata->IntegralAndError(1,nBins/3,nDataInWindowErr);
 	Double_t nDatatotal = hdata->Integral();
 	Double_t nTrue_fit = nTrue.getVal();
@@ -134,7 +122,8 @@ void fit(float lowpt, float highpt){
 	sieie.setRange("window",0.0052,0.0102);
 	RooRealVar *fracFake = (RooRealVar*)efake_pdf.createIntegral(sieie,sieie,"window");
 	Double_t nFake_inwindow = nFake_fit*fracFake->getVal();
-	Double_t nFake_inwindowErr = sqrt(nFake_fitErr*nFake_fitErr*fracFake->getVal()*fracFake->getVal()+ nFake_fit*nFake_fit*fracFake->getError()*fracFake->getError());
+	Double_t nFake_inwindowErr = sqrt(nFake_fitErr*nFake_fitErr*fracFake->getVal()*fracFake->getVal()+
+										nFake_fit*nFake_fit*fracFake->getError()*fracFake->getError());
 	RooRealVar *fracTrue =(RooRealVar*)etrue_pdf.createIntegral(sieie,sieie,"window");
 	Double_t nTrue_inwindow = nTrue_fit*fracTrue->getVal();
 	Double_t nTrue_inwindowErr = sqrt(nTrue_fitErr*nTrue_fitErr*fracTrue->getVal()*fracTrue->getVal()+
@@ -144,10 +133,10 @@ void fit(float lowpt, float highpt){
 	Double_t fakerateErr = sqrt(nFake_inwindowErr*nFake_inwindowErr/(nDataInWindow*nDataInWindow)
 								+ nFake_inwindow*nFake_inwindow*nDataInWindowErr*nDataInWindowErr/(nDataInWindow
 									*nDataInWindow*nDataInWindow*nDataInWindow));
-	ofstream myfile(TString("fakerate_") + Form("photon_pt%0.f_%0.f.txt", lowpt, highpt),ios::out);
-	ofstream myfile1(TString("fakerate_") + Form("pt%0.f_%0.f.txt", lowpt, highpt),ios::out);
-	ofstream file(TString("TrueNumber_") + Form("pt%0.f-%0.f.txt", lowpt, highpt),ios::out);
-	ofstream file1(TString("FakeNumber_") + Form("pt%0.f-%0.f.txt", lowpt, highpt),ios::out);
+	ofstream myfile(TString("./txt/fakerate_") + Form("photon_pt%0.f_%0.f.txt", lowpt, highpt),ios::out);
+	ofstream myfile1(TString("./txt/fakerate_") + Form("pt%0.f_%0.f.txt", lowpt, highpt),ios::out);
+	ofstream file(TString("./txt/TrueNumber_") + Form("pt%0.f-%0.f.txt", lowpt, highpt),ios::out);
+	ofstream file1(TString("./txt/FakeNumber_") + Form("pt%0.f-%0.f.txt", lowpt, highpt),ios::out);
 
 	myfile << "data in window = " << nDataInWindow << "+-" << nDataInWindowErr <<" "<<nDataInWindow_1<<" "<<nDataInWindow_2<<" "<<nDataInWindow_3<<" "<<nDataInWindow_4<<" "<<nDataInWindow_5<<" "<<nDataInWindow_6<<" "<<nDataInWindow_7<<std::endl;
 	myfile << "nDatatotal = " << nDatatotal << std::endl;
@@ -181,7 +170,7 @@ void fit(float lowpt, float highpt){
         textFR->Draw();
 
     char buffer[256];
-	sprintf(buffer, "pt%0.f-%0.f.eps",lowpt,highpt);
+	sprintf(buffer, "./eps/pt%0.f-%0.f.eps",lowpt,highpt);
 	c1->Print(buffer);
 
 }

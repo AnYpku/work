@@ -1,0 +1,61 @@
+ ! Maximal center-of-mass energy in TeV:
+ sqrt_s =     13.0
+ 
+ ! The following anomalous couplings to / Lambda^4 have been set != 0 :
+ 
+ ! Form factor from on-shell W+W- -> W+W- scattering in GeV:
+ FFscale_WWWW =       0.
+ ! Form factor from on-shell W+W+ -> W+W+ scattering in GeV:
+ FFscale_WPWP =       0.
+ ! Form factor from on-shell W+W- -> ZZ scattering in GeV:
+ FFscale_WWZZ =       0.
+ ! Form factor from on-shell W+Z -> W+Z scattering in GeV:
+ FFscale_WZWZ =       0.
+ ! Form factor from on-shell ZZ -> ZZ scattering in GeV:
+ FFscale_ZZZZ =       0.
+ ! Form factor from on-shell W+W- -> AA scattering in GeV:
+ FFscale_WWAA =       0.
+ ! Form factor from on-shell W+W- -> ZA scattering in GeV:
+ FFscale_WWZA =       0.
+ ! Form factor from on-shell W+A -> W+A scattering in GeV:
+ FFscale_WAWA =       0.
+ ! Form factor from on-shell W+Z -> W+A scattering in GeV:
+ FFscale_WZWA =       0.
+ ! Form factor from on-shell AA -> AA scattering in GeV:
+ FFscale_AAAA =       0.
+ ! Form factor from on-shell ZA -> AA scattering in GeV:
+ FFscale_ZAAA =       0.
+ ! Form factor from on-shell ZA -> ZA scattering in GeV:
+ FFscale_ZAZA =       0.
+ ! Form factor from on-shell ZZ -> AA scattering in GeV:
+ FFscale_ZZAA =       0.
+ ! Form factor from on-shell ZZ -> ZA scattering in GeV:
+ FFscale_ZZZA =       0.
+ 
+ ! Form factor from on-shell W+W- -> W+W- scattering in GeV, diagonalizing the T-matrix:
+ FFscale_WWWW_diag =       0.
+ ! Form factor from on-shell W+W+ -> W+W+ scattering in GeV, diagonalizing the T-matrix:
+ FFscale_WPWP_diag =       0.
+ ! Form factor from on-shell ZZ -> ZZ scattering in GeV, diagonalizing the T-matrix:
+ FFscale_ZZZZ_diag =       0.
+ ! Form factor from on-shell W+Z -> W+Z scattering in GeV, diagonalizing the T-matrix:
+ FFscale_WZWZ_diag =       0.
+ ! Form factor from on-shell AA -> AA scattering in GeV, diagonalizing the T-matrix:
+ FFscale_AAAA_diag =       0.
+ ! Form factor from on-shell ZA -> ZA scattering in GeV, diagonalizing the T-matrix:
+ FFscale_ZAZA_diag =       0.
+ ! Form factor from on-shell W+A -> W+A scattering in GeV, diagonalizing the T-matrix:
+ FFscale_WAWA_diag =       0.
+ 
+ ! Form factor from Q = 2 on-shell VV scattering in GeV, diagonalizing the T-matrix:
+ FFscale_VVVV_Q_2 =       0.
+ ! Form factor from Q = 1 on-shell VV scattering in GeV, diagonalizing the T-matrix:
+ FFscale_VVVV_Q_1 =       0.
+ ! Form factor from Q = 0 on-shell VV scattering in GeV, diagonalizing the T-matrix:
+ FFscale_VVVV_Q_0 =       0.
+ ! Form factor from Q = 1 on-shell VV scattering in GeV (with photons), diagonalizing the T-matrix:
+ FFscale_VVVV_Q_1_A =       0.
+ ! Form factor from Q = 0 on-shell VV scattering in GeV (with photons), diagonalizing the T-matrix:
+ FFscale_VVVV_Q_0_A =       0.
+ 
+(FF = 0 => no FF needed for this channel)
